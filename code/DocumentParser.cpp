@@ -1,9 +1,32 @@
 #include "DocumentParser.h"
 
-
+/***********************************************************************************************
+                                          GOT STEMMER HERE
+                    https://bitbucket.org/smassung/porter2_stemmer/wiki/Home
+************************************************************************************************/
 
 DocumentParser::DocumentParser()
 {
+  //load stop words
+  ifstream stopWordsIn;
+  stopWordsIn.open("stopwords.txt");
+  string word;
+  while(!stopWordsIn.eof())
+  {
+    stopWordsIn >> word;
+    stopwords.push_back(word);
+  }
+  stopWordsIn.close();
+
+  //load bad phrase file
+  ifstream badPhrasesIn;
+  badPhrasesIn.open("badphrase.txt");
+  while(!badPhrasesIn.eof())
+  {
+    badPhrasesIn >> word;
+    throwout.push_back(word);
+  }
+  badPhrasesIn.close();
 
 }
 
@@ -14,7 +37,7 @@ void DocumentParser::parseDrive(string xmlInFile)
   inXMLstream.open(xmlInFile.c_str());
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
-  while(!inXMLstream.eof() && looper++ < 5000)
+  while(!inXMLstream.eof() && looper++ < 130)
   {
     //read in next word
     string inString;
@@ -22,11 +45,13 @@ void DocumentParser::parseDrive(string xmlInFile)
     //found new page object, now parse it
     if (inString.compare(0, 5, "<page") == 0)
     {
-        string title = "";
+        //create page object to save data in
+        Page* page = new Page();
 
         /***********************************************************************************************
                                                     FIND TITLE
         ************************************************************************************************/
+        string title = "";
 
         while(inString.compare(0, 7, "<title>") != 0)
           inXMLstream >> inString;
@@ -126,7 +151,63 @@ void DocumentParser::parseDrive(string xmlInFile)
 
         cout << title << " by " << username << " has id " << id << endl;
 
+
+        /***********************************************************************************************
+                                  FIND KEYWORDS //still need to parse out formatting shit
+        ************************************************************************************************/
+        while(inString.compare(0, 5, "<text") != 0)
+          inXMLstream >> inString;
+        bool isStop;
+        while(inString.compare("</text") != 0)
+        {
+          isStop = false;
+          if(inString.length() > 6 && inString.compare(inString.length()-7, inString.length(), "</text>") == 0)
+            break;
+          //read in next word
+          inXMLstream >> inString;
+
+          for (int i = 0; i < inString.length(); i++)
+          {
+            if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == ".")
+            {
+              inString = inString.substr(0, i);
+              break;
+            }
+          }
+          //make the string lower case
+          transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
+          //search for keyword in stop word list, n times complexity, could be binary search
+          for(size_t i = 0; i < stopwords.size(); i++)
+          {
+            if(inString.compare(stopwords[i]) == 0) //this fucking == cost me 30 minutes alone
+            {
+              isStop = true;
+              break;
+            }
+          }
+          for (size_t i = 0; i < throwout.size(); i++)
+          {
+            if (inString.find(throwout[i]) != string::npos)
+              cout << inString << endl;
+              isStop = true;
+              break;
+          }
+
+          if(!isStop)
+          {
+            Porter2Stemmer::stem(inString);
+            page->addKeyword(inString);
+          }
+
+        }
+        /*for(auto e: page->getKeywords())
+          cout << e << endl;*/
+
+        collection.push_back(page);
     }
+
   }
+  inXMLstream.close();
+  cout << counter << endl;
 
 }

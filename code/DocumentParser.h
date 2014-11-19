@@ -5,6 +5,7 @@
 #include <fstream>
 #include <vector>
 #include "Page.h"
+#include <algorithm>
 
 using namespace std;
 
@@ -22,8 +23,9 @@ public:
 
 
 private:
-  //vector<Page*> binder;
-
+  vector<Page*> collection;
+  vector<string> stopwords;
+  vector<string> throwout;
 
 };
 
