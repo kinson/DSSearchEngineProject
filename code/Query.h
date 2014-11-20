@@ -8,7 +8,12 @@ class Query
 {
 public:
 	Query();
+	Query(std::vector<std::string>,std::vector<std::string>,std::vector<std::string>);
+	std::vector<std::string> getandArgs();
+	std::vector<std::string> getorArgs();
+	std::vector<std::string> getnotArgs();
 	~Query();
+
 private:
 	std::vector<std::string> andArgs;
 	std::vector<std::string> orArgs;
