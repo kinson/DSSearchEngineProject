@@ -37,7 +37,7 @@ void DocumentParser::parseDrive(string xmlInFile)
   inXMLstream.open(xmlInFile.c_str());
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
-  while(!inXMLstream.eof() && looper++ < 130)
+  while(!inXMLstream.eof() /*&& looper++ < 130*/)
   {
     //read in next word
     string inString;
@@ -168,10 +168,9 @@ void DocumentParser::parseDrive(string xmlInFile)
 
           for (int i = 0; i < inString.length(); i++)
           {
-            if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == ".")
+            if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == "." || inString.substr(i) == "]" || inString.substr(i) == "|")
             {
               inString = inString.substr(0, i);
-              break;
             }
           }
           //make the string lower case
@@ -187,10 +186,12 @@ void DocumentParser::parseDrive(string xmlInFile)
           }
           for (size_t i = 0; i < throwout.size(); i++)
           {
-            if (inString.find(throwout[i]) != string::npos)
-              cout << inString << endl;
+            if (inString.find(throwout[i])!= string::npos)
+            {
+              //cout << inString << endl;
               isStop = true;
               break;
+            }
           }
 
           if(!isStop)
@@ -204,10 +205,11 @@ void DocumentParser::parseDrive(string xmlInFile)
           cout << e << endl;*/
 
         collection.push_back(page);
+        cout << counter++ << endl;
     }
 
   }
   inXMLstream.close();
-  cout << counter << endl;
+
 
 }

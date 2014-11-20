@@ -15,10 +15,15 @@ void IndexHandler::addPage(Page* nextPage)
 	{
 		addToIndex(nextPage, temp(i));
 	}
-	
+
 }
 
 void addToIndex(Page* page, string keyword)
 {
-	
+
 }
+
+struct classcomp {
+  bool operator() (const Page*& lhs, const Page*& rhs) const
+  {;}
+};

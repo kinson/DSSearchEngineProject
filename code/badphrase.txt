@@ -12,3 +12,6 @@ font
 %
 &gt
 http
+margin
+quot
+*
