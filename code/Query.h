@@ -2,6 +2,9 @@
 #define QUERY_H
 
 #include <vector>
+#include <string>
+
+using namespace std;
 
 
 class Query

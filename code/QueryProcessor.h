@@ -1,6 +1,11 @@
 #ifndef QUERYPROCESSOR_H
 #define QUERYPROCESSOR_H
 #include <vector>
+#include <string>
+#include <sstream> 
+#include <iostream>
+
+using namespace std;
 
 
 class QueryProcessor
