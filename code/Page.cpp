@@ -48,7 +48,7 @@ string Page:: getDate()
 }
 
 //adds the specific keywords for the page object
-void Page::addKeyword(string keyword)
+void Page::addKeyword(string& keyword)
 {
   //check for duplicate keyword and add to frequency if exists
   int index = binarySearch(keywords, keyword, 0, keywords.size());
@@ -68,10 +68,11 @@ vector<string> Page::getKeywords()
 
 int Page::binarySearch(vector<string>& vc, string kw, int low, int high)
 {
-  if (high - low <= 1 || low - high <= 1)
+
+  if (high - low <= 1)
     return -1;
   int index = (high + low)/2;
-  cout << "high\t" << high << "index\t" << index << "low\t" << low << endl;
+  //cout << "high\t" << high << "index\t" << index << "low\t" << low << endl;
   if (kw.compare(vc[index]) == 0)
     return index;
   else if (kw.compare(vc[index]) > 0)

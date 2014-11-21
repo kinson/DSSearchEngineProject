@@ -6,7 +6,6 @@ Node::Node()
 
 Node::Node(Page* pg, string keyword)
 {
-  //binder.
 
 }
 
@@ -18,4 +17,14 @@ void Node::setWord(string newword)
 void Node::addToBinder(Page*& pg)
 {
   binder.insert(pg);
+}
+
+set<Page*> Node::getBinder()
+{
+  return binder;
+}
+
+string Node::getWord()
+{
+  return word;
 }

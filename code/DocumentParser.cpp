@@ -29,18 +29,13 @@ DocumentParser::DocumentParser()
   }
   badPhrasesIn.close();
   sort(throwout.begin(), throwout.end());
-  for (auto e: stopwords)
-    cout << e << endl;
 
-  //instantiate hashtable
-  indexhandler = new HashTable();
+  cout << Page::binarySearch(stopwords, "well", 0, stopwords.size());
 
 }
 
 void DocumentParser::parseDrive(string xmlInFile)
 {
-
-
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
@@ -50,10 +45,11 @@ void DocumentParser::parseDrive(string xmlInFile)
   inFile.close();
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
+  string inString;
   while(!inXMLstream.eof() /*&& looper++ < 200*/)
   {
     //read in next word
-    string inString;
+
     inXMLstream >> inString;
     //found new page object, now parse it
     if (inString.compare(0, 5, "<page") == 0)
@@ -179,26 +175,26 @@ void DocumentParser::parseDrive(string xmlInFile)
           //read in next word
           inXMLstream >> inString;
 
-          for (int i = 0; i < inString.length(); i++) //3:14 with just this
+          /*for (int i = 0; i < inString.length(); i++) //3:14 with just this
           {
             if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == "." || inString.substr(i) == "]" || inString.substr(i) == "|")
             {
               inString = inString.substr(0, i);
             }
-          }
+          }*/
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower); //3:35
           //search for keyword in stop word list, n times complexity, could be binary search
           if (Page::binarySearch(stopwords, inString, 0, stopwords.size()) != -1) //15% in 5 min
             isStop = true;
-          for (size_t i = 0; i < throwout.size(); i++)
+          /*for (size_t i = 0; i < throwout.size(); i++)
           {
             if (inString.find(throwout[i])!= string::npos)
             {
               isStop = true;
               break;
             }
-          }
+          }*/
           //if it's not being thrown out
           if(!isStop)
           {
@@ -220,8 +216,9 @@ void DocumentParser::parseDrive(string xmlInFile)
 }
 
 
-void DocumentParser::writeToStructure()
+void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
 {
+
   for (auto e: collection)
     indexhandler->addPage(e);
 }

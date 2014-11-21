@@ -19,7 +19,7 @@ public:
   DocumentParser(); //constructor for doc parser
   void parseDrive(string); //open file and parse the xml file
   void sendToIndex(Page*); //send an individual page index
-  void writeToStructure(); //iterate over collection, sending it to the index
+  void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
 
 
 
@@ -28,7 +28,6 @@ private:
   vector<Page*> collection;
   vector<string> stopwords;
   vector<string> throwout;
-  IndexHandler* indexhandler;
 
 
 };

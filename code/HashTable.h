@@ -19,6 +19,7 @@ public:
   void addToIndex(Page*, string); //add an individual word node to the hash table
   //set<Page*> searchIndex(string); //search index based on key
   //unsigned long hashString(string); //hash a string return an index to place the word in
+  void printTable(); //print out hashtable
 
 
 private:

@@ -25,6 +25,10 @@ public:
   //setters
   void setWord(string);
 
+  //getters
+  set<Page*> getBinder(); //return binder vector
+  string getWord();
+
   //add to binder
   void addToBinder(Page*&);
 

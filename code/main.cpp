@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include "DocumentParser.h"
+#include "IndexHandler.h"
 
 using namespace std;
 
@@ -9,7 +10,9 @@ int main()
 {
   DocumentParser* p = new DocumentParser();
   p->parseDrive("hugewikibookdump.xml");
-  //p->writeToStructure();
+  IndexHandler* indexhandler = new HashTable();
+  //p->writeToStructure(indexhandler);
+  //indexhandler->printTable();
 
 
 
