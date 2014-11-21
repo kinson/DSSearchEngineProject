@@ -9,7 +9,8 @@ int main()
 {
   DocumentParser* p = new DocumentParser();
   p->parseDrive("hugewikibookdump.xml");
-  
+  //p->writeToStructure();
+
 
 
 

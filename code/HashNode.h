@@ -1,10 +1,11 @@
 #ifndef HASHNODE_H
 #define HASHNODE_H
 
+#include "Node.h"
 
 
 
-class HashNode
+class HashNode : public Node
 {
 private:
   HashNode* next;
@@ -12,6 +13,7 @@ private:
 
 
 public:
+  HashNode(); //default constructor
 
 
 

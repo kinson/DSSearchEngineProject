@@ -31,7 +31,7 @@ void Page::setContributingUser(string username)
   contributingUser = username;
 }
 
-string getContributingUser()
+string Page::getContributingUser()
 {
   return contributingUser;
 }
@@ -51,20 +51,32 @@ string Page:: getDate()
 void Page::addKeyword(string keyword)
 {
   //check for duplicate keyword and add to frequency if exists
-  for(size_t i = 0; i < keywords.size(); i++)
+  int index = binarySearch(keywords, keyword, 0, keywords.size());
+  if (index == -1)
   {
-    if (keywords[i].compare(keyword) == 0)
-    {
-      frequency[i] += 1;
-      return;
-    }
+    frequency.push_back(1);
+    keywords.push_back(keyword);
   }
-  //add new keyword
-  keywords.push_back(keyword);
-  frequency.push_back(1);
+  else
+    frequency[index]++;
 }
 
 vector<string> Page::getKeywords()
 {
   return keywords;
+}
+
+int Page::binarySearch(vector<string>& vc, string kw, int low, int high)
+{
+  if (high - low <= 1 || low - high <= 1)
+    return -1;
+  int index = (high + low)/2;
+  cout << "high\t" << high << "index\t" << index << "low\t" << low << endl;
+  if (kw.compare(vc[index]) == 0)
+    return index;
+  else if (kw.compare(vc[index]) > 0)
+    return binarySearch(vc, kw, index, high);
+  else
+    return binarySearch(vc, kw, low, index);
+
 }

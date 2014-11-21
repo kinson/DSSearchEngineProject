@@ -17,6 +17,7 @@ DocumentParser::DocumentParser()
     stopwords.push_back(word);
   }
   stopWordsIn.close();
+  sort(stopwords.begin(), stopwords.end());
 
   //load bad phrase file
   ifstream badPhrasesIn;
@@ -27,17 +28,29 @@ DocumentParser::DocumentParser()
     throwout.push_back(word);
   }
   badPhrasesIn.close();
+  sort(throwout.begin(), throwout.end());
+  for (auto e: stopwords)
+    cout << e << endl;
+
+  //instantiate hashtable
+  indexhandler = new HashTable();
 
 }
 
 void DocumentParser::parseDrive(string xmlInFile)
 {
+
+
   //create ifstream object to read in xmlfile
-  ifstream inXMLstream;
-  inXMLstream.open(xmlInFile.c_str());
+  ifstream inFile(xmlInFile.c_str());
+  stringstream inXMLstream;
+
+  //read it all in
+  inXMLstream << inFile.rdbuf();
+  inFile.close();
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
-  while(!inXMLstream.eof() /*&& looper++ < 130*/)
+  while(!inXMLstream.eof() /*&& looper++ < 200*/)
   {
     //read in next word
     string inString;
@@ -149,7 +162,7 @@ void DocumentParser::parseDrive(string xmlInFile)
         else
           username = "none";
 
-        cout << title << " by " << username << " has id " << id << endl;
+        cout << counter++ << "\t" << title << " by " << username << " has id " << id << endl;
 
 
         /***********************************************************************************************
@@ -166,7 +179,7 @@ void DocumentParser::parseDrive(string xmlInFile)
           //read in next word
           inXMLstream >> inString;
 
-          for (int i = 0; i < inString.length(); i++)
+          for (int i = 0; i < inString.length(); i++) //3:14 with just this
           {
             if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == "." || inString.substr(i) == "]" || inString.substr(i) == "|")
             {
@@ -174,28 +187,22 @@ void DocumentParser::parseDrive(string xmlInFile)
             }
           }
           //make the string lower case
-          transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
+          transform(inString.begin(), inString.end(), inString.begin(), ::tolower); //3:35
           //search for keyword in stop word list, n times complexity, could be binary search
-          for(size_t i = 0; i < stopwords.size(); i++)
-          {
-            if(inString.compare(stopwords[i]) == 0) //this fucking == cost me 30 minutes alone
-            {
-              isStop = true;
-              break;
-            }
-          }
+          if (Page::binarySearch(stopwords, inString, 0, stopwords.size()) != -1) //15% in 5 min
+            isStop = true;
           for (size_t i = 0; i < throwout.size(); i++)
           {
             if (inString.find(throwout[i])!= string::npos)
             {
-              //cout << inString << endl;
               isStop = true;
               break;
             }
           }
-
+          //if it's not being thrown out
           if(!isStop)
           {
+            //stem word
             Porter2Stemmer::stem(inString);
             page->addKeyword(inString);
           }
@@ -205,11 +212,16 @@ void DocumentParser::parseDrive(string xmlInFile)
           cout << e << endl;*/
 
         collection.push_back(page);
-        cout << counter++ << endl;
     }
 
   }
-  inXMLstream.close();
 
 
+}
+
+
+void DocumentParser::writeToStructure()
+{
+  for (auto e: collection)
+    indexhandler->addPage(e);
 }

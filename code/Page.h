@@ -21,13 +21,15 @@ public:
   //getters
   string getTitle();
   unsigned long getId();
-  string getContriutingUser();
+  string getContributingUser();
   string getDate();
   vector<string> getKeywords();
 
   void addKeyword(string); //add to keyword vector
 
   ~Page(); //destructor for page object
+
+  static int binarySearch(vector<string>&, string, int, int); //search over a vector, return true if the string exists
 
 
 

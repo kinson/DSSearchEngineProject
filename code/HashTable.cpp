@@ -1,20 +1,30 @@
 #include <iostream>
 #include "HashTable.h"
+#include <functional>
+
 
 
 HashTable::HashTable()
 {
-  hashSize = 1000000;
   for (size_t i = 0; i < hashVector.size(); i++)
-    hashVector.push_back();
+    hashVector.push_back(new HashNode());
 }
 
-override void HashTable::addToIndex(Page* pg, string kw)
+void HashTable::addToIndex(Page* pg, string kw)
 {
   //hash the string
+  hash<string> hash_fn;
+  size_t hash_val = hash_fn(kw);
 
-  //check the existing hash set
-  for ()
+
+  //check the existing hash set (deal with collisions still)
 
   //add the page object to the respective page object
+  hashVector[hash_val % hashSize]->setWord(kw);
+  hashVector[hash_val % hashSize]->addToBinder(pg);
 }
+
+/*set<Page*> HashTable::searchIndex(string kw)
+{
+
+}*/
