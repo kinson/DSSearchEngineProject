@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <vector>
-#include "porter2_stemmer.h"
+#include <string>
+//#include "porter2_stemmer.h"
 
 using namespace std;
 
@@ -25,7 +26,8 @@ public:
   string getDate();
   vector<string> getKeywords();
 
-  void addKeyword(string&); //add to keyword vector
+  //void addKeyword(string&); //add to keyword vector
+  void addKeyword(char*&);
 
   ~Page(); //destructor for page object
 

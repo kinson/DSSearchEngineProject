@@ -1,4 +1,5 @@
 #include "DocumentParser.h"
+//int stem(char * p, int i, int j);
 
 /***********************************************************************************************
                                           GOT STEMMER HERE
@@ -31,6 +32,7 @@ DocumentParser::DocumentParser()
   sort(throwout.begin(), throwout.end());
 
   cout << Page::binarySearch(stopwords, "well", 0, stopwords.size());
+  stemmer s;
 
 }
 
@@ -199,8 +201,19 @@ void DocumentParser::parseDrive(string xmlInFile)
           if(!isStop)
           {
             //stem word
-            Porter2Stemmer::stem(inString);
-            page->addKeyword(inString);
+            char* buffer = new char[80];
+            for(int i = 0; i< inString.size(); i++)
+            {
+              buffer[i] = inString.at(i);
+            }  
+
+            int wordsize = s.stem(buffer,0,inString.size());
+            char* newWord = new char[wordsize+1];
+            for(int i = 0; i < wordsize+1; i++)
+            {
+              newWord[i] = buffer[i];
+            }
+            page->addKeyword(newWord);
           }
 
         }
@@ -216,9 +229,9 @@ void DocumentParser::parseDrive(string xmlInFile)
 }
 
 
-void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
-{
+// void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
+// {
 
-  for (auto e: collection)
-    indexhandler->addPage(e);
-}
+//   for (auto e: collection)
+//     indexhandler->addPage(e);
+// }

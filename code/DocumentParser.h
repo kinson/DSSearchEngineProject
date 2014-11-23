@@ -9,6 +9,9 @@
 #include "HashTable.h"
 #include <algorithm>
 #include <sstream>
+extern "C" {
+#include "stemmer.h"
+}
 
 using namespace std;
 
@@ -28,6 +31,7 @@ private:
   vector<Page*> collection;
   vector<string> stopwords;
   vector<string> throwout;
+  stemmer s;
 
 
 };
