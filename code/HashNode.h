@@ -11,9 +11,16 @@ private:
   HashNode* next;
 
 
-
 public:
   HashNode(); //default constructor
+  HashNode( Node*& other); //copy constructor
+
+
+  //getters
+  HashNode* getNextHashNode();
+
+  //setters
+  void setNextHashNode(HashNode*);
 
 
 

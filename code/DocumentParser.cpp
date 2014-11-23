@@ -206,8 +206,6 @@ void DocumentParser::parseDrive(string xmlInFile)
           }
 
         }
-        /*for(auto e: page->getKeywords())
-          cout << e << endl;*/
 
         //collection.push_back(page);
     }

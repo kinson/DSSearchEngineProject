@@ -11,8 +11,8 @@ int main()
   DocumentParser* p = new DocumentParser();
   p->parseDrive("hugewikibookdump.xml");
   IndexHandler* indexhandler = new HashTable();
-  //p->writeToStructure(indexhandler);
-  //indexhandler->printTable();
+  p->writeToStructure(indexhandler);
+  indexhandler->printTable();
 
 
 
