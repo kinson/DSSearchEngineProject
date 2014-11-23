@@ -33,6 +33,23 @@ std::vector<std::string> Query::getnotArgs()
 	return notArgs;
 }
 
+void Query::addandArgs(std::string andArg)
+{
+	andArgs.push_back(andArg);
+}
+void Query::addorArgs(std::string orArg)
+{
+	orArgs.push_back(orArg);
+}
+void Query::addnotArgs(std::string notArg)
+{
+	notArgs.push_back(notArg);
+}
+void Query::addnormArgs(std::string normArg)
+{
+	normArgs.push_back(normArg);
+}
+
 Query::~Query()
 {
 

@@ -8,9 +8,11 @@
 #include "HashTable.h"
 #include <algorithm>
 #include <sstream>
+extern "C" {
+#include "stemmer.h"
+}
 #include <map>
 #include <iostream>
-//#include "english_stem.h"
 
 using namespace std;
 
@@ -28,6 +30,7 @@ private:
   vector<Page*> collection;
   map<string, bool> stopwords;
   vector<string> throwout;
+  stemmer s;
 
 
 };

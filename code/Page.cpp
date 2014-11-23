@@ -1,6 +1,5 @@
 #include "Page.h"
-#include <iostream>
-#include <vector>
+
 
 using namespace std;
 Page::Page()
@@ -48,8 +47,22 @@ string Page:: getDate()
 }
 
 //adds the specific keywords for the page object
-void Page::addKeyword(string& keyword)
+/*void Page::addKeyword(string& keyword)
 {
+  //check for duplicate keyword and add to frequency if exists
+  int index = binarySearch(keywords, keyword, 0, keywords.size());
+  if (index == -1)
+  {
+    frequency.push_back(1);
+    keywords.push_back(keyword);
+  }
+  else
+    frequency[index]++;
+}*/
+
+void Page::addKeyword(char*& key)
+{
+  string keyword(key);
   //check for duplicate keyword and add to frequency if exists
   int index = binarySearch(keywords, keyword, 0, keywords.size());
   if (index == -1)
