@@ -1,7 +1,6 @@
 #ifndef DOCUMENTPARSER_H
 #define DOCUMENTPARSER_H
 
-#include <iostream>
 #include <fstream>
 #include <vector>
 #include "Page.h"
@@ -9,6 +8,9 @@
 #include "HashTable.h"
 #include <algorithm>
 #include <sstream>
+#include <map>
+#include <iostream>
+//#include "english_stem.h"
 
 using namespace std;
 
@@ -22,11 +24,9 @@ public:
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
 
 
-
-
 private:
   vector<Page*> collection;
-  vector<string> stopwords;
+  map<string, bool> stopwords;
   vector<string> throwout;
 
 

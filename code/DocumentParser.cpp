@@ -14,10 +14,9 @@ DocumentParser::DocumentParser()
   while(!stopWordsIn.eof())
   {
     stopWordsIn >> word;
-    stopwords.push_back(word);
+    stopwords[word] = true;
   }
   stopWordsIn.close();
-  sort(stopwords.begin(), stopwords.end());
 
   //load bad phrase file
   ifstream badPhrasesIn;
@@ -29,9 +28,6 @@ DocumentParser::DocumentParser()
   }
   badPhrasesIn.close();
   sort(throwout.begin(), throwout.end());
-
-  cout << Page::binarySearch(stopwords, "well", 0, stopwords.size());
-
 }
 
 void DocumentParser::parseDrive(string xmlInFile)
@@ -39,13 +35,21 @@ void DocumentParser::parseDrive(string xmlInFile)
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
-
+  //inFile.seekg(0, ios::end);
+  //unsigned long fileSize = inFile.tellg();
+  //cout << "file size is " << fileSize << endl;
   //read it all in
   inXMLstream << inFile.rdbuf();
   inFile.close();
+  /*char* chararray = new char[fileSize+1];
+  inFile.open(xmlInFile.c_str());
+  inFile.read(chararray, fileSize);
+  inFile.close();
+  cout << chararray << endl;*/
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
+
   while(!inXMLstream.eof() /*&& looper++ < 200*/)
   {
     //read in next word
@@ -55,7 +59,7 @@ void DocumentParser::parseDrive(string xmlInFile)
     if (inString.compare(0, 5, "<page") == 0)
     {
         //create page object to save data in
-        Page* page = new Page();
+        //Page* page = new Page();
 
         /***********************************************************************************************
                                                     FIND TITLE
@@ -183,9 +187,9 @@ void DocumentParser::parseDrive(string xmlInFile)
             }
           }*/
           //make the string lower case
-          transform(inString.begin(), inString.end(), inString.begin(), ::tolower); //3:35
+          transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
           //search for keyword in stop word list, n times complexity, could be binary search
-          if (Page::binarySearch(stopwords, inString, 0, stopwords.size()) != -1) //15% in 5 min
+          if (stopwords.count(inString)) //15% in 5 min
             isStop = true;
           /*for (size_t i = 0; i < throwout.size(); i++)
           {
@@ -198,16 +202,14 @@ void DocumentParser::parseDrive(string xmlInFile)
           //if it's not being thrown out
           if(!isStop)
           {
-            //stem word
-            Porter2Stemmer::stem(inString);
-            page->addKeyword(inString);
+            //stem the word
           }
 
         }
         /*for(auto e: page->getKeywords())
           cout << e << endl;*/
 
-        collection.push_back(page);
+        //collection.push_back(page);
     }
 
   }
