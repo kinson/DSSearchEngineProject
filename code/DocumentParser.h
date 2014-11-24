@@ -7,11 +7,11 @@
 #include "IndexHandler.h"
 #include "HashTable.h"
 #include <algorithm>
+#include <string>
 #include <sstream>
-//#include "porter2_stemmer.h"
-
 #include <map>
 #include <iostream>
+#include <cctype>
 
 using namespace std;
 
@@ -23,9 +23,6 @@ public:
   void parseDrive(string); //open file and parse the xml file
   void sendToIndex(Page*); //send an individual page index
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
- 
-
-
 
 private:
   vector<Page*> collection;

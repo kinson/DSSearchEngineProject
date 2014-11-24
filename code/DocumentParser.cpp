@@ -204,15 +204,18 @@ void DocumentParser::parseDrive(string xmlInFile)
             }
           }*/
           //if it's not being thrown out
-          if(!isStop && inString.length() < 2)
-          {
+          if(!isStop && inString.length() > 2)
+            {
+               inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){ 
+                  if((int) thing >= 122 || (int) thing <= 97) return true;
+                  else return false;
+               }), inString.end());
             char* buffer = (char*) inString.c_str();
             int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
             buffer[whoknowswhatthisis+ 1] = '/0';
             inString = buffer;
-            //Porter2Stemmer::stem(inString);
-            page->addKeyword(inString);
-          }
+           page->addKeyword(inString);
+              }
 
         }
 
