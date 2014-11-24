@@ -24,7 +24,10 @@ public:
   bool balance(AVLNode*&);
   void balanceTree(AVLNode*&);
 
-  void printTable(); //override pvf from indexhandler
+  void printTable();
+  void print(AVLNode*&); //override pvf from indexhandler
+
+  void rightRotation(AVLNode*&);
 
 };
 #endif

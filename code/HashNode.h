@@ -7,6 +7,8 @@
 
 class HashNode : public Node
 {
+friend class HashTable;
+
 private:
   HashNode* next;
 

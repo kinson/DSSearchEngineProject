@@ -3,7 +3,6 @@
 #include <functional>
 
 
-
 HashTable::HashTable()
 {
   for (size_t i = 0; i < hashSize; i++)
@@ -16,35 +15,29 @@ void HashTable::addToIndex(Page* pg, string kw)
   hash<string> hash_fn;
   size_t hash_val = hash_fn(kw);
   //check the existing hash set
-  if (hashVector[hash_val % hashSize]->getWord() != kw && hashVector[hash_val % hashSize]->getWord() != "")
-  {
-    HashNode t = HashNode(hashVector[hash_val % hashSize]);
-    HashNode* p = &t;
-    while (p->getNextHashNode() != nullptr && p->getWord() != kw)
-    {
-      p = p->getNextHashNode();
-    }
-    HashNode* newNode = new HashNode();
-    newNode->setWord(kw);
-    newNode->addToBinder(pg);
-    p->setNextHashNode(newNode);
-  }
-  else
+  if ((hashVector[hash_val % hashSize]->getWord() == kw) || (hashVector[hash_val % hashSize]->getWord() == ""))
   {
     //add the page object to the respective page object
     hashVector[hash_val % hashSize]->setWord(kw);
     hashVector[hash_val % hashSize]->addToBinder(pg);
   }
+  else
+  {
+    HashNode* t = hashVector[hash_val % hashSize];
+    while (t->getNextHashNode() != nullptr && t->getWord() != kw)
+      {
+        t = t->getNextHashNode();
+      }
+      HashNode* newNode = new HashNode();
+      newNode->setWord(kw);
+      newNode->addToBinder(pg);
+      t->setNextHashNode(newNode);
+  }
 }
-
-/*set<Page*> HashTable::searchIndex(string kw)
-{
-
-}*/
 
 void HashTable::printTable()
 {
-  for(auto e: hashVector)
+  for(HashNode* e: hashVector)
     if (e->getBinder().size() > 0)
       cout << e->getWord() << "\t" << e->getBinder().size() << endl;
 }

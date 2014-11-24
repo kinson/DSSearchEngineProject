@@ -23,7 +23,7 @@ public:
 
 
 private:
-  vector<Node*> hashVector;
+  vector<HashNode*> hashVector;
   const unsigned long hashSize =  1000000;
 
 

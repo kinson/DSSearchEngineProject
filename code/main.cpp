@@ -1,7 +1,7 @@
-
 #include <iostream>
 #include "DocumentParser.h"
 #include "IndexHandler.h"
+#include "AVLTree.h"
 
 using namespace std;
 
@@ -9,10 +9,10 @@ using namespace std;
 int main()
 {
   DocumentParser* p = new DocumentParser();
-  p->parseDrive("hugewikibookdump.xml");
   IndexHandler* indexhandler = new HashTable();
+  p->parseDrive("hugewikibookdump.xml", indexhandler);
   p->writeToStructure(indexhandler);
-  //indexhandler->printTable();
+  indexhandler->printTable();
 
 
 

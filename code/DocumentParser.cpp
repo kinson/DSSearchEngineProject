@@ -33,7 +33,7 @@ DocumentParser::DocumentParser()
 
 }
 
-void DocumentParser::parseDrive(string xmlInFile)
+void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 {
   struct stemmer * z = create_stemmer();
   //create ifstream object to read in xmlfile
@@ -54,10 +54,10 @@ void DocumentParser::parseDrive(string xmlInFile)
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
-  while(!inXMLstream.eof() /*&& looper < 4*/)
+
+  while(!inXMLstream.eof() && looper < 80000)
   {
     //read in next word
-
     inXMLstream >> inString;
     //found new page object, now parse it
     if (inString.compare(0, 5, "<page") == 0)
@@ -80,7 +80,7 @@ void DocumentParser::parseDrive(string xmlInFile)
           inXMLstream >> inString;
 
 
-        while(inString.compare(0, 7, "</title>") !=0)
+        while(inString.compare(0, 7, "</title>") != 0)
         {
           //check to see if last part of title is tacked on to element and break if so
           if (inString.length() > 7)
@@ -180,57 +180,42 @@ void DocumentParser::parseDrive(string xmlInFile)
           isStop = false;
           if(inString.length() > 6 && inString.compare(inString.length()-7, inString.length(), "</text>") == 0)
             break;
-          //read in next word
-          inXMLstream >> inString;
 
-          /*for (int i = 0; i < inString.length(); i++) //3:14 with just this
-          {
-            if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == "." || inString.substr(i) == "]" || inString.substr(i) == "|")
-            {
-              inString = inString.substr(0, i);
-            }
-          }*/
+
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
           //search for keyword in stop word list, n times complexity, could be binary search
-          if (stopwords.count(inString)) //15% in 5 min
-            isStop = true;
-          /*for (size_t i = 0; i < throwout.size(); i++)
+          if (stopwords.count(inString))
           {
-            if (inString.find(throwout[i])!= string::npos)
-            {
               isStop = true;
-              break;
-            }
-          }*/
+          }
+
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
-            {
-               inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){ 
+          {
+               inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){
                   if((int) thing >= 122 || (int) thing <= 97) return true;
                   else return false;
                }), inString.end());
             char* buffer = (char*) inString.c_str();
             int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
-            buffer[whoknowswhatthisis+ 1] = '/0';
+            buffer[whoknowswhatthisis+1] = '\0';
             inString = buffer;
            page->addKeyword(inString);
-              }
+          }
 
+          //read in next word
+          inXMLstream >> inString;
         }
-
-        collection.push_back(page);
+        indexhandler->addPage(page);
     }
 
   }
 
-
 }
-
 
 void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
 {
-
   for (auto e: collection)
     indexhandler->addPage(e);
 }

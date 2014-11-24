@@ -20,9 +20,10 @@ class DocumentParser
 
 public:
   DocumentParser(); //constructor for doc parser
-  void parseDrive(string); //open file and parse the xml file
+  void parseDrive(string, IndexHandler*&); //open file and parse the xml file
   void sendToIndex(Page*); //send an individual page index
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
+
 
 private:
   vector<Page*> collection;
