@@ -26,8 +26,7 @@ public:
   string getDate();
   vector<string> getKeywords();
 
-  //void addKeyword(string&); //add to keyword vector
-  void addKeyword(char*&);
+  void addKeyword(string&); //add to keyword vector
 
   ~Page(); //destructor for page object
 

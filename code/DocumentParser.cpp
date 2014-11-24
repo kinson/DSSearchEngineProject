@@ -30,9 +30,6 @@ DocumentParser::DocumentParser()
   badPhrasesIn.close();
   sort(throwout.begin(), throwout.end());
 
-  cout << Page::binarySearch(stopwords, "well", 0, stopwords.size());
-  stemmer s;
-
 }
 
 void DocumentParser::parseDrive(string xmlInFile)
@@ -55,7 +52,7 @@ void DocumentParser::parseDrive(string xmlInFile)
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
-  while(!inXMLstream.eof() /*&& looper++ < 200*/)
+  while(!inXMLstream.eof() && looper < 4)
   {
     //read in next word
 
@@ -64,7 +61,7 @@ void DocumentParser::parseDrive(string xmlInFile)
     if (inString.compare(0, 5, "<page") == 0)
     {
         //create page object to save data in
-        //Page* page = new Page();
+        Page* page = new Page();
 
         /***********************************************************************************************
                                                     FIND TITLE
@@ -167,7 +164,7 @@ void DocumentParser::parseDrive(string xmlInFile)
         else
           username = "none";
 
-        cout << counter++ << "\t" << title << " by " << username << " has id " << id << endl;
+        cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
 
 
         /***********************************************************************************************
@@ -208,36 +205,23 @@ void DocumentParser::parseDrive(string xmlInFile)
           if(!isStop)
           {
 
-            //stem word
-            char* buffer = new char[80];
-            for(int i = 0; i< inString.size(); i++)
-            {
-              buffer[i] = inString.at(i);
-            }  
-
-            int wordsize = s.stem(buffer,0,inString.size());
-            char* newWord = new char[wordsize+1];
-            for(int i = 0; i < wordsize+1; i++)
-            {
-              newWord[i] = buffer[i];
-            }
-            page->addKeyword(newWord);
+            Porter2Stemmer::stem(inString);
+            page->addKeyword(inString);
           }
 
         }
 
-        //collection.push_back(page);
+        collection.push_back(page);
     }
 
   }
 
-
 }
 
 
-// void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
-// {
+void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
+{
 
-//   for (auto e: collection)
-//     indexhandler->addPage(e);
-// }
+  for (auto e: collection)
+    indexhandler->addPage(e);
+}

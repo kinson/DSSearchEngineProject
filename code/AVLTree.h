@@ -1,11 +1,17 @@
-#ifndef AVLTree
-#define AVLTree
+#ifndef AVLTREE_H
+#define AVLTREE_H
 
+#include <iostream>
 #include "IndexHandler.h"
 #include "AVLNode.h"
+#include <cmath>
+
+using namespace std;
 
 class AVLTree : public IndexHandler
 {
+friend class AVLNode;
+
 private:
   AVLNode* root;
   int depth;
@@ -14,7 +20,11 @@ private:
 public:
   AVLTree(); //defualt constructor
   void addToIndex(Page*, string); //virtual overridden function
+  void insert(string, Page*, AVLNode*&, AVLNode*&);
+  bool balance(AVLNode*&);
+  void balanceTree(AVLNode*&);
 
-
+  void printTable(); //override pvf from indexhandler
 
 };
+#endif
