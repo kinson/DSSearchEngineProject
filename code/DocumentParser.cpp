@@ -54,7 +54,7 @@ void DocumentParser::parseDrive(string xmlInFile)
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
-  while(!inXMLstream.eof() && looper < 4)
+  while(!inXMLstream.eof() /*&& looper < 4*/)
   {
     //read in next word
 
@@ -204,17 +204,14 @@ void DocumentParser::parseDrive(string xmlInFile)
             }
           }*/
           //if it's not being thrown out
-          if(!isStop)
+          if(!isStop && inString.length() < 2)
           {
-            char* buffer = new char[80];
-            for(int i = 0; i< inString.size(); i++)
-            {
-              buffer[i] = inString.at(i);
-            }  
-
-            int whoknowswhatthisis = stem(z, buffer, inString.length());
+            char* buffer = (char*) inString.c_str();
+            int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
+            buffer[whoknowswhatthisis+ 1] = '/0';
+            inString = buffer;
             //Porter2Stemmer::stem(inString);
-            //page->addKeyword(inString);
+            page->addKeyword(inString);
           }
 
         }
@@ -223,6 +220,7 @@ void DocumentParser::parseDrive(string xmlInFile)
     }
 
   }
+
 
 }
 
