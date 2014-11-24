@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include "DocumentParser.h"
-//#include "IndexHandler.h"
+#include "IndexHandler.h"
 
 using namespace std;
 

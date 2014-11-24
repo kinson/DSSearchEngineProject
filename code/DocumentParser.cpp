@@ -1,4 +1,5 @@
 #include "DocumentParser.h"
+#include "PorterStemmer.h"
 //int stem(char * p, int i, int j);
 
 /***********************************************************************************************
@@ -34,6 +35,7 @@ DocumentParser::DocumentParser()
 
 void DocumentParser::parseDrive(string xmlInFile)
 {
+  struct stemmer * z = create_stemmer();
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
@@ -204,9 +206,15 @@ void DocumentParser::parseDrive(string xmlInFile)
           //if it's not being thrown out
           if(!isStop)
           {
+            char* buffer = new char[80];
+            for(int i = 0; i< inString.size(); i++)
+            {
+              buffer[i] = inString.at(i);
+            }  
 
-            Porter2Stemmer::stem(inString);
-            page->addKeyword(inString);
+            int whoknowswhatthisis = stem(z, buffer, inString.length());
+            //Porter2Stemmer::stem(inString);
+            //page->addKeyword(inString);
           }
 
         }

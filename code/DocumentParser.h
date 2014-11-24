@@ -8,7 +8,8 @@
 #include "HashTable.h"
 #include <algorithm>
 #include <sstream>
-#include "porter2_stemmer.h"
+//#include "porter2_stemmer.h"
+
 #include <map>
 #include <iostream>
 
@@ -22,6 +23,8 @@ public:
   void parseDrive(string); //open file and parse the xml file
   void sendToIndex(Page*); //send an individual page index
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
+ 
+
 
 
 private:
