@@ -10,7 +10,7 @@ void IndexHandler::addPage(Page* nextPage)
 	int size = temp.size();
 
 	//add pages with each keyword
-	for(int i = 0; i < size; i++)
+	for(int i = 0; i < 1; i++)
 	{
 		addToIndex(nextPage, temp[i]);
 	}

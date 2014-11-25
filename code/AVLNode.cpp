@@ -21,20 +21,15 @@ AVLNode::AVLNode(string kw, AVLNode*& rightnode, AVLNode*& leftnode, Page* pg) :
   depth = -1;
 }
 
-AVLNode::AVLNode(string kw, Page* pg, AVLNode*& parentnode) : Node(pg, kw)
-{
-  right = nullptr;
-  left = nullptr;
-  depth = -1;
-  parent = parentnode;
-}
 
 bool operator<(AVLNode& left, string& kw)
 {
+  cout << "using custom comparison" << endl;
   return (kw.compare(left.getWord()) < 0);
 }
 
 bool operator>(AVLNode& left, string& kw)
 {
+  cout << "using custom comparison" << endl;
   return (kw.compare(left.getWord()) > 0);
 }

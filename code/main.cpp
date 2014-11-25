@@ -9,9 +9,10 @@ using namespace std;
 int main()
 {
   DocumentParser* p = new DocumentParser();
-  IndexHandler* indexhandler = new HashTable();
-  p->parseDrive("hugewikibookdump.xml", indexhandler);
-  p->writeToStructure(indexhandler);
+  IndexHandler* indexhandler = new AVLTree();
+  //p->parseDrive("hugewikibookdump.xml", indexhandler);
+  //p->writeToStructure(indexhandler);
+  indexhandler->addToIndex(new Page(), "cat");
   indexhandler->printTable();
 
 

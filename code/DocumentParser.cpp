@@ -55,7 +55,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
 
 
-  while(!inXMLstream.eof() && looper < 80000)
+  while(!inXMLstream.eof() && looper < 8)
   {
     //read in next word
     inXMLstream >> inString;
@@ -207,7 +207,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           //read in next word
           inXMLstream >> inString;
         }
-        indexhandler->addPage(page);
+        //indexhandler->addPage(page);
     }
 
   }

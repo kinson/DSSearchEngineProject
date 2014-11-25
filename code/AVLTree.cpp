@@ -1,5 +1,8 @@
 #include "AVLTree.h"
 
+/**********************************************************************************************************************
+                      PSEUDO CODE FOUND AT  http://www.sanfoundry.com/cpp-program-implement-avl-trees/
+**********************************************************************************************************************/
 
 AVLTree::AVLTree()
 {
@@ -11,91 +14,153 @@ void AVLTree::addToIndex(Page* pg, string kw)
 {
   vector<string>tests = {"three", "two", "cat", "dog"};
   for (auto e: tests)
-    insert(e, pg, root, root);
-  //balance(root);
+    insert(e, pg, root);
 }
 
-void AVLTree::insert(string kw, Page* pg, AVLNode*& avlnode, AVLNode*& parent)
+AVLNode*& AVLTree::insert(string kw, Page*& pg, AVLNode*& avlnode)
 {
-  if (avlnode == nullptr)
+  if (this->root == nullptr)
+  {
+    cout << "creating root with " << kw << endl;
+    this->root = new AVLNode(kw, pg);
+  }
+  else if (avlnode == nullptr)
   {
     //parent points to iteself for the root
-    avlnode = new AVLNode(kw, pg, parent);
-    avlnode->depth = parent->depth + 1;
+    cout << "found insertion point for " <<  kw << endl;
+    avlnode = new AVLNode(kw, pg);
+  }
+  //handle duplicated, add page to existing AVLNode binder
+  else if (avlnode->getWord() == kw)
+  {
+    cout << "found duplicate word" << endl;
+    avlnode->addToBinder(pg);
   }
   else if (avlnode->getWord() < kw)
-    return insert(kw, pg, avlnode->right, avlnode);
-  else
-    return insert(kw, pg, avlnode->left, avlnode);
-
-}
-
-bool AVLTree::balance(AVLNode*& avlnode)
-{
-  cout << "here" << endl;
-  if (avlnode->left != nullptr)
-    return balance(avlnode->left);
-  else if (avlnode->right != nullptr)
-    return balance(avlnode->right);
-  cout << avlnode->getWord() << endl;
-  if (abs(avlnode->left->depth - avlnode->right->depth) == 2)
   {
-    balanceTree(avlnode);
-    return false;
-  }
-  return true;
-}
-
-void AVLTree::balanceTree(AVLNode*& alpha)
-{
-  if (alpha->left != nullptr && alpha->right == nullptr)
-  {
-    if (alpha->left->left != nullptr && alpha->left->right)
-      cout << "double right" << endl; //rightRotation(alpha);
-    else
-      cout << "doubleRight" << endl; //doubleRight(alpha);
-  }
-  else if (alpha->right != nullptr && alpha->left == nullptr)
-  {
-    if (alpha->right->right != nullptr && alpha->right->left == nullptr)
-      cout << "leftRotation" << endl; //leftRotation(alpha);
-    else
-      cout << "doubleLeft" << endl; //doubleLeft(alpha);
-  }
-}
-
-
-void AVLTree::rightRotation(AVLNode*& alpha)
-{
-  if (alpha->parent->left == alpha)
-  {
-    alpha->parent->left = alpha->left;
-    alpha->left->parent = alpha->parent;
-  }
-  else if( alpha->parent->right == alpha)
-  {
-    alpha->parent->right = alpha->left;
-    alpha->left->parent = alpha->parent;
+    cout << "moving down right subtree with " << kw << endl;
+    insert(kw, pg, avlnode->right);
+    cout << "before balance" << endl;
+    avlnode = balance(avlnode);
   }
   else
-    cout << "this aint gonna work" << endl;
-  alpha->left = alpha->left->right;
-  alpha->left->right = alpha;
-  alpha->parent = alpha->left;
+  {
+    cout << "moving down left subtree with " << kw << endl;
+    insert(kw, pg, avlnode->left);
+    cout << "before balance" << endl;
+    avlnode = balance(avlnode);
+  }
+  return avlnode;
+
 }
 
-void AVLTree::print(AVLNode*& node)
+AVLNode*& AVLTree::leftRotation(AVLNode*& avlnode)
 {
-  cout << node->getWord() << endl;
-  if (node->left != nullptr)
-    return print(node->left);
-  if (node->right != nullptr)
-    return print(node->right);
+  AVLNode* temp;
+  temp = avlnode->left;
+  avlnode->left = temp->right;
+  temp->right = avlnode;
+  return temp;
+}
 
-    return;
+AVLNode*& AVLTree::rightRotation(AVLNode*& avlnode)
+{
+  AVLNode* temp;
+  temp = avlnode->right;
+  avlnode->right = temp->left;
+  temp->left = avlnode;
+  return temp;
+}
+
+AVLNode*& AVLTree::doubleLeft(AVLNode*& avlnode)
+{
+  AVLNode* temp;
+  temp = avlnode->left;
+  avlnode->left = rightRotation(temp);
+  return leftRotation(avlnode);
+}
+
+AVLNode*& AVLTree::doubleRight(AVLNode*& avlnode)
+{
+  AVLNode* temp;
+  temp = avlnode->right;
+  avlnode->right = leftRotation(temp);
+  return rightRotation(avlnode);
+}
+
+
+AVLNode*& AVLTree::balance(AVLNode*& avlnode)
+{
+  int bal = difference(avlnode);
+  cout << "balance value is " << bal << endl;
+  if (bal > 1)
+  {
+    if (difference(avlnode->left) > 0)
+      avlnode = leftRotation(avlnode);
+    else
+      avlnode = doubleLeft(avlnode);
+  }
+  else if(bal < -1)
+  {
+    if (difference(avlnode->right) > 0)
+      avlnode = doubleRight(avlnode);
+    else
+      avlnode = rightRotation(avlnode);
+  }
+  return avlnode;
+
+}
+
+int AVLTree::height(AVLNode*& avlnode)
+{
+  int h = 0;
+  if (avlnode != nullptr)
+  {
+    int leftHeight = height(avlnode->left);
+    int rightHeight = height(avlnode->right);
+    int max_height = max(rightHeight, leftHeight);
+    h = max_height + 1;
+  }
+  return h;
+}
+
+int AVLTree::difference(AVLNode*& avlnode)
+{
+  int l = height(avlnode->left);
+  int r = height(avlnode->right);
+  int diff = l - r;
+  return diff;
 }
 
 void AVLTree::printTable()
 {
-  print(root);
+  inorder(root);
+}
+
+
+void AVLTree::display(AVLNode* avlnode, int level)
+{
+  int i;
+  if(avlnode != nullptr)
+  {
+    display(avlnode->right, level + 1);
+    printf("\n");
+    if (avlnode == root) cout << "Root -> ";
+    for (int i = 0; i < level  && avlnode != root; i++)
+    {
+      cout << "            " << endl;
+    }
+    cout << avlnode->getWord();
+    display(avlnode->left, level + 1);
+  }
+}
+
+
+void AVLTree::inorder(AVLNode* temp)
+{
+  if (temp == nullptr)
+    return;
+  inorder(temp->left);
+  cout << temp->getWord() << " ";
+  inorder(temp->right);
 }
