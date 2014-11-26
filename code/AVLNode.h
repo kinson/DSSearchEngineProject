@@ -20,6 +20,7 @@ public:
   AVLNode();
   AVLNode(string, Page*);
   AVLNode(string, AVLNode*&, AVLNode*&, Page*);
+  ~AVLNode();
 
 
   //override comparison constructors for string comparing

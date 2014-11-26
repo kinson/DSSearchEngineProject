@@ -18,6 +18,11 @@ AVLNode::AVLNode(string kw, AVLNode*& rightnode, AVLNode*& leftnode, Page* pg) :
   left = leftnode;
 }
 
+AVLNode::~AVLNode()
+{
+  delete right; delete left;
+}
+
 
 /*bool operator<(AVLNode& left, string& kw)
 {

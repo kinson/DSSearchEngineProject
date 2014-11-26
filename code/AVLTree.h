@@ -18,19 +18,20 @@ private:
 
 public:
   AVLTree(); //defualt constructor
-  void addToIndex(Page*, string); //virtual overridden function
+  void addToIndex(Page*&, string&); //virtual overridden function
   AVLNode*& insert(string&, Page*&, AVLNode*&);
-  AVLNode*& balance(AVLNode*&); //manages balancing of tree
+  AVLNode*& balance(AVLNode*); //manages balancing of tree
+  set<Page*> searchIndex(string);
 
   //functions that deal with and manage height
   int height(AVLNode*); //return height of string
   int difference(AVLNode*); //return difference between left and right subtree height
 
   //rotations
-  AVLNode*& leftRotation(AVLNode*&);
-  AVLNode*& rightRotation(AVLNode*&);
-  AVLNode*& doubleLeft(AVLNode*&);
-  AVLNode*& doubleRight(AVLNode*&);
+  AVLNode*& leftRotation(AVLNode*);
+  AVLNode*& rightRotation(AVLNode*);
+  AVLNode*& doubleLeft(AVLNode*);
+  AVLNode*& doubleRight(AVLNode*);
 
 
   void printTable();

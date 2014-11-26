@@ -5,7 +5,6 @@ IndexHandler::IndexHandler()
 
 void IndexHandler::addPage(Page* nextPage)
 {
-	cout << "indexing " << nextPage->getTitle() << endl;
 	//read in the keywords of the specific page
 	vector<string> temp = nextPage->getKeywords();
 	int size = temp.size();

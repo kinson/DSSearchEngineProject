@@ -9,11 +9,8 @@ HashTable::HashTable()
     hashVector.push_back(new HashNode());
 }
 
-void HashTable::addToIndex(Page* pg, string kw)
+void HashTable::addToIndex(Page*& pg, string& kw)
 {
-  //TIMING STUFF
-  chrono::time_point<chrono::system_clock> start, end;
-  start = chrono::system_clock::now();
 
   //hash the string
   hash<string> hash_fn;
@@ -27,6 +24,7 @@ void HashTable::addToIndex(Page* pg, string kw)
   }
   else
   {
+    cout << "collision detected between " << hashVector[hash_val % hashSize]->getWord() << " (" << hash_fn(hashVector[hash_val % hashSize]->getWord())%hashSize << ")  and " << kw << " (" << hash_fn(kw)%hashSize << ")" << endl;
     HashNode* t = hashVector[hash_val % hashSize];
     while (t->getNextHashNode() != nullptr && t->getWord() != kw)
       {
@@ -38,9 +36,6 @@ void HashTable::addToIndex(Page* pg, string kw)
       t->setNextHashNode(newNode);
   }
 
-  end = std::chrono::system_clock::now();
-  unsigned int milliseconds = chrono::duration_cast<chrono::milliseconds>(end-start).count();
-  times.push_back(milliseconds);
 }
 
 void HashTable::printTable()
@@ -48,4 +43,16 @@ void HashTable::printTable()
   for(HashNode* e: hashVector)
     if (e->getBinder().size() > 0)
       cout << e->getWord() << "\t" << e->getBinder().size() << endl;
+}
+
+
+set<Page*> HashTable::searchIndex(string search_term)
+{
+  hash<string> hash_fn;
+  size_t hash_val = hash_fn(search_term);
+  HashNode* t = hashVector[hash_val % hashSize];
+  while (t->getNextHashNode() != nullptr && t->getWord() != search_term)
+    t = t->getNextHashNode();
+  return t->getBinder();
+
 }

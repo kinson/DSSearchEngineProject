@@ -39,23 +39,15 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
-  //inFile.seekg(0, ios::end);
-  //unsigned long fileSize = inFile.tellg();
-  //cout << "file size is " << fileSize << endl;
   //read it all in
   inXMLstream << inFile.rdbuf();
   inFile.close();
-  /*char* chararray = new char[fileSize+1];
-  inFile.open(xmlInFile.c_str());
-  inFile.read(chararray, fileSize);
-  inFile.close();
-  cout << chararray << endl;*/
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
 
-  while(!inXMLstream.eof() && looper < 5000)
+  while(!inXMLstream.eof() && looper < 200)
   {
     //read in next word
     inXMLstream >> inString;
@@ -96,6 +88,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
         {
           title += inString.substr(0, inString.length()-8);
         }
+        page->setTitle(title);
 
         /***********************************************************************************************
                                                     FIND ID
@@ -115,6 +108,8 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
         {
           id = id.substr(0, id.length()-5);
         }
+
+        page->setId(atoi(id.c_str()));
 
         /***********************************************************************************************
                                                 FIND USERNAME
@@ -166,6 +161,8 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
         else
           username = "none";
 
+        page->setContributingUser(username);
+
         cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
 
 
@@ -207,7 +204,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           //read in next word
           inXMLstream >> inString;
         }
-      collection.push_back(page);
+      indexhandler->addPage(page);
     }
 
   }

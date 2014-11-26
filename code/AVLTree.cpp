@@ -9,18 +9,11 @@ AVLTree::AVLTree()
   root = nullptr;
 }
 
-void AVLTree::addToIndex(Page* pg, string kw)
+void AVLTree::addToIndex(Page*& pg, string& kw)
 {
-  chrono::time_point<chrono::system_clock> start, end;
-  start = chrono::system_clock::now();
-  /*vector<string>tests = {"three", "two", "cat", "dog", "date", "zebra", "elephant", "turd", "faith", "cat", "fun", "alpha", "jack"};
-  for (auto e: tests)
-    insert(e, pg, root);*/
+
   insert(kw, pg, root);
 
-  end = std::chrono::system_clock::now();
-  unsigned int milliseconds = chrono::duration_cast<chrono::milliseconds>(end-start).count();
-  times.push_back(milliseconds);
 }
 
 AVLNode*& AVLTree::insert(string& kw, Page*& pg, AVLNode*& avlnode)
@@ -52,7 +45,7 @@ AVLNode*& AVLTree::insert(string& kw, Page*& pg, AVLNode*& avlnode)
 
 }
 
-AVLNode*& AVLTree::leftRotation(AVLNode*& avlnode)
+AVLNode*& AVLTree::leftRotation(AVLNode* avlnode)
 {
   AVLNode* temp;
   temp = avlnode->left;
@@ -61,7 +54,7 @@ AVLNode*& AVLTree::leftRotation(AVLNode*& avlnode)
   return temp;
 }
 
-AVLNode*& AVLTree::rightRotation(AVLNode*& avlnode)
+AVLNode*& AVLTree::rightRotation(AVLNode* avlnode)
 {
   AVLNode* temp;
   temp = avlnode->right;
@@ -70,7 +63,7 @@ AVLNode*& AVLTree::rightRotation(AVLNode*& avlnode)
   return temp;
 }
 
-AVLNode*& AVLTree::doubleLeft(AVLNode*& avlnode)
+AVLNode*& AVLTree::doubleLeft(AVLNode* avlnode)
 {
   AVLNode* temp;
   temp = avlnode->left;
@@ -78,7 +71,7 @@ AVLNode*& AVLTree::doubleLeft(AVLNode*& avlnode)
   return leftRotation(avlnode);
 }
 
-AVLNode*& AVLTree::doubleRight(AVLNode*& avlnode)
+AVLNode*& AVLTree::doubleRight(AVLNode* avlnode)
 {
   AVLNode* temp;
   temp = avlnode->right;
@@ -87,7 +80,7 @@ AVLNode*& AVLTree::doubleRight(AVLNode*& avlnode)
 }
 
 
-AVLNode*& AVLTree::balance(AVLNode*& avlnode)
+AVLNode*& AVLTree::balance(AVLNode* avlnode)
 {
   int bal = difference(avlnode);
   if (bal > 1)
@@ -132,26 +125,25 @@ int AVLTree::difference(AVLNode* avlnode)
 void AVLTree::printTable()
 {
   inorder(root);
+  //display(root, 1);
 }
 
 
-void AVLTree::display(AVLNode* avlnode, int level)
+void AVLTree::display(AVLNode *ptr, int level)
 {
   int i;
-  if(avlnode != nullptr)
-  {
-    display(avlnode->right, level + 1);
-    printf("\n");
-    if (avlnode == root) cout << "Root -> ";
-    for (int i = 0; i < level  && avlnode != root; i++)
+  if (ptr!=nullptr)
     {
-      cout << "            " << endl;
-    }
-    cout << avlnode->getWord();
-    display(avlnode->left, level + 1);
-  }
-}
-
+      display(ptr->right, level + 1);
+      printf("\n");
+      if (ptr == root)
+        cout<<"Root -> ";
+        for (i = 0; i < level && ptr != root; i++)
+          cout<<"        ";
+          cout<<ptr->getWord();
+          display(ptr->left, level + 1);
+        }
+      }
 
 void AVLTree::inorder(AVLNode* temp)
 {
@@ -160,4 +152,10 @@ void AVLTree::inorder(AVLNode* temp)
   inorder(temp->left);
   cout << temp->getWord() << " " << temp->getBinder().size() << "\t";
   inorder(temp->right);
+}
+
+
+set<Page*> AVLTree::searchIndex(string search_term)
+{
+  return root->getBinder();
 }

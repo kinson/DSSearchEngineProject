@@ -4,32 +4,24 @@
 #include "IndexHandler.h"
 #include "AVLTree.h"
 #include <iomanip>
-#include <thread>
-#include <chrono>
-
+#include "Page.h"
 
 using namespace std;
-
-
-
-void write(DocumentParser*& p, IndexHandler*& ih)
-{
-  this_thread::sleep_for(chrono::milliseconds(4800));
-  p->writeToStructure(ih);
-}
 
 
 //main for testing
 int main()
 {
   DocumentParser* p = new DocumentParser();
-  IndexHandler* indexhandler = new AVLTree();
-  thread t1(write, ref(p), ref(indexhandler));
+  IndexHandler* indexhandler = new HashTable();
   p->parseDrive("hugewikibookdump.xml", indexhandler);
   //p->writeToStructure(indexhandler);
-  t1.join();
   //indexhandler->addToIndex(new Page(), "cat");
   //indexhandler->printTable();
+  set<Page*> results = indexhandler->searchIndex("ffded");
+  cout << results.size() << endl;
+  for (auto e: results)
+    cout << e->getTitle() << endl;
 
 
 

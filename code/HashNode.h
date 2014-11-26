@@ -4,7 +4,6 @@
 #include "Node.h"
 
 
-
 class HashNode : public Node
 {
 friend class HashTable;
