@@ -11,6 +11,10 @@ HashTable::HashTable()
 
 void HashTable::addToIndex(Page* pg, string kw)
 {
+  //TIMING STUFF
+  chrono::time_point<chrono::system_clock> start, end;
+  start = chrono::system_clock::now();
+
   //hash the string
   hash<string> hash_fn;
   size_t hash_val = hash_fn(kw);
@@ -33,6 +37,10 @@ void HashTable::addToIndex(Page* pg, string kw)
       newNode->addToBinder(pg);
       t->setNextHashNode(newNode);
   }
+
+  end = std::chrono::system_clock::now();
+  unsigned int milliseconds = chrono::duration_cast<chrono::milliseconds>(end-start).count();
+  times.push_back(milliseconds);
 }
 
 void HashTable::printTable()

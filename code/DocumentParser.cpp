@@ -55,7 +55,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
 
 
-  while(!inXMLstream.eof() && looper < 8)
+  while(!inXMLstream.eof() && looper < 5000)
   {
     //read in next word
     inXMLstream >> inString;
@@ -170,7 +170,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 
 
         /***********************************************************************************************
-                                  FIND KEYWORDS //still need to parse out formatting shit
+                                            FIND KEYWORDS
         ************************************************************************************************/
         while(inString.compare(0, 5, "<text") != 0)
           inXMLstream >> inString;
@@ -201,21 +201,22 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
             int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
             buffer[whoknowswhatthisis+1] = '\0';
             inString = buffer;
-           page->addKeyword(inString);
+            page->addKeyword(inString);
           }
 
           //read in next word
           inXMLstream >> inString;
         }
-        //indexhandler->addPage(page);
+      collection.push_back(page);
     }
 
   }
 
 }
 
-void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
+
+void DocumentParser::writeToStructure(IndexHandler*& ih)
 {
-  for (auto e: collection)
-    indexhandler->addPage(e);
+  for(auto e: collection)
+    ih->addPage(e);
 }

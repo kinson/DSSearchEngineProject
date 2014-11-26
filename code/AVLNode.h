@@ -11,7 +11,6 @@ class AVLNode : public Node
 friend class AVLTree;
 
 private:
-  int depth;
   AVLNode* left;
   AVLNode* right;
 
@@ -24,8 +23,8 @@ public:
 
 
   //override comparison constructors for string comparing
-  friend bool operator<(AVLNode&, string&);
-  friend bool operator>(AVLNode&, string&);
+  //friend bool operator<(AVLNode&, string&);
+  //friend bool operator>(AVLNode&, string&);
 
 
 

@@ -5,6 +5,8 @@
 #include "Page.h"
 #include "Query.h"
 #include <set>
+#include <chrono>
+
 using namespace std;
 
 class IndexHandler
@@ -17,9 +19,12 @@ public:
 	//set<Page*> compare(set<Page*>, set<Page*>, int); //compare something?
 	//set<Page*> readQuery(Query*); //read in user query
 	virtual void printTable() = 0;
+	vector<unsigned int> times;
+	vector<unsigned int> words;
 
 
 private:
+
 
 };
 

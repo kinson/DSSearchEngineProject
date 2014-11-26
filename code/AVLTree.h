@@ -14,18 +14,17 @@ friend class AVLNode;
 
 private:
   AVLNode* root;
-  int depth;
 
 
 public:
   AVLTree(); //defualt constructor
   void addToIndex(Page*, string); //virtual overridden function
-  AVLNode*& insert(string, Page*&, AVLNode*&);
+  AVLNode*& insert(string&, Page*&, AVLNode*&);
   AVLNode*& balance(AVLNode*&); //manages balancing of tree
 
   //functions that deal with and manage height
-  int height(AVLNode*&); //return height of string
-  int difference(AVLNode*&); //return difference between left and right subtree height
+  int height(AVLNode*); //return height of string
+  int difference(AVLNode*); //return difference between left and right subtree height
 
   //rotations
   AVLNode*& leftRotation(AVLNode*&);

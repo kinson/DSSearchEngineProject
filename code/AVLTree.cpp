@@ -7,47 +7,45 @@
 AVLTree::AVLTree()
 {
   root = nullptr;
-  depth = 0;
 }
 
 void AVLTree::addToIndex(Page* pg, string kw)
 {
-  vector<string>tests = {"three", "two", "cat", "dog"};
+  chrono::time_point<chrono::system_clock> start, end;
+  start = chrono::system_clock::now();
+  /*vector<string>tests = {"three", "two", "cat", "dog", "date", "zebra", "elephant", "turd", "faith", "cat", "fun", "alpha", "jack"};
   for (auto e: tests)
-    insert(e, pg, root);
+    insert(e, pg, root);*/
+  insert(kw, pg, root);
+
+  end = std::chrono::system_clock::now();
+  unsigned int milliseconds = chrono::duration_cast<chrono::milliseconds>(end-start).count();
+  times.push_back(milliseconds);
 }
 
-AVLNode*& AVLTree::insert(string kw, Page*& pg, AVLNode*& avlnode)
+AVLNode*& AVLTree::insert(string& kw, Page*& pg, AVLNode*& avlnode)
 {
   if (this->root == nullptr)
   {
-    cout << "creating root with " << kw << endl;
     this->root = new AVLNode(kw, pg);
   }
   else if (avlnode == nullptr)
   {
-    //parent points to iteself for the root
-    cout << "found insertion point for " <<  kw << endl;
     avlnode = new AVLNode(kw, pg);
   }
   //handle duplicated, add page to existing AVLNode binder
   else if (avlnode->getWord() == kw)
   {
-    cout << "found duplicate word" << endl;
     avlnode->addToBinder(pg);
   }
   else if (avlnode->getWord() < kw)
   {
-    cout << "moving down right subtree with " << kw << endl;
     insert(kw, pg, avlnode->right);
-    cout << "before balance" << endl;
     avlnode = balance(avlnode);
   }
   else
   {
-    cout << "moving down left subtree with " << kw << endl;
     insert(kw, pg, avlnode->left);
-    cout << "before balance" << endl;
     avlnode = balance(avlnode);
   }
   return avlnode;
@@ -92,7 +90,6 @@ AVLNode*& AVLTree::doubleRight(AVLNode*& avlnode)
 AVLNode*& AVLTree::balance(AVLNode*& avlnode)
 {
   int bal = difference(avlnode);
-  cout << "balance value is " << bal << endl;
   if (bal > 1)
   {
     if (difference(avlnode->left) > 0)
@@ -111,7 +108,7 @@ AVLNode*& AVLTree::balance(AVLNode*& avlnode)
 
 }
 
-int AVLTree::height(AVLNode*& avlnode)
+int AVLTree::height(AVLNode* avlnode)
 {
   int h = 0;
   if (avlnode != nullptr)
@@ -124,7 +121,7 @@ int AVLTree::height(AVLNode*& avlnode)
   return h;
 }
 
-int AVLTree::difference(AVLNode*& avlnode)
+int AVLTree::difference(AVLNode* avlnode)
 {
   int l = height(avlnode->left);
   int r = height(avlnode->right);
@@ -161,6 +158,6 @@ void AVLTree::inorder(AVLNode* temp)
   if (temp == nullptr)
     return;
   inorder(temp->left);
-  cout << temp->getWord() << " ";
+  cout << temp->getWord() << " " << temp->getBinder().size() << "\t";
   inorder(temp->right);
 }
