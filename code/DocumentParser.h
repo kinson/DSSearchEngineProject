@@ -23,6 +23,7 @@ public:
   void parseDrive(string, IndexHandler*&); //open file and parse the xml file
   void sendToIndex(Page*); //send an individual page index
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
+  void saveIndex();
 
 
 private:

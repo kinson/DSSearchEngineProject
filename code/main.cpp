@@ -15,13 +15,11 @@ int main()
   DocumentParser* p = new DocumentParser();
   IndexHandler* indexhandler = new HashTable();
   p->parseDrive("hugewikibookdump.xml", indexhandler);
-  //p->writeToStructure(indexhandler);
+  p->writeToStructure(indexhandler);
   //indexhandler->addToIndex(new Page(), "cat");
-  //indexhandler->printTable();
-  set<Page*> results = indexhandler->searchIndex("ffded");
-  cout << results.size() << endl;
-  for (auto e: results)
-    cout << e->getTitle() << endl;
+  p->saveIndex();
+  //set<Page*> results = indexhandler->searchIndex("ffded");
+
 
 
 

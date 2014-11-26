@@ -21,6 +21,7 @@ public:
   //unsigned long hashString(string); //hash a string return an index to place the word in
   void printTable(); //print out hashtable
   set<Page*> searchIndex(string);
+  void saveIndex(); //save index in offline file
 
 
 private:

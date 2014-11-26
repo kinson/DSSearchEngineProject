@@ -47,7 +47,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
 
 
-  while(!inXMLstream.eof() && looper < 200)
+  while(!inXMLstream.eof() /*&& looper < 200*/)
   {
     //read in next word
     inXMLstream >> inString;
@@ -204,7 +204,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           //read in next word
           inXMLstream >> inString;
         }
-      indexhandler->addPage(page);
+      collection.push_back(page);
     }
 
   }
@@ -216,4 +216,23 @@ void DocumentParser::writeToStructure(IndexHandler*& ih)
 {
   for(auto e: collection)
     ih->addPage(e);
+}
+
+void DocumentParser::saveIndex()
+{
+  ofstream indexSave("index.txt");
+  for (int i = 0; i < collection.size(); i++)
+  {
+    Page* t = collection[i];
+    indexSave << t->getTitle() << endl;
+    indexSave << t->getId() << endl;
+    //indexSave << t->getDate() << endl;
+    indexSave << t->getContributingUser() << endl;
+    indexSave << t->getKeywords().size() << endl;
+    for (auto e: t->getKeywords())
+      indexSave << e << " ";
+    indexSave << endl;
+  }
+
+  indexSave.close();
 }

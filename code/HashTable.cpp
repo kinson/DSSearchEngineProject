@@ -24,7 +24,7 @@ void HashTable::addToIndex(Page*& pg, string& kw)
   }
   else
   {
-    cout << "collision detected between " << hashVector[hash_val % hashSize]->getWord() << " (" << hash_fn(hashVector[hash_val % hashSize]->getWord())%hashSize << ")  and " << kw << " (" << hash_fn(kw)%hashSize << ")" << endl;
+    //cout << "collision detected between " << hashVector[hash_val % hashSize]->getWord() << " (" << hash_fn(hashVector[hash_val % hashSize]->getWord())%hashSize << ")  and " << kw << " (" << hash_fn(kw)%hashSize << ")" << endl;
     HashNode* t = hashVector[hash_val % hashSize];
     while (t->getNextHashNode() != nullptr && t->getWord() != kw)
       {
