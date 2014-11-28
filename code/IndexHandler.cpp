@@ -16,9 +16,3 @@ void IndexHandler::addPage(Page* nextPage)
 	}
 
 }
-
-
-/*struct classcomp {
-  bool operator() (const Page*& lhs, const Page*& rhs) const
-  {;}
-};*/

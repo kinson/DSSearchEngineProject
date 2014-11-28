@@ -6,6 +6,7 @@
 #include "AVLNode.h"
 #include <cmath>
 
+
 using namespace std;
 
 class AVLTree : public IndexHandler
@@ -14,17 +15,30 @@ friend class AVLNode;
 
 private:
   AVLNode* root;
-  int depth;
 
 
 public:
   AVLTree(); //defualt constructor
-  void addToIndex(Page*, string); //virtual overridden function
-  void insert(string, Page*, AVLNode*&, AVLNode*&);
-  bool balance(AVLNode*&);
-  void balanceTree(AVLNode*&);
+  void addToIndex(Page*&, string&); //virtual overridden function
+  AVLNode*& insert(string&, Page*&, AVLNode*&);
+  AVLNode*& balance(AVLNode*); //manages balancing of tree
+  set<Page*> searchIndex(string);
 
-  void printTable(); //override pvf from indexhandler
+  //functions that deal with and manage height
+  int height(AVLNode*); //return height of string
+  int difference(AVLNode*); //return difference between left and right subtree height
+
+  //rotations
+  AVLNode*& leftRotation(AVLNode*);
+  AVLNode*& rightRotation(AVLNode*);
+  AVLNode*& doubleLeft(AVLNode*);
+  AVLNode*& doubleRight(AVLNode*);
+
+
+  void printTable();
+  void display(AVLNode*, int);
+  void inorder(AVLNode*);
+
 
 };
 #endif

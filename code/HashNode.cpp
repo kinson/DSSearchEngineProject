@@ -1,7 +1,9 @@
 #include "HashNode.h"
 
 HashNode::HashNode() : Node()
-{}
+{
+  next = nullptr;
+}
 
 HashNode* HashNode::getNextHashNode()
 {
@@ -16,7 +18,7 @@ void HashNode::setNextHashNode(HashNode* h)
 
 
 
-HashNode::HashNode( Node*& node)
+HashNode::HashNode(Node*& node)
 {
 
 }

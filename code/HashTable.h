@@ -16,14 +16,16 @@ class HashTable: public IndexHandler
 {
 public:
   HashTable(); //default constructor
-  void addToIndex(Page*, string); //add an individual word node to the hash table
+  void addToIndex(Page*&, string&); //add an individual word node to the hash table
   //set<Page*> searchIndex(string); //search index based on key
   //unsigned long hashString(string); //hash a string return an index to place the word in
   void printTable(); //print out hashtable
+  set<Page*> searchIndex(string);
+  void saveIndex(); //save index in offline file
 
 
 private:
-  vector<Node*> hashVector;
+  vector<HashNode*> hashVector;
   const unsigned long hashSize =  1000000;
 
 

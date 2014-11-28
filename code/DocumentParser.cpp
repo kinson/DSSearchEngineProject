@@ -33,31 +33,23 @@ DocumentParser::DocumentParser()
 
 }
 
-void DocumentParser::parseDrive(string xmlInFile)
+void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 {
   struct stemmer * z = create_stemmer();
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
-  //inFile.seekg(0, ios::end);
-  //unsigned long fileSize = inFile.tellg();
-  //cout << "file size is " << fileSize << endl;
   //read it all in
   inXMLstream << inFile.rdbuf();
   inFile.close();
-  /*char* chararray = new char[fileSize+1];
-  inFile.open(xmlInFile.c_str());
-  inFile.read(chararray, fileSize);
-  inFile.close();
-  cout << chararray << endl;*/
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
-  while(!inXMLstream.eof() /*&& looper < 4*/)
+
+  while(!inXMLstream.eof() /*&& looper < 200*/)
   {
     //read in next word
-
     inXMLstream >> inString;
     //found new page object, now parse it
     if (inString.compare(0, 5, "<page") == 0)
@@ -80,7 +72,7 @@ void DocumentParser::parseDrive(string xmlInFile)
           inXMLstream >> inString;
 
 
-        while(inString.compare(0, 7, "</title>") !=0)
+        while(inString.compare(0, 7, "</title>") != 0)
         {
           //check to see if last part of title is tacked on to element and break if so
           if (inString.length() > 7)
@@ -96,6 +88,7 @@ void DocumentParser::parseDrive(string xmlInFile)
         {
           title += inString.substr(0, inString.length()-8);
         }
+        page->setTitle(title);
 
         /***********************************************************************************************
                                                     FIND ID
@@ -115,6 +108,8 @@ void DocumentParser::parseDrive(string xmlInFile)
         {
           id = id.substr(0, id.length()-5);
         }
+
+        page->setId(atoi(id.c_str()));
 
         /***********************************************************************************************
                                                 FIND USERNAME
@@ -166,11 +161,13 @@ void DocumentParser::parseDrive(string xmlInFile)
         else
           username = "none";
 
+        page->setContributingUser(username);
+
         cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
 
 
         /***********************************************************************************************
-                                  FIND KEYWORDS //still need to parse out formatting shit
+                                            FIND KEYWORDS
         ************************************************************************************************/
         while(inString.compare(0, 5, "<text") != 0)
           inXMLstream >> inString;
@@ -180,8 +177,7 @@ void DocumentParser::parseDrive(string xmlInFile)
           isStop = false;
           if(inString.length() > 6 && inString.compare(inString.length()-7, inString.length(), "</text>") == 0)
             break;
-          //read in next word
-          inXMLstream >> inString;
+
 
           /*for (int i = 0; i < inString.length(); i++) //3:14 with just this
           {
@@ -191,16 +187,13 @@ void DocumentParser::parseDrive(string xmlInFile)
             }
           }*/
 
+
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
 
           //search for keyword in stop word list, n times complexity, could be binary search
-          if (stopwords.count(inString)) //15% in 5 min
-            isStop = true;
-          /*for (size_t i = 0; i < throwout.size(); i++)
+          if (stopwords.count(inString))
           {
-            if (inString.find(throwout[i])!= string::npos)
-            {
               isStop = true;
               break;
             }
@@ -219,20 +212,40 @@ void DocumentParser::parseDrive(string xmlInFile)
               string otherString = buffer;
               page->addKeyword(otherString);
             }
-        }
 
-        collection.push_back(page);
+          //read in next word
+          inXMLstream >> inString;
+
+        }
+      collection.push_back(page);
     }
 
   }
 
-
 }
 
 
-void DocumentParser::writeToStructure(IndexHandler*& indexhandler)
+void DocumentParser::writeToStructure(IndexHandler*& ih)
 {
+  for(auto e: collection)
+    ih->addPage(e);
+}
 
-  for (auto e: collection)
-    indexhandler->addPage(e);
+void DocumentParser::saveIndex()
+{
+  ofstream indexSave("index.txt");
+  for (int i = 0; i < collection.size(); i++)
+  {
+    Page* t = collection[i];
+    indexSave << t->getTitle() << endl;
+    indexSave << t->getId() << endl;
+    //indexSave << t->getDate() << endl;
+    indexSave << t->getContributingUser() << endl;
+    indexSave << t->getKeywords().size() << endl;
+    for (auto e: t->getKeywords())
+      indexSave << e << " ";
+    indexSave << endl;
+  }
+
+  indexSave.close();
 }

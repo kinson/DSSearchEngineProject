@@ -2,11 +2,13 @@
 
 Node::Node()
 {
+  word = "";
 }
 
 Node::Node(Page* pg, string keyword)
 {
-
+  word = keyword;
+  binder.insert(pg);
 }
 
 void Node::setWord(string newword)
