@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <string>
-#include <iostream>
 
 using namespace std;
 
@@ -20,7 +19,6 @@ public:
 	void addorArgs(std::string);
 	void addnotArgs(std::string);
 	void addnormArgs(std::string);
-	void printQuery();
 	~Query();
 
 private:

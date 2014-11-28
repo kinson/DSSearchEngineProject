@@ -47,7 +47,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
 
 
-  while(!inXMLstream.eof() /*&& looper < 200*/)
+  while(!inXMLstream.eof() && looper < 200)
   {
     //read in next word
     inXMLstream >> inString;
@@ -186,32 +186,24 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
               inString = inString.substr(0, i);
             }
           }*/
-
-
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
-
           //search for keyword in stop word list, n times complexity, could be binary search
           if (stopwords.count(inString))
-          {
               isStop = true;
-              break;
-            }
-          }*/
-
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
-            {
-              inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){ 
-                if((int) thing >= 122 || (int) thing <= 97) return true;
+          {
+               inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){
+                  if((int) thing >= 122 || (int) thing <= 97) return true;
                   else return false;
-                }), inString.end());
-              char* buffer = (char*) inString.c_str();
-              int stringEnd = stem(z, buffer, inString.length()-1);
-              buffer[stringEnd+ 1] = '\0';
-              string otherString = buffer;
-              page->addKeyword(otherString);
-            }
+               }), inString.end());
+            char* buffer = (char*) inString.c_str();
+            int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
+            buffer[whoknowswhatthisis+ 1] = '\0';
+            inString = buffer;
+           page->addKeyword(inString);
+          }
 
           //read in next word
           inXMLstream >> inString;
@@ -242,10 +234,10 @@ void DocumentParser::saveIndex()
     //indexSave << t->getDate() << endl;
     indexSave << t->getContributingUser() << endl;
     indexSave << t->getKeywords().size() << endl;
+    int largeindex = t->getKeywords().size();
     for (auto e: t->getKeywords())
-      indexSave << e << " ";
-    indexSave << endl;
+      indexSave << e << endl;
   }
-
   indexSave.close();
+
 }
