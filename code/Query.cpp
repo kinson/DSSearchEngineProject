@@ -50,6 +50,33 @@ void Query::addnormArgs(std::string normArg)
 	normArgs.push_back(normArg);
 }
 
+void Query::printQuery()
+{
+	cout << "Add Args" << endl << endl;
+	for(int i = 0; i < andArgs.size(); i++)
+	{
+		cout << andArgs[i] << endl;
+	}
+
+	cout << "Or Args " << endl << endl;
+	for(int j = 0; j < orArgs.size(); j++)
+	{
+		cout << orArgs[j] << endl;
+	}
+
+	cout << "Not Args " << endl << endl;
+	for(int k = 0; k < notArgs.size(); k++)
+	{
+		cout << notArgs[k] << endl;
+	}
+
+	cout << "Not messed with " << endl << endl;
+	for(int m = 0; m < normArgs.size(); m++)
+	{
+		cout << normArgs[m] << endl;
+	}
+} 
+
 Query::~Query()
 {
 

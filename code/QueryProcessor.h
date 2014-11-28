@@ -5,6 +5,8 @@
 #include <sstream> 
 #include <iostream>
 #include "Query.h"
+#include "PorterStemmer.h"
+
 
 using namespace std;
 
@@ -15,8 +17,10 @@ public:
 	QueryProcessor();
 	~QueryProcessor();
 	void parseQuery(std::string);
-	void notArgFinder(int);	
-	void otherArgFinder(int);
+	std::string stemQuery(std::string&, stemmer*);
+	void notArgFinder(int, stemmer*);	
+	void otherArgFinder(int, stemmer*);
+	void print();
 private:
 	std::string searchQuery;
 	std::vector<std::string> searchWords;

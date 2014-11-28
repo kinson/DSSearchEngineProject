@@ -190,8 +190,10 @@ void DocumentParser::parseDrive(string xmlInFile)
               inString = inString.substr(0, i);
             }
           }*/
+
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
+
           //search for keyword in stop word list, n times complexity, could be binary search
           if (stopwords.count(inString)) //15% in 5 min
             isStop = true;
@@ -203,20 +205,20 @@ void DocumentParser::parseDrive(string xmlInFile)
               break;
             }
           }*/
+
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
             {
-               inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){ 
-                  if((int) thing >= 122 || (int) thing <= 97) return true;
+              inString.erase(std::remove_if(inString.begin(), inString.end(), [](char thing){ 
+                if((int) thing >= 122 || (int) thing <= 97) return true;
                   else return false;
-               }), inString.end());
-            char* buffer = (char*) inString.c_str();
-            int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
-            buffer[whoknowswhatthisis+ 1] = '/0';
-            inString = buffer;
-           page->addKeyword(inString);
-              }
-
+                }), inString.end());
+              char* buffer = (char*) inString.c_str();
+              int stringEnd = stem(z, buffer, inString.length()-1);
+              buffer[stringEnd+ 1] = '\0';
+              string otherString = buffer;
+              page->addKeyword(otherString);
+            }
         }
 
         collection.push_back(page);
