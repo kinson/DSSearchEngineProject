@@ -46,6 +46,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
 
+
   while(!inXMLstream.eof() /*&& looper < 200*/)
   {
     //read in next word
@@ -161,7 +162,6 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           username = "none";
 
         page->setContributingUser(username);
-        //cout << "did this make sure?" << endl;
 
         cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
 
