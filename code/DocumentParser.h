@@ -24,6 +24,7 @@ public:
   void sendToIndex(Page*); //send an individual page index
   void writeToStructure(IndexHandler*&); //iterate over collection, sending it to the index
   void saveIndex();
+  void readInParsedFile(IndexHandler*&); //function to read in an already parsed file
 
 
 private:

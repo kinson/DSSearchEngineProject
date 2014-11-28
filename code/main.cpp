@@ -17,7 +17,7 @@ int main()
   p->parseDrive("hugewikibookdump.xml", indexhandler);
   //p->writeToStructure(indexhandler);
   //indexhandler->addToIndex(new Page(), "cat");
-  p->saveIndex();
+  p->readInParsedFile(indexhandler);
   //set<Page*> results = indexhandler->searchIndex("ffded");
   return 0;
 }
