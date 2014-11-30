@@ -2,9 +2,10 @@
 #define QUERYPROCESSOR_H
 #include <vector>
 #include <string>
-#include <sstream> 
+#include <sstream>
 #include <iostream>
 #include "Query.h"
+#include "PorterStemmer.h"
 
 
 
@@ -17,7 +18,7 @@ public:
 	QueryProcessor();
 	~QueryProcessor();
 	void parseQuery(std::string);
-	void notArgFinder(int);	
+	void notArgFinder(int);
 	void otherArgFinder(int);
 	void stemQuery();
 	void print();
@@ -27,4 +28,4 @@ private:
 	Query* currentQ;
 };
 
-#endif 
+#endif

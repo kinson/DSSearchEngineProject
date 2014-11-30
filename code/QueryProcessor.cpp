@@ -2,6 +2,7 @@
 #include "stemHelper.h"
 
 
+
 QueryProcessor::QueryProcessor()
 {
   currentQ = new Query;
@@ -25,7 +26,7 @@ void QueryProcessor::parseQuery(std::string search)
   {
     string temp;
     //breaks if there aren't any words left
-    if (!getline(inString, temp, ' ')) 
+    if (!getline(inString, temp, ' '))
       break;
     //otherwise adds to the search words vector
     searchWords.push_back(temp);
@@ -39,12 +40,12 @@ void QueryProcessor::parseQuery(std::string search)
     {
       notArgFinder(i);
       break;
-    } 
+    }
   }
 
   if(searchWords[0].compare("AND")==0)
     otherArgFinder(0);
-  if(searchWords[0].compare("OR")==0)  
+  if(searchWords[0].compare("OR")==0)
     otherArgFinder(1);
   else
     otherArgFinder(2);
@@ -96,9 +97,9 @@ void QueryProcessor::notArgFinder(int loc)
   for(int i = loc + 1; i < size; i++)
   {
     transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-    currentQ->addnotArgs(searchWords[i]);  
+    currentQ->addnotArgs(searchWords[i]);
   }
- 
+
   searchWords.erase(searchWords.begin()+loc, searchWords.begin()+size);
 }
 
@@ -111,7 +112,7 @@ void QueryProcessor::otherArgFinder(int type)
         for(int i = 1; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          currentQ->addandArgs(searchWords[i]); 
+          currentQ->addandArgs(searchWords[i]);
         }
         break;
         }
@@ -120,7 +121,7 @@ void QueryProcessor::otherArgFinder(int type)
         for(int i = 1; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          currentQ->addandArgs(searchWords[i]); 
+          currentQ->addandArgs(searchWords[i]);
         }
         break;
       }
@@ -129,10 +130,10 @@ void QueryProcessor::otherArgFinder(int type)
         for(int i = 0; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          currentQ->addandArgs(searchWords[i]); 
+          currentQ->addandArgs(searchWords[i]);
         }
         break;
-      } 
+      }
     }
 }
 
@@ -140,23 +141,3 @@ void QueryProcessor::print()
 {
   currentQ->printQuery();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

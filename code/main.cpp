@@ -39,13 +39,6 @@ int main()
 
 
 
-
-
-
-
-
-
-
 //main for testing
 /*int main()
 {

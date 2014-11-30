@@ -12,6 +12,8 @@
 #include <map>
 #include <iostream>
 #include <cctype>
+#include "PorterStemmer.h"
+
 
 
 using namespace std;
