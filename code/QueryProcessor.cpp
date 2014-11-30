@@ -12,6 +12,7 @@ QueryProcessor::~QueryProcessor()
 
 void QueryProcessor::parseQuery(std::string search)
 {
+  struct stemmer* stm = create_stemmer();
 	searchQuery = search;
 	istringstream inString(searchQuery);
 	cout << searchQuery << endl;
@@ -29,39 +30,53 @@ void QueryProcessor::parseQuery(std::string search)
   {
     if(searchWords[i].compare("not")==0)
     {
-      notArgFinder(i);
+      notArgFinder(i, stm);
       break;
     } 
   }
 
   if(searchWords[0].compare("and")==0)
-    otherArgFinder(0);
+    otherArgFinder(0, stm);
   if(searchWords[0].compare("or")==0)  
-    otherArgFinder(1);
+    otherArgFinder(1, stm);
   else
-    otherArgFinder(2);
+    otherArgFinder(2, stm);
 
 }
 
-void QueryProcessor::notArgFinder(int loc)
+std::string QueryProcessor::stemQuery(std::string& qWord, stemmer*stm)
 {
+
+  char* buffer = (char*) qWord.c_str();
+  int stringEnd = stem(stm, buffer, qWord.length()-1);
+  buffer[stringEnd +1] = '\0';
+  string stemWord = bufffer;
+  return stemWord;
+}
+
+void QueryProcessor::notArgFinder(int loc, stemmer* stm)
+{
+  string queryKeyword;
   int size = searchWords.size();
   for(int i = loc; i < size; i++)
   {
-    currentQ->addnotArgs(searchWords[i]);
+    queryKeyword = stemQuery(searchWords[i], stm);
+    currentQ->addnotArgs(queryKeyword);
   }
   searchWords.erase(searchWords.begin()+loc, searchWords.begin()+size);
 }
 
-void QueryProcessor::otherArgFinder(int type)
+void QueryProcessor::otherArgFinder(int type, stemmer* stm)
 {
+  string queryKeyword;
   switch (type)
   {
     case 0:
         {
         for(int i = 1; i < searchWords.size(); i++)
         {
-          currentQ->addandArgs(searchWords[i]); 
+          queryKeyword = stemQuery(searchWords[i], stm);
+          currentQ->addandArgs(queryKeyword); 
         }
         break;
         }
@@ -69,7 +84,8 @@ void QueryProcessor::otherArgFinder(int type)
       {
         for(int i = 1; i < searchWords.size(); i++)
         {
-          currentQ->addorArgs(searchWords[i]);
+          queryKeyword = stemQuery(searchWords[i], stm);
+          currentQ->addandArgs(queryKeyword); 
         }
         break;
       }
@@ -77,11 +93,17 @@ void QueryProcessor::otherArgFinder(int type)
       {
         for(int i = 0; i < searchWords.size(); i++)
         {
-            currentQ->addnormArgs(searchWords[i]);
+          queryKeyword = stemQuery(searchWords[i], stm);
+          currentQ->addandArgs(queryKeyword); 
         }
         break;
       } 
     }
+}
+
+void QueryProcessor::print()
+{
+  currentQ->printQuery();
 }
 
 
