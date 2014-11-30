@@ -22,6 +22,8 @@ public:
   void printTable(); //print out hashtable
   set<Page*> searchIndex(string);
   void saveIndex(); //save index in offline file
+  string getClassType(); //return HashTable
+  void destroyStructure(); //delete the structure
 
 
 private:
