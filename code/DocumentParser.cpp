@@ -1,6 +1,6 @@
 #include "DocumentParser.h"
 #include "PorterStemmer.h"
-//int stem(char * p, int i, int j);
+
 
 /***********************************************************************************************
                                           GOT STEMMER HERE
@@ -186,11 +186,14 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
               inString = inString.substr(0, i);
             }
           }*/
+
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
+
           //search for keyword in stop word list, n times complexity, could be binary search
           if (stopwords.count(inString))
               isStop = true;
+
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
           {
@@ -199,8 +202,8 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
                   else return false;
                }), inString.end());
             char* buffer = (char*) inString.c_str();
-            int whoknowswhatthisis = stem(z, buffer, inString.length()-1);
-            buffer[whoknowswhatthisis+ 1] = '\0';
+            int stringEnd = stem(z, buffer, inString.length()-1);
+            buffer[stringEnd+ 1] = '\0';
             inString = buffer;
            page->addKeyword(inString);
           }
