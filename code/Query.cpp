@@ -76,7 +76,7 @@ void Query::printQuery()
 	{
 		cout << normArgs[m] << endl;
 	}
-}
+	
 }
 
 Query::~Query()

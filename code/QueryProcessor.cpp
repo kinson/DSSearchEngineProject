@@ -50,7 +50,7 @@ std::string QueryProcessor::stemQuery(std::string& qWord, stemmer*stm)
   char* buffer = (char*) qWord.c_str();
   int stringEnd = stem(stm, buffer, qWord.length()-1);
   buffer[stringEnd +1] = '\0';
-  string stemWord = bufffer;
+  string stemWord = buffer;
   return stemWord;
 }
 
