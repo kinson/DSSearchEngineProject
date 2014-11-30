@@ -220,10 +220,10 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 }
 
 
-void DocumentParser::writeToStructure(IndexHandler*& ih)
+void DocumentParser::writeToStructure(IndexHandler*& ih, int startIndex)
 {
-  for(auto e: collection)
-    ih->addPage(e);
+  for(int i = startIndex; i < collection.size(); i++)
+    ih->addPage(collection[i]);
 }
 
 void DocumentParser::saveIndex()
@@ -275,4 +275,9 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
     collection.push_back(p);
     //cout << p->getTitle() << " " << p->getId() << " " << "number of pages " << number_of_pages << p->getContributingUser() << endl;
   }
+}
+
+int DocumentParser::getCollectionSize()
+{
+  return collection.size() - 1;
 }

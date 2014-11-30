@@ -56,3 +56,14 @@ set<Page*> HashTable::searchIndex(string search_term)
   return t->getBinder();
 
 }
+
+
+string HashTable::getClassType()
+{
+  return "HashTable";
+}
+
+void HashTable::destroyStructure()
+{
+  cout << "destroying table" << endl;
+}

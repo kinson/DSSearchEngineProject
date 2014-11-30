@@ -159,3 +159,15 @@ set<Page*> AVLTree::searchIndex(string search_term)
 {
   return root->getBinder();
 }
+
+string AVLTree::getClassType()
+{
+  return "AVLTree";
+}
+
+
+
+void AVLTree::destroyStructure()
+{
+  cout << "destroying tree" << endl;
+}

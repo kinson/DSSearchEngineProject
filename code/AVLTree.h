@@ -40,5 +40,8 @@ public:
   void inorder(AVLNode*);
 
 
+  string getClassType(); // return AVLTree
+  void destroyStructure(); //delete the structure
+
 };
 #endif
