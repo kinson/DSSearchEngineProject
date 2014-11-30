@@ -35,7 +35,6 @@ DocumentParser::DocumentParser()
 
 void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 {
-  cout << "made it to the damn function" << endl;
   struct stemmer * z = create_stemmer();
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
@@ -48,7 +47,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
 
 
-  while(!inXMLstream.eof() && looper < 200)
+  while(!inXMLstream.eof() /*&& looper < 200*/)
   {
     //read in next word
     inXMLstream >> inString;
@@ -248,24 +247,24 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
   ifstream indexRead("index.txt");
   string inString;
   int looper = 0;
-  while (!indexRead.eof() && looper++ < 5)
+  while (!indexRead.eof() /*&& looper++ < 5*/)
   {
     Page* p = new Page();
     getline(indexRead, inString);
     p->setTitle(inString);
-    cout << "title: " << inString;
+    //cout << ++looper <<  " title: " << inString;
     getline(indexRead, inString);
     p->setId(atoi(inString.c_str()));
-    cout << " id: " << inString;
+    //cout << " id: " << inString;
     getline(indexRead, inString);
     p->setContributingUser(inString);
-    cout << " user: " << inString << endl;
+    //cout << " user: " << inString << endl;
     getline(indexRead, inString);
     int test = 0;
     int number_of_pages = atoi(inString.c_str());
     for (int i = 0; i < number_of_pages; i++)
     {
-      indexRead >> inString;
+      getline(indexRead, inString);
       p->addKeyword(inString);
       //cout <<++test << " " << inString << endl;
     }
