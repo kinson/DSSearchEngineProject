@@ -35,7 +35,8 @@
 */
 
 
-
+#ifndef PORTERSTEMMER_H
+#define PORTERSTEMMER_H
 
 
 #include <stdlib.h>  /* for malloc, free */
@@ -394,3 +395,5 @@ extern int stem(struct stemmer * z, char * b, int k)
    }
    return z->k;
 }
+
+#ENDIF PORTERSTEMMER_H

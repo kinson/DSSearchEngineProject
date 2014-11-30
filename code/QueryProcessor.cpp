@@ -14,7 +14,9 @@ QueryProcessor::~QueryProcessor()
 
 void QueryProcessor::parseQuery(std::string search)
 {
-	searchQuery = search;
+  if(currentQ->getandArgs().size()!=0||currentQ->getorArgs().size()!=0||currentQ->getnotArgs().size()!=0||currentQ->getnormArgs().size()!=0)
+    currentQ->clearQuery();
+  searchQuery = search;
 	istringstream inString(searchQuery);
 	cout << searchQuery << endl;
 
