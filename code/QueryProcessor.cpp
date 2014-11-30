@@ -1,5 +1,5 @@
 #include "QueryProcessor.h"
-#include "PorterStemmer.h"
+#include "stemHelper.h"
 
 
 QueryProcessor::QueryProcessor()
@@ -55,13 +55,11 @@ void QueryProcessor::parseQuery(std::string search)
 
 void QueryProcessor::stemQuery()
 {
-  struct stemmer* stm = create_stemmer();
   char* buffer;
   for(int i = 0; i < currentQ->getandArgs().size(); i++)
   {
     buffer = (char*) currentQ->getandArgs(i).c_str();
-    int stringEnd = stem(stm, buffer, currentQ->getandArgs(i).length()-1);
-    buffer[stringEnd +1] = '\0';
+    string newString = StemHelper::stemword(buffer);
     currentQ->setandArgs(i, buffer);
 
   }
@@ -69,8 +67,7 @@ void QueryProcessor::stemQuery()
   for(int i = 0; i < currentQ->getorArgs().size(); i++)
   {
     buffer = (char*) currentQ->getorArgs(i).c_str();
-    int stringEnd = stem(stm, buffer, currentQ->getorArgs(i).length()-1);
-    buffer[stringEnd +1] = '\0';
+    string newString = StemHelper::stemword(buffer);
     currentQ->setorArgs(i, buffer);
 
   }
@@ -78,8 +75,7 @@ void QueryProcessor::stemQuery()
     for(int i = 0; i < currentQ->getnotArgs().size(); i++)
   {
     buffer = (char*) currentQ->getnotArgs(i).c_str();
-    int stringEnd = stem(stm, buffer, currentQ->getnotArgs(i).length()-1);
-    buffer[stringEnd +1] = '\0';
+    string newString = StemHelper::stemword(buffer);
     currentQ->setnotArgs(i, buffer);
 
   }
@@ -87,8 +83,7 @@ void QueryProcessor::stemQuery()
    for(int i = 0; i < currentQ->getnormArgs().size(); i++)
   {
     buffer = (char*) currentQ->getnormArgs(i).c_str();
-    int stringEnd = stem(stm, buffer, currentQ->getnormArgs(i).length()-1);
-    buffer[stringEnd +1] = '\0';
+    string newString = StemHelper::stemword(buffer);
     currentQ->setnormArgs(i, buffer);
 
   }

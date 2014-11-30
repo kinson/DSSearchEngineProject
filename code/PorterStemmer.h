@@ -103,6 +103,7 @@ extern void free_stemmer(struct stemmer * z)
 }
 
 
+
 /* cons(z, i) is TRUE <=> b[i] is a consonant. ('b' means 'z->b', but here
    and below we drop 'z->' in comments.
 */
@@ -396,4 +397,4 @@ extern int stem(struct stemmer * z, char * b, int k)
    return z->k;
 }
 
-#ENDIF PORTERSTEMMER_H
+#endif //PORTERSTEMMER_H

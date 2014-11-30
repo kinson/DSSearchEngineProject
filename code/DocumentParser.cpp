@@ -1,5 +1,5 @@
 #include "DocumentParser.h"
-#include "PorterStemmer.h"
+#include "stemHelper.h"
 
 
 /***********************************************************************************************
@@ -35,7 +35,6 @@ DocumentParser::DocumentParser()
 
 void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 {
-  struct stemmer * z = create_stemmer();
   //create ifstream object to read in xmlfile
   ifstream inFile(xmlInFile.c_str());
   stringstream inXMLstream;
@@ -202,9 +201,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
                   else return false;
                }), inString.end());
             char* buffer = (char*) inString.c_str();
-            int stringEnd = stem(z, buffer, inString.length()-1);
-            buffer[stringEnd+ 1] = '\0';
-            inString = buffer;
+           string newString = StemHelper::stemword(buffer);
            page->addKeyword(inString);
           }
 
