@@ -39,12 +39,14 @@
 #define PORTERSTEMMER_H
 
 
-#include <stdlib.h>  /* for malloc, free */
-#include <string.h>  /* for memcmp, memmove */
+//#include <stdlib.h>  /* for malloc, free */
+//#include <string.h>  /* for memcmp, memmove */
+#include <cstdlib>
+#include <cstring>
 
 /* You will probably want to move the following declarations to a central
    header file.
-*/
+
 
 struct stemmer;
 
@@ -52,7 +54,7 @@ extern struct stemmer * create_stemmer(void);
 extern void free_stemmer(struct stemmer * z);
 
 extern int stem(struct stemmer * z, char * b, int k);
-
+*/
 
 
 /* The main part of the stemming algorithm starts here.
@@ -91,13 +93,15 @@ struct stemmer {
 */
 
 
-extern struct stemmer * create_stemmer(void)
+//extern struct stemmer * create_stemmer(void)
+static struct stemmer * create_stemmer(void)
 {
     return (struct stemmer *) malloc(sizeof(struct stemmer));
     /* assume malloc succeeds */
 }
 
-extern void free_stemmer(struct stemmer * z)
+//extern void free_stemmer(struct stemmer * z)
+static void free_stemmer(struct stemmer * z)
 {
     free(z);
 }
@@ -380,7 +384,8 @@ static void step5(struct stemmer * z)
    length, so 0 <= k' <= k.
 */
 
-extern int stem(struct stemmer * z, char * b, int k)
+//extern int stem(struct stemmer * z, char * b, int k)
+static int stem(struct stemmer * z, char * b, int k)
 {
    if (k <= 1) return k; /*-DEPARTURE-*/
    z->b = b; z->k = k; /* copy the parameters into z */

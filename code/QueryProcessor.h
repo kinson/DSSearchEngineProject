@@ -5,7 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include "Query.h"
-#include "PorterStemmer.h"
+//#include "PorterStemmer.h"
 
 
 

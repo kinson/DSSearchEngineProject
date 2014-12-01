@@ -12,10 +12,10 @@ class StemHelper
 			struct stemmer * z = create_stemmer();
 			int stringEnd = stem(z, buffer, strlen(buffer)-1);
             buffer[stringEnd+ 1] = '\0';
-            free(*z);
+            //free(*z);
             return buffer;
 		}
-	private:	
+	private:
 };
 
-#endif 
+#endif

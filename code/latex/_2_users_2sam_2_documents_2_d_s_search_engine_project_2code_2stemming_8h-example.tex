@@ -1,0 +1,13 @@
+\hypertarget{_2_users_2sam_2_documents_2_d_s_search_engine_project_2code_2stemming_8h-example}{\section{/\+Users/sam/\+Documents/\+D\+S\+Search\+Engine\+Project/code/stemming.\+h}
+}
+The template argument for the stemmers are the type of std\+::basic\+\_\+string that you are trying to stem, by default std\+::wstring (Unicode strings). As long as the char type of your basic\+\_\+string is wchar\+\_\+t, then you can use any type of basic\+\_\+string. This is to say, if your basic\+\_\+string has a custom char\+\_\+traits or allocator, then just specify it in your template argument to the stemmer.
+
+typedef std\+::basic\+\_\+string$<$wchar\+\_\+t, my\+Traits, my\+Allocator$>$ my\+String;~\newline
+ my\+String word(L\char`\"{}documentation\char`\"{});~\newline
+ stemming\+::english\+\_\+stem$<$my\+String$>$ Stem\+English;~\newline
+ Stem\+English(word);
+
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 
