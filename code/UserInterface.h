@@ -28,6 +28,8 @@ class UserInterface
 		void addFilesToIndex(); //add file to paths vector if it exists
 		void createStructure(string); //create indexhandler structure based on arg
 		void addToExistingIndex(); //add more files!
+		void searchIndex(); //search the indexhandler and display results
+		void loadExistingIndex(); //load indexed file into memory
 
 
 	private:

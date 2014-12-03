@@ -44,12 +44,13 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   int counter = 0;
   int looper = 0; //used to only get a certain amount of xml file
   string inString;
+  cout << "<";
 
-
-  while(!inXMLstream.eof() /*&& looper < 200*/)
+  while(!inXMLstream.eof() && looper < 200)
   {
     //read in next word
     inXMLstream >> inString;
+
     //found new page object, now parse it
     if (inString.compare(0, 5, "<page") == 0)
     {
@@ -177,15 +178,6 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           if(inString.length() > 6 && inString.compare(inString.length()-7, inString.length(), "</text>") == 0)
             break;
 
-
-          /*for (int i = 0; i < inString.length(); i++) //3:14 with just this
-          {
-            if(inString.substr(i) == "&" || inString.substr(i) == "," || inString.substr(i) == ";" || inString.substr(i) == "." || inString.substr(i) == "]" || inString.substr(i) == "|")
-            {
-              inString = inString.substr(0, i);
-            }
-          }*/
-
           //make the string lower case
           transform(inString.begin(), inString.end(), inString.begin(), ::tolower);
 
@@ -213,6 +205,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
     }
 
   }
+  cout << ">" << endl;
 
 }
 

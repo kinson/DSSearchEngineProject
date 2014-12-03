@@ -23,6 +23,7 @@ public:
   AVLNode*& insert(string&, Page*&, AVLNode*&);
   AVLNode*& balance(AVLNode*); //manages balancing of tree
   set<Page*> searchIndex(string);
+  set<Page*> search(string, AVLNode*&); 
 
   //functions that deal with and manage height
   int height(AVLNode*); //return height of string

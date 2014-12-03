@@ -15,7 +15,7 @@ UserInterface::~UserInterface()
 void UserInterface::driver()
 {
 	int userChoice = 1;
-	while(userChoice!=0)
+	while(userChoice != 0)
 	{
 		cout << "Welcome!" << endl << "Enter the number of the mode you wish to use." << endl;
 		cout << "1: Maintenence Mode" << endl;
@@ -61,7 +61,9 @@ void UserInterface::maintenenceMode()
 	cout << endl << endl << "Welcome to Maintenence Mode" << endl;
 	cout << "Enter the number of what you want YO!" << endl;
 	cout << "1: Add files to the index " << endl;
-	cout << "2: Clear Index " << endl;
+	cout << "2: Clear index " << endl;
+	if (fexists("index.txt") && indexhandler == nullptr)
+		cout << "3: Load existing index" << endl;
 	cout << "0: Exit Maintence mode" << endl;
 	cin >> maintenence;
 
@@ -73,6 +75,9 @@ void UserInterface::maintenenceMode()
 			break;
 		case(2):
 			clearIndex();
+			break;
+		case(3):
+			loadExistingIndex();
 			break;
 		case(0):
 			return;
@@ -86,13 +91,12 @@ void UserInterface::interactiveMode()
 {
 	string interaction;
 	cout << endl << endl << "Welcome to Interactive Mode" << endl;
-	cout << "Enter the number of what you want YO!" << endl;
 	if (indexhandler == nullptr)
 	{
 		cout << "Index Status: No index created" << endl;
 		cout << "1: Create Hash Table" << endl;
 		cout << "2: Create AVL Tree" << endl;
-		cout << "0: Exit Maintence mode" << endl;
+		cout << "0: Exit interactive mode" << endl;
 		cin >> interaction;
 		switch(atoi(interaction.c_str()))
 		{
@@ -116,6 +120,25 @@ void UserInterface::interactiveMode()
 		cout << "2: Clear Index" << endl;
 		cout << "3: Switch to " << (indexhandler->getClassType() == "HashTable" ? "AVL Tree" : "Hash Table") << endl;
 		cout << "0: Exit" << endl;
+		cin >>interaction;
+		switch(atoi(interaction.c_str()))
+		{
+			case(1):
+				searchIndex();
+				break;
+			case(2):
+				clearIndex();
+				break;
+			case(3):
+				clearIndex();
+				createStructure(indexhandler->getClassType() == "HashTable" ? "AVLTree" : "HashTable");
+				break;
+			case(0):
+				return;
+			default:
+				cout << "Please choose an option or exit back to main screen" << endl;
+		}
+		interactiveMode();
 	}
 
 }
@@ -201,7 +224,59 @@ void UserInterface::clearIndex()
 
 void UserInterface::addToExistingIndex()
 {
+	cout << "parsing files..." << endl;
 	int lastCollectionIndex = docparser->getCollectionSize();
 	docparser->parseDrive(paths[paths.size()-1], indexhandler);
+	cout << "adding files to index..." << endl;
+	if (indexhandler == nullptr)
+	{
+		cout << "Select a data structure to write to\n1: Hash Table\n2: AVL Tree" << endl;
+		string input;
+		cin >> input;
+		if (input == "1")
+			indexhandler = new HashTable();
+		else if (input == "2")
+			indexhandler = new AVLTree();
+		else
+		{
+			cout << "invalid choice" << endl;
+			return;
+		}
+	}
 	docparser->writeToStructure(indexhandler, lastCollectionIndex + 1);
+}
+
+void UserInterface::searchIndex()
+{
+	cout << "Enter search query" << endl;
+	string query;
+	cin >> query;
+	set<Page*> results = indexhandler->searchIndex(query);
+	for (auto e: results)
+		cout << e->getTitle() << endl;
+}
+
+void UserInterface::loadExistingIndex()
+{
+	if (indexhandler == nullptr)
+	{
+		cout << "Select a data structure to write to\n1: Hash Table\n2: AVL Tree" << endl;
+		string input;
+		cin >> input;
+		if (input == "1")
+			indexhandler = new HashTable();
+		else if (input == "2")
+			indexhandler = new AVLTree();
+		else
+		{
+			cout << "invalid choice" << endl;
+			return;
+		}
+	}
+
+
+	docparser->readInParsedFile(indexhandler);
+	docparser->writeToStructure(indexhandler);
+
+
 }

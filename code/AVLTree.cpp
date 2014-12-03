@@ -11,7 +11,7 @@ AVLTree::AVLTree()
 
 void AVLTree::addToIndex(Page*& pg, string& kw)
 {
-
+  cout << "indexing "<< kw <<" in AVL Tree" << endl;
   insert(kw, pg, root);
 
 }
@@ -157,15 +157,32 @@ void AVLTree::inorder(AVLNode* temp)
 
 set<Page*> AVLTree::searchIndex(string search_term)
 {
-  return root->getBinder();
+  return search(search_term, root);
+}
+
+set<Page*> AVLTree::search(string search_string, AVLNode*& root)
+{
+  cout << root->getWord() << endl;
+  if (root == nullptr)
+  {
+    cout << "no result found" << endl;
+    set<Page*>a;
+    return a;
+  }
+  if (search_string == root->getWord())
+  {
+    return root->getBinder();
+  }
+  if (search_string < root->getWord())
+    return search(search_string, root->left);
+  else
+    return search(search_string, root->right);
 }
 
 string AVLTree::getClassType()
 {
   return "AVLTree";
 }
-
-
 
 void AVLTree::destroyStructure()
 {
