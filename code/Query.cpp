@@ -85,49 +85,49 @@ void Query::setnormArgs(int index, std::string newWord)
 void Query::printQuery()
 {
 
-	cout << endl << "Add Args" << endl << endl;
+	
 	if(andArgs.size()>0)
+	{
+	cout << endl << "And Args" << endl << endl;
 	for(int i = 0; i < andArgs.size(); i++)
 	{
 		cout << andArgs[i] << endl;
 	}
+}
 
 	if(orArgs.size()>0)
+	{
 	cout << "Or Args " << endl << endl;
 	for(int j = 0; j < orArgs.size(); j++)
 	{
 		cout << orArgs[j] << endl;
 	}
-
+}
 	if(notArgs.size()>0)
+	{
 	cout << endl << "Not Args " << endl << endl;
 	for(int k = 0; k < notArgs.size(); k++)
 	{
 		cout << notArgs[k] << endl;
 	}
-
+}
 	if(normArgs.size()>0)
+	{
 	cout << endl << "Not messed with " << endl << endl;
 	for(int m = 0; m < normArgs.size(); m++)
 	{
 		cout << normArgs[m] << endl;
 	}
-
+}
 }
 
 void Query::clearQuery()
 {
-	if(andArgs.size()!=0)
-	andArgs.erase(andArgs.begin());
-
-	if(orArgs.size()!=0)
-	orArgs.erase(orArgs.begin());
-
-	if(notArgs.size()!=0)
-	notArgs.erase(notArgs.begin());
-
-	if(normArgs.size()!=0)
-	normArgs.erase(normArgs.begin());
+	
+	andArgs.erase(andArgs.begin(),andArgs.end());
+	orArgs.clear();
+	notArgs.clear();
+	normArgs.clear();
 
 }
 

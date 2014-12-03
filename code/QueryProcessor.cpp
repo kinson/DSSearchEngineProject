@@ -15,8 +15,6 @@ QueryProcessor::~QueryProcessor()
 
 void QueryProcessor::parseQuery(std::string search)
 {
-  if(currentQ->getandArgs().size()!=0||currentQ->getorArgs().size()!=0||currentQ->getnotArgs().size()!=0||currentQ->getnormArgs().size()!=0)
-    currentQ->clearQuery();
   searchQuery = search;
 	istringstream inString(searchQuery);
 	cout << searchQuery << endl;
@@ -32,6 +30,7 @@ void QueryProcessor::parseQuery(std::string search)
     searchWords.push_back(temp);
   }
 
+  currentQ->clearQuery();
   //finds if there are any not keywords in the file
   for(int i = searchWords.size() - 1; i >= 0 ; i--)
   {
@@ -45,10 +44,11 @@ void QueryProcessor::parseQuery(std::string search)
 
   if(searchWords[0].compare("AND")==0)
     otherArgFinder(0);
-  if(searchWords[0].compare("OR")==0)
-    otherArgFinder(1);
   else
-    otherArgFinder(2);
+    if(searchWords[0].compare("OR")==0)
+      otherArgFinder(1);
+    else
+      otherArgFinder(2);
 
   stemQuery();
 
@@ -121,7 +121,7 @@ void QueryProcessor::otherArgFinder(int type)
         for(int i = 1; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          currentQ->addandArgs(searchWords[i]);
+          currentQ->addorArgs(searchWords[i]);
         }
         break;
       }
@@ -130,7 +130,7 @@ void QueryProcessor::otherArgFinder(int type)
         for(int i = 0; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          currentQ->addandArgs(searchWords[i]);
+          currentQ->addnormArgs(searchWords[i]);
         }
         break;
       }
