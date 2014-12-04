@@ -46,7 +46,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
   string inString;
   cout << "<";
 
-  while(!inXMLstream.eof() && looper < 200)
+  while(!inXMLstream.eof() && looper < 20000)
   {
     //read in next word
     inXMLstream >> inString;

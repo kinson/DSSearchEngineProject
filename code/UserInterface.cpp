@@ -186,6 +186,8 @@ void UserInterface::addFilesToIndex()
 	cout << "Enter relative path to xml document" << endl;
 	cin >> xmlPath;
 	//check to see if the file actually exists
+	if (xmlPath == "0")
+		return;
 	if (!fexists(xmlPath))
 	{
 		cout << "Please enter a valid path" << endl;
@@ -248,10 +250,11 @@ void UserInterface::addToExistingIndex()
 
 void UserInterface::searchIndex()
 {
+	cin.ignore();
 	cout << "Enter search query" << endl;
 	string query;
-	cin >> query;
-	set<Page*> results = indexhandler->searchIndex(query);
+	getline(cin, query);
+	vector<Page*> results = qprocessor->searchIndex(query, indexhandler);
 	for (auto e: results)
 		cout << e->getTitle() << endl;
 }

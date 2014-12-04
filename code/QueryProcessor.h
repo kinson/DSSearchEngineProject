@@ -5,6 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include "Query.h"
+#include "IndexHandler.h"
 //#include "PorterStemmer.h"
 
 
@@ -22,6 +23,7 @@ public:
 	void otherArgFinder(int);
 	void stemQuery();
 	void print();
+	vector<Page*> searchIndex(string, IndexHandler*&);
 private:
 	std::string searchQuery;
 	std::vector<std::string> searchWords;
