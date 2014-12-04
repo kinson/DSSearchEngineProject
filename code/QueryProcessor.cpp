@@ -2,7 +2,6 @@
 #include "stemHelper.h"
 
 
-
 QueryProcessor::QueryProcessor()
 {
   currentQ = new Query();
@@ -17,7 +16,7 @@ void QueryProcessor::parseQuery(std::string search)
 {
   searchQuery = search;
 	istringstream inString(searchQuery);
-	cout << searchQuery << endl;
+  searchWords.clear();
 
   //reading in the query by word save into vector
   while (inString)
@@ -108,11 +107,9 @@ void QueryProcessor::otherArgFinder(int type)
   {
     case 0:
         {
-        cout << "maybe here " <<  searchWords.size() << endl;
         for(int i = 1; i < searchWords.size(); i++)
         {
           transform(searchWords[i].begin(), searchWords[i].end(), searchWords[i].begin(), ::tolower);
-          cout << "made it here with " << searchWords[i] << endl;
           currentQ->addandArgs(searchWords[i]);
         }
         break;
@@ -146,37 +143,56 @@ void QueryProcessor::print()
 
 vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& ih)
 {
-  cout << search_string << endl;
   parseQuery(search_string);
   //check for AND args
-
+  vector<Page*>results;
   if (currentQ->getandArgs().size() > 0)
   {
-    vector<Page*> andResultSet;
-    set<Page*>a = ih->searchIndex(currentQ->getandArgs()[0]);
-    set<Page*>b = ih->searchIndex(currentQ->getandArgs()[1]);
-
-    /*for (auto e: a)
-      cout << e->getTitle() << endl;
-
-    for (auto e: b)
-      cout << e->getTitle() << endl;*/
-
-
-    set_intersection(a.begin(), a.end(), b.begin(), b.end(), andResultSet.begin());
-    cout << "something" << endl;
-    cout << andResultSet[0]->getTitle() << endl;
-    return andResultSet;
-
+    for (auto e: currentQ->getandArgs())
+    {
+      if (results.size() > 0)
+      {
+        set<Page*>test(results.begin(), results.end());
+        results.clear();
+        set<Page*> andargs = ih->searchIndex(e);
+        set_intersection(test.begin(), test.end(), andargs.begin(), andargs.end(), back_inserter(results));
+      }
+      else
+      {
+        set<Page*> andargs = ih->searchIndex(e);
+        copy(andargs.begin(), andargs.end(), back_inserter(results));
+      }
+    }
     /*set<Page*> andResultSet = ih->searchIndex(currentQ->getandArgs()[0]);
     if (currentQ->getandArgs().size() > 1)
       for (auto e: currentQ->getandArgs())
         set_intersection(andResultSet.begin(), andResultSet.end(), ih->searchIndex(e).begin(), ih->searchIndex(e).end(), inserter(andResultSet,andResultSet.begin()));*/
   }
+  else if (currentQ->getorArgs().size() > 0)
+  {
+    set<Page*>orResultSet;
+    for (auto e: currentQ->getorArgs())
+    {
+      set<Page*> a = ih->searchIndex(e);
+      orResultSet.insert(a.begin(), a.end());
+    }
+    copy(orResultSet.begin(), orResultSet.end(), back_inserter(results));
+  }
   else if (currentQ->getnormArgs().size() > 0)
   {
     set<Page*> a = ih->searchIndex(currentQ->getnormArgs()[0]);
-    vector<Page*> results(a.begin(), a.end());
-    return results;
+    copy(a.begin(), a.end(), back_inserter(results));
   }
+  if (currentQ->getnotArgs().size() > 0)
+  {
+    for (auto e: currentQ->getnotArgs())
+    {
+      set<Page*>test(results.begin(), results.end());
+      results.clear();
+      set<Page*> notargs = ih->searchIndex(e);
+      set_difference(test.begin(), test.end(), notargs.begin(), notargs.end(), back_inserter(results));
+    }
+  }
+
+  return results;
 }

@@ -240,7 +240,7 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
   ifstream indexRead("index.txt");
   string inString;
   int looper = 0;
-  while (!indexRead.eof() /*&& looper++ < 5*/)
+  while (!indexRead.eof() && looper++ < 10000)
   {
     Page* p = new Page();
     getline(indexRead, inString);

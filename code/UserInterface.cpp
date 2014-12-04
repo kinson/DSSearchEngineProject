@@ -255,8 +255,11 @@ void UserInterface::searchIndex()
 	string query;
 	getline(cin, query);
 	vector<Page*> results = qprocessor->searchIndex(query, indexhandler);
-	for (auto e: results)
-		cout << e->getTitle() << endl;
+	if (results.size() > 0)
+		for (auto e: results)
+			cout << e->getTitle() << endl;
+	else
+		cout << "no results found in data set" << endl;
 }
 
 void UserInterface::loadExistingIndex()
@@ -277,9 +280,7 @@ void UserInterface::loadExistingIndex()
 		}
 	}
 
-
 	docparser->readInParsedFile(indexhandler);
 	docparser->writeToStructure(indexhandler);
-
 
 }

@@ -85,7 +85,7 @@ void Query::setnormArgs(int index, std::string newWord)
 void Query::printQuery()
 {
 
-	
+
 	if(andArgs.size()>0)
 	{
 	cout << endl << "And Args" << endl << endl;
@@ -123,8 +123,7 @@ void Query::printQuery()
 
 void Query::clearQuery()
 {
-	
-	andArgs.erase(andArgs.begin(),andArgs.end());
+	andArgs.clear();
 	orArgs.clear();
 	notArgs.clear();
 	normArgs.clear();
