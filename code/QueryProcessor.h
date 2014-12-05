@@ -24,6 +24,7 @@ public:
 	void stemQuery();
 	void print();
 	vector<Page*> searchIndex(string, IndexHandler*&);
+	void sortResults(vector<Page*>&); //sort results vectors
 private:
 	std::string searchQuery;
 	std::vector<std::string> searchWords;

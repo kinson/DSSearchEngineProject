@@ -144,7 +144,7 @@ void QueryProcessor::print()
 vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& ih)
 {
   parseQuery(search_string);
-  //check for AND args
+  //check different types of arguments
   vector<Page*>results;
   if (currentQ->getandArgs().size() > 0)
   {
@@ -163,10 +163,6 @@ vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& i
         copy(andargs.begin(), andargs.end(), back_inserter(results));
       }
     }
-    /*set<Page*> andResultSet = ih->searchIndex(currentQ->getandArgs()[0]);
-    if (currentQ->getandArgs().size() > 1)
-      for (auto e: currentQ->getandArgs())
-        set_intersection(andResultSet.begin(), andResultSet.end(), ih->searchIndex(e).begin(), ih->searchIndex(e).end(), inserter(andResultSet,andResultSet.begin()));*/
   }
   else if (currentQ->getorArgs().size() > 0)
   {
@@ -193,6 +189,84 @@ vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& i
       set_difference(test.begin(), test.end(), notargs.begin(), notargs.end(), back_inserter(results));
     }
   }
-
+  sortResults(results);
   return results;
+}
+
+
+void QueryProcessor::sortResults(vector<Page*>& unsortedResults)
+{
+  vector<double>resultsinversefreq;
+  //if there are AND arguments
+  if (currentQ->getandArgs().size() > 0)
+  {
+    //for each Page* object in the unsorted results vector
+    for (auto e:unsortedResults)
+    {
+      //cout << "processing " << e->getTitle() << endl;
+      double freq = 0;
+      double sumwords = 0;
+      //for each keyword string in the page object
+      for (int i = 0; i < e->getKeywords().size(); i++)
+      {
+        //for each of the and arguments
+        for (auto arg: currentQ->getandArgs())
+          if (arg == e->getKeywordAtIndex(i))
+          {
+            //cout << "\tcounting " << e->getKeywordAtIndex(i) << " " << e->getFrequency(i) << endl;
+            freq += e->getFrequency(i); //argument found in page
+          }
+        sumwords+=1; //incremenet number of words
+      }
+
+      //do the math
+      resultsinversefreq.push_back(freq/sumwords);
+    }
+  }
+  else if(currentQ->getorArgs().size() > 0)
+  {
+    for (auto e: unsortedResults)
+    {
+      double freq = 0;
+      double sumwords = 0;
+      //for each keyword string in the page object
+      for (int i = 0; i < e->getKeywords().size(); i++)
+      {
+        //for each of the or arguments
+        for (auto arg: currentQ->getorArgs())
+          if (arg == e->getKeywordAtIndex(i))
+          {
+            freq += e->getFrequency(i); //argument found in page
+            break;
+          }
+        sumwords+=1; //incremenet number of words
+      }
+
+      //do the math
+      resultsinversefreq.push_back(freq/sumwords);
+    }
+  }
+  else //if there is only one search term
+  {
+    //for each Page* object in the unsorted results vector
+    for (auto e:unsortedResults)
+    {
+      double freq = 0;
+      double sumwords = 0;
+      //for each keyword string in the page object
+      for (int i = 0; i < e->getKeywords().size(); i++)
+      {
+        if (currentQ->getnormArgs()[0] == e->getKeywordAtIndex(i))
+          freq += e->getFrequency(i); //argument found in page
+        sumwords+=1; //incremenet number of words
+      }
+      //do the math
+      resultsinversefreq.push_back(freq/sumwords);
+    }
+  }
+
+  //now sort
+  for (int i = 0; i < unsortedResults.size(); i++)
+    cout << unsortedResults[i]->getTitle() << "\t\t" << resultsinversefreq[i] << endl;
+
 }

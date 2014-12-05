@@ -62,8 +62,10 @@ void UserInterface::maintenenceMode()
 	cout << "Enter the number of what you want YO!" << endl;
 	cout << "1: Add files to the index " << endl;
 	cout << "2: Clear index " << endl;
+	if (indexhandler != nullptr)
+		cout << "3: Save index to disk" << endl;
 	if (fexists("index.txt") && indexhandler == nullptr)
-		cout << "3: Load existing index" << endl;
+		cout << "4: Load existing index" << endl;
 	cout << "0: Exit Maintence mode" << endl;
 	cin >> maintenence;
 
@@ -77,6 +79,9 @@ void UserInterface::maintenenceMode()
 			clearIndex();
 			break;
 		case(3):
+			saveIndexToDisk();
+			break;
+		case(4):
 			loadExistingIndex();
 			break;
 		case(0):
@@ -283,4 +288,9 @@ void UserInterface::loadExistingIndex()
 	docparser->readInParsedFile(indexhandler);
 	docparser->writeToStructure(indexhandler);
 
+}
+
+void UserInterface::saveIndexToDisk()
+{
+	docparser->saveIndex();
 }
