@@ -1,6 +1,7 @@
 #ifndef USERINTERFACE_H
 #define USERINTERFACE_H
 
+#include <string>
 #include "IndexHandler.h"
 #include "AVLTree.h"
 #include "HashTable.h"
@@ -9,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -23,10 +25,11 @@ class UserInterface
 		void stressTest();
 
 
-		bool fexists(const string&); //return true if file exists
+		bool fexists(const std::string&); //return true if file exists
 		void clearIndex(); //destruct index if it exists
 		void addFilesToIndex(); //add file to paths vector if it exists
-		void createStructure(string); //create indexhandler structure based on arg
+		void addFilesToIndex(std::string); //add file to paths vector if it exists give path
+		void createStructure(std::string); //create indexhandler structure based on arg
 		void addToExistingIndex(); //add more files!
 		void searchIndex(); //search the indexhandler and display results
 		void loadExistingIndex(); //load indexed file into memory
@@ -36,7 +39,7 @@ class UserInterface
 		IndexHandler* indexhandler;
 		DocumentParser* docparser;
 		QueryProcessor* qprocessor;
-		vector<string>paths;
+		vector<std::string>paths;
 };
 
 #endif

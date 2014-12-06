@@ -145,10 +145,65 @@ void UserInterface::interactiveMode()
 
 void UserInterface::stressTest()
 {
+	clock_t start;
+	ifstream stress;
+
 	string stressFile;
+	string doFunc;
+	string path;
+	string searchQ;
+	string indexType;
 	cout << endl << endl << "Welcome to the Stress Test" << endl;
 	cout << "Enter the name of the file you wish to upload" << endl;
 	cin >> stressFile;
+	stress.open(stressFile);
+	/**/
+	while(stress.good()) //use the better one
+	{
+		start = clock();
+		stress >> doFunc;
+		if(doFunc.compare("PD")==0)
+		{
+			stress >> path;
+			addFilesToIndex(path);
+		}
+
+		if(doFunc.compare("SQ")==0)
+		{
+			stress >> searchQ;
+			vector<Page*> results = qprocessor->searchIndex(searchQ, indexhandler);
+			if (results.size() > 0)
+				for (auto e: results)
+					cout << e->getTitle() << endl;
+			else
+				cout << "no results found in data set" << endl;
+		}
+
+		if(doFunc.compare("CS")==0)
+		{
+			stress >> indexType;
+			createStructure(indexType);
+		}
+
+		if(doFunc.compare("LI")==0)
+		{
+			stress >> indexType;
+			if (indexType.compare("HashTable")==0)
+				indexhandler = new HashTable();
+			else
+				indexhandler = new AVLTree();
+
+			docparser->readInParsedFile(indexhandler);
+			docparser->writeToStructure(indexhandler);
+
+		}
+		cout << "Time: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 100) << " s" << std::endl;
+
+	} 
+	
+
+
+	/**/
 }
 
 
@@ -202,6 +257,13 @@ void UserInterface::addFilesToIndex()
 			inVector = true;
 		}
 	if (!inVector)
+		paths.push_back(xmlPath);
+
+}
+
+void UserInterface::addFilesToIndex(string xmlPath)
+{
+		addFilesToIndex();
 		paths.push_back(xmlPath);
 
 }
