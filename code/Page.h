@@ -25,8 +25,11 @@ public:
   string getContributingUser();
   string getDate();
   vector<string> getKeywords();
+  int getFrequency(int); //return frequency of word at index
+  string getKeywordAtIndex(int);
+  void incrementFreq(int); //increment the frequency of given word
 
-  void addKeyword(string&); //add to keyword vector
+  int addKeyword(string&); //add to keyword vector
 
   ~Page(); //destructor for page object
 

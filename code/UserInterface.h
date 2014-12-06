@@ -33,6 +33,7 @@ class UserInterface
 		void addToExistingIndex(); //add more files!
 		void searchIndex(); //search the indexhandler and display results
 		void loadExistingIndex(); //load indexed file into memory
+		void saveIndexToDisk();
 
 
 	private:

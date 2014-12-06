@@ -2,5 +2,4 @@ Functions that you can use in the maintenence mode
 PD path - parse document you have to put the path to the document right after
 SQ query - search query and the search. If you use keywords and, or, not they must be capitalized 
 CS type - create a structure 'Hashtable' or 'tree' //we might need a path though?
-LI - load existing index //the old one
-LI type - loads into whatever type of structure
+LI type - loads index into whatever type of structure

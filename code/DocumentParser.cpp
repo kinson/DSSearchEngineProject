@@ -169,6 +169,8 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
         /***********************************************************************************************
                                             FIND KEYWORDS
         ************************************************************************************************/
+        map<string, int> curwords;
+
         while(inString.compare(0, 5, "<text") != 0)
           inXMLstream >> inString;
         bool isStop;
@@ -185,6 +187,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           if (stopwords.count(inString))
               isStop = true;
 
+
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
           {
@@ -194,12 +197,18 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
                }), inString.end());
             char* buffer = (char*) inString.c_str();
            string newString = StemHelper::stemword(buffer);
-           page->addKeyword(inString);
+           //check to see if the word has already been added
+           if (newString != "" && newString != " ")
+           {
+             if (!curwords.count(newString) > 0)
+               curwords[newString] = page->addKeyword(newString);
+              else
+                page->incrementFreq(curwords[newString]);
+           }
           }
 
           //read in next word
           inXMLstream >> inString;
-
         }
       collection.push_back(page);
     }
@@ -219,7 +228,7 @@ void DocumentParser::writeToStructure(IndexHandler*& ih, int startIndex)
 void DocumentParser::saveIndex()
 {
   ofstream indexSave("index.txt");
-  for (int i = 0; i < collection.size(); i++)
+  for (int i = 0; i < /*collection.size()*/ 40000; i++)
   {
     Page* t = collection[i];
     indexSave << t->getTitle() << endl;
@@ -240,7 +249,7 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
   ifstream indexRead("index.txt");
   string inString;
   int looper = 0;
-  while (!indexRead.eof() && looper++ < 10000)
+  while (!indexRead.eof() /*&& looper++ < 10000*/)
   {
     Page* p = new Page();
     getline(indexRead, inString);

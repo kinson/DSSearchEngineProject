@@ -33,6 +33,7 @@ AVLNode*& AVLTree::insert(string& kw, Page*& pg, AVLNode*& avlnode)
   }
   else if (avlnode->getWord() < kw)
   {
+    // increment avlnode height
     insert(kw, pg, avlnode->right);
     avlnode = balance(avlnode);
   }
