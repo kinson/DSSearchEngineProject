@@ -8,9 +8,7 @@ QueryProcessor::QueryProcessor()
 }
 
 QueryProcessor::~QueryProcessor()
-{
-
-}
+{}
 
 void QueryProcessor::parseQuery(std::string search)
 {
@@ -141,7 +139,7 @@ void QueryProcessor::print()
 }
 
 
-vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& ih)
+vector<Result*> QueryProcessor::searchIndex(string search_string, IndexHandler*& ih)
 {
   parseQuery(search_string);
   //check different types of arguments
@@ -189,12 +187,12 @@ vector<Page*> QueryProcessor::searchIndex(string search_string, IndexHandler*& i
       set_difference(test.begin(), test.end(), notargs.begin(), notargs.end(), back_inserter(results));
     }
   }
-  sortResults(results);
-  return results;
+  vector<Result*> resultsvector = sortResults(results);
+  return resultsvector;
 }
 
 
-void QueryProcessor::sortResults(vector<Page*>& unsortedResults)
+vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
 {
   vector<double>resultsinversefreq;
   //if there are AND arguments
@@ -215,6 +213,7 @@ void QueryProcessor::sortResults(vector<Page*>& unsortedResults)
           {
             //cout << "\tcounting " << e->getKeywordAtIndex(i) << " " << e->getFrequency(i) << endl;
             freq += e->getFrequency(i); //argument found in page
+            break;
           }
         sumwords+=1; //incremenet number of words
       }
@@ -259,14 +258,89 @@ void QueryProcessor::sortResults(vector<Page*>& unsortedResults)
         if (currentQ->getnormArgs()[0] == e->getKeywordAtIndex(i))
           freq += e->getFrequency(i); //argument found in page
         sumwords+=1; //incremenet number of words
+        break;
       }
       //do the math
       resultsinversefreq.push_back(freq/sumwords);
     }
   }
 
+  vector<Result*>results;
   //now sort
   for (int i = 0; i < unsortedResults.size(); i++)
-    cout << unsortedResults[i]->getTitle() << "\t\t" << resultsinversefreq[i] << endl;
+  {
+    Result* rs = new Result(unsortedResults[i], resultsinversefreq[i]);
+    results.push_back(rs);
+  }
 
+
+  //sort the results
+  results = merge_sort(results);
+
+  if (results.size() > 15)
+    results.erase(results.begin()+15, results.end());
+
+  return results;
+}
+
+
+vector<Result*> QueryProcessor::merge_sort(vector<Result*>& vec)
+{
+  // Termination condition: List is completely sorted if it
+  // only contains a single element.
+  if(vec.size() == 1)
+  {
+    return vec;
+  }
+
+  // Determine the location of the middle element in the vector
+  vector<Result*>::iterator middle = vec.begin() + (vec.size() / 2);
+
+  vector<Result*> left(vec.begin(), middle);
+  vector<Result*> right(middle, vec.end());
+
+  // Perform a merge sort on the two smaller vectors
+  left = merge_sort(left);
+  right = merge_sort(right);
+
+  return merge(vec,left, right);
+}
+
+vector<Result*> QueryProcessor::merge(vector<Result*> &vec,const vector<Result*>& left, const vector<Result*>& right)
+{
+  // Fill the resultant vector with sorted results from both vectors
+  vector<Result*> result;
+  unsigned left_it = 0, right_it = 0;
+
+  while(left_it < left.size() && right_it < right.size())
+  {
+    // If the left value is smaller than the right it goes next
+    // into the resultant vector
+    if(left[left_it]->getInverseFrequency() > right[right_it]->getInverseFrequency())
+    {
+      result.push_back(left[left_it]);
+      left_it++;
+    }
+    else
+    {
+      result.push_back(right[right_it]);
+      right_it++;
+    }
+  }
+
+  // Push the remaining data from both vectors onto the resultant
+  while(left_it < left.size())
+  {
+    result.push_back(left[left_it]);
+    left_it++;
+  }
+
+  while(right_it < right.size())
+  {
+    result.push_back(right[right_it]);
+    right_it++;
+  }
+  //take a source vector and parse the result to it. then return it.
+  vec = result;
+  return vec;
 }

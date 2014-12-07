@@ -322,12 +322,27 @@ void UserInterface::searchIndex()
 	cout << "Enter search query" << endl;
 	string query;
 	getline(cin, query);
-	vector<Page*> results = qprocessor->searchIndex(query, indexhandler);
+	vector<Result*> results = qprocessor->searchIndex(query, indexhandler);
+
+	int resultnum = 0;
+	int resultchoice = -1;
 	if (results.size() > 0)
+	{
 		for (auto e: results)
+		{
+			cout << endl << "RESULT\t" << resultnum++ << "------------------------------" << endl;
 			cout << e->getTitle() << endl;
+			cout << "id: " << e->getId() << endl << "user: " << e->getPage()->getContributingUser() << endl << "TD/IDF: " << e->getInverseFrequency() << endl;
+		}
+		cout << "Enter a result number to see full text or type -1 to return to menu: ";
+		cin >> resultchoice;
+		if (resultchoice != -1)
+			cout << results[resultchoice]->getTitle() << endl << results[resultchoice]->getFullText() << endl;
+
+	}
 	else
 		cout << "no results found in data set" << endl;
+
 }
 
 void UserInterface::loadExistingIndex()

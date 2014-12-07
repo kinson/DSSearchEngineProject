@@ -3,7 +3,9 @@
 
 using namespace std;
 Page::Page()
-{}
+{
+  fullText = "";
+}
 
 void Page::setTitle(string t)
 {
