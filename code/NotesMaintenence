@@ -3,3 +3,4 @@ PD path - parse document you have to put the path to the document right after
 SQ query - search query and the search. If you use keywords and, or, not they must be capitalized 
 CS type - create a structure 'Hashtable' or 'tree' //we might need a path though?
 LI type - loads index into whatever type of structure
+CI - clear index

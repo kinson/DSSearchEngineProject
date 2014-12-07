@@ -59,14 +59,13 @@ void UserInterface::maintenenceMode()
 {
 	string maintenence;
 	cout << endl << endl << "Welcome to Maintenence Mode" << endl;
-	cout << "Enter the number of what you want YO!" << endl;
 	cout << "1: Add files to the index " << endl;
 	cout << "2: Clear index " << endl;
 	if (indexhandler != nullptr)
 		cout << "3: Save index to disk" << endl;
 	if (fexists("index.txt") && indexhandler == nullptr)
 		cout << "4: Load existing index" << endl;
-	cout << "0: Exit Maintence mode" << endl;
+	cout << "0: Exit maintence mode" << endl;
 	cin >> maintenence;
 
 	switch(atoi(maintenence.c_str()))
@@ -124,7 +123,7 @@ void UserInterface::interactiveMode()
 		cout << "1: Search Index" << endl;
 		cout << "2: Clear Index" << endl;
 		cout << "3: Switch to " << (indexhandler->getClassType() == "HashTable" ? "AVL Tree" : "Hash Table") << endl;
-		cout << "0: Exit" << endl;
+		cout << "0: Exit interactive mode" << endl;
 		cin >>interaction;
 		switch(atoi(interaction.c_str()))
 		{
@@ -201,6 +200,11 @@ void UserInterface::stressTest()
 			docparser->readInParsedFile(indexhandler);
 			docparser->writeToStructure(indexhandler);
 
+		}
+
+		if(doFunc.compare("CI")==0)
+		{
+			clearIndex();	
 		}
 		cout << "Time: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 100) << " s" << std::endl;
 

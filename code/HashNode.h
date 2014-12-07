@@ -14,7 +14,7 @@ private:
 
 public:
   HashNode(); //default constructor
-  HashNode( Node*& other); //copy constructor
+  HashNode(Node*& other); //copy constructor
 
 
   //getters

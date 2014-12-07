@@ -111,6 +111,28 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 
         page->setId(atoi(id.c_str()));
 
+
+        /***********************************************************************************************
+                                                    FIND DATE
+        ************************************************************************************************/
+        string timestamp = "";
+
+        while(inString.compare(0, 11, "<timestamp>") != 0)
+          inXMLstream >> inString;
+
+        //reads in date if there is a space between tag & date
+        if (inString.length() > 11)
+          timestamp = inString.substr(11, inString.length());
+        else
+          inXMLstream >> timestamp;
+
+        if (timestamp.length() > 11 && inString.compare(inString.length() - 12, inString.length(), "</timestamp>") == 0)
+        {
+          timestamp = timestamp.substr(0, 10);
+        }
+
+        page->setDate(timestamp);
+
         /***********************************************************************************************
                                                 FIND USERNAME
         ************************************************************************************************/
@@ -163,7 +185,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 
         page->setContributingUser(username);
 
-        cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
+       // cout << looper++ << "\t" << title << " by " << username << " has id " << id << endl;
 
 
         /***********************************************************************************************
@@ -233,7 +255,7 @@ void DocumentParser::saveIndex()
     Page* t = collection[i];
     indexSave << t->getTitle() << endl;
     indexSave << t->getId() << endl;
-    //indexSave << t->getDate() << endl;
+    indexSave << t->getDate() << endl;
     indexSave << t->getContributingUser() << endl;
     indexSave << t->getKeywords().size() << endl;
     int largeindex = t->getKeywords().size();
@@ -260,6 +282,8 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
     //cout << " id: " << inString;
     getline(indexRead, inString);
     p->setContributingUser(inString);
+    getline(indexRead, inString);
+    p->setDate(inString);
     //cout << " user: " << inString << endl;
     getline(indexRead, inString);
     int test = 0;
