@@ -35,6 +35,8 @@ public:
 
   static int binarySearch(vector<string>&, string, int, int); //search over a vector, return true if the string exists
 
+  string fullText;
+
 
 
 private:

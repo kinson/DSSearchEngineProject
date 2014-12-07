@@ -7,6 +7,7 @@
 #include "HashTable.h"
 #include "QueryProcessor.h"
 #include "DocumentParser.h"
+#include "Result.h"
 #include <iostream>
 #include <vector>
 #include <fstream>

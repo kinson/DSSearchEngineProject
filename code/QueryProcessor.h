@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Query.h"
 #include "IndexHandler.h"
+#include "Result.h"
 //#include "PorterStemmer.h"
 
 
@@ -23,8 +24,11 @@ public:
 	void otherArgFinder(int);
 	void stemQuery();
 	void print();
-	vector<Page*> searchIndex(string, IndexHandler*&);
-	void sortResults(vector<Page*>&); //sort results vectors
+	vector<Result*> searchIndex(string, IndexHandler*&);
+	vector<Result*> sortResults(vector<Page*>&); //sort results vectors
+	vector<Result*> merge_sort(vector<Result*>& vec); //merge sort for result vector
+	vector<Result*> merge(vector<Result*>&,const vector<Result*>&, const vector<Result*>&);
+
 private:
 	std::string searchQuery;
 	std::vector<std::string> searchWords;

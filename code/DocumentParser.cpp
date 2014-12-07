@@ -174,6 +174,7 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
         while(inString.compare(0, 5, "<text") != 0)
           inXMLstream >> inString;
         bool isStop;
+        string fulltext = "";
         while(inString.compare("</text") != 0)
         {
           isStop = false;
@@ -209,7 +210,10 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
 
           //read in next word
           inXMLstream >> inString;
+          fulltext += inString + " ";
+
         }
+      page->fullText = fulltext;
       collection.push_back(page);
     }
 
