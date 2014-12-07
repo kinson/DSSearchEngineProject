@@ -175,7 +175,7 @@ void UserInterface::stressTest()
 		if(doFunc.compare("SQ")==0)
 		{
 			stress >> searchQ;
-			vector<Page*> results = qprocessor->searchIndex(searchQ, indexhandler);
+			vector<Result*> results = qprocessor->searchIndex(searchQ, indexhandler);
 			if (results.size() > 0)
 				for (auto e: results)
 					cout << e->getTitle() << endl;
@@ -204,11 +204,11 @@ void UserInterface::stressTest()
 
 		if(doFunc.compare("CI")==0)
 		{
-			clearIndex();	
+			clearIndex();
 		}
 		cout << "Time: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 100) << " s" << std::endl;
 
-	} 
+	}
 
 }
 

@@ -209,12 +209,13 @@ vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
       {
         //for each of the and arguments
         for (auto arg: currentQ->getandArgs())
+        {
           if (arg == e->getKeywordAtIndex(i))
           {
-            //cout << "\tcounting " << e->getKeywordAtIndex(i) << " " << e->getFrequency(i) << endl;
             freq += e->getFrequency(i); //argument found in page
             break;
           }
+        }
         sumwords+=1; //incremenet number of words
       }
 
@@ -233,11 +234,13 @@ vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
       {
         //for each of the or arguments
         for (auto arg: currentQ->getorArgs())
+        {
           if (arg == e->getKeywordAtIndex(i))
           {
             freq += e->getFrequency(i); //argument found in page
             break;
           }
+        }
         sumwords+=1; //incremenet number of words
       }
 
@@ -255,30 +258,34 @@ vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
       //for each keyword string in the page object
       for (int i = 0; i < e->getKeywords().size(); i++)
       {
+        //cout << e->getKeywordAtIndex(i) << "\t" << e->getFrequency(i) << endl;
         if (currentQ->getnormArgs()[0] == e->getKeywordAtIndex(i))
+        {
           freq += e->getFrequency(i); //argument found in page
+          break;
+        }
         sumwords+=1; //incremenet number of words
-        break;
       }
       //do the math
       resultsinversefreq.push_back(freq/sumwords);
     }
   }
-
   vector<Result*>results;
   //now sort
   for (int i = 0; i < unsortedResults.size(); i++)
   {
+    cout << unsortedResults[i] << "\t" << resultsinversefreq[i] << endl;
     Result* rs = new Result(unsortedResults[i], resultsinversefreq[i]);
     results.push_back(rs);
   }
 
-
   //sort the results
-  results = merge_sort(results);
+  if (results.size() > 1)
+    results = merge_sort(results);
 
   if (results.size() > 15)
     results.erase(results.begin()+15, results.end());
+
 
   return results;
 }
