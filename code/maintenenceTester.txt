@@ -1,3 +1,4 @@
-AF hugewikibookdump.xml
 PD smallwikibookdump.xml
 CS HashTable
+SI
+SQ running NOT dog

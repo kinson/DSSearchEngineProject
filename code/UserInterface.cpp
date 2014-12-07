@@ -1,5 +1,6 @@
 #include "UserInterface.h"
 
+
 UserInterface::UserInterface()
 {
 	docparser = new DocumentParser();
@@ -21,6 +22,7 @@ void UserInterface::driver()
 		cout << "1: Maintenence Mode" << endl;
 		cout << "2: Interactive Mode" << endl;
 		cout << "3: Stress Test Mode" << endl;
+		cout << "0: Exit Program" << endl;
 		cin >> userChoice;
 
 		switch(userChoice)
@@ -149,7 +151,7 @@ void UserInterface::interactiveMode()
 
 void UserInterface::stressTest()
 {
-	clock_t start;
+	std::chrono::time_point<std::chrono::system_clock> start, end;
 	ifstream stress;
 
 	string stressFile;
@@ -157,17 +159,19 @@ void UserInterface::stressTest()
 	string path;
 	string searchQ;
 	string indexType;
+	string holder;
 	cout << endl << endl << "Welcome to the Stress Test" << endl;
 	cout << "Enter the name of the file you wish to upload" << endl;
 	cin >> stressFile;
 	stress.open(stressFile);
 
 	while(stress.good()) //use the better one
-	{
-		start = clock();
+	{	
+		start = std::chrono::system_clock::now();
 		stress >> doFunc;
 		if(doFunc.compare("AF")==0)
 		{
+			cout << "Adding files..." << endl;
 			stress >> path;
 			addFilesToIndex(path);
 		}
@@ -181,7 +185,16 @@ void UserInterface::stressTest()
 
 		if(doFunc.compare("SQ")==0)
 		{
+			cout << "searching..." << endl;
 			stress >> searchQ;
+			stress >> holder;
+			while(holder.size()>2)
+			{
+				searchQ = " "  + holder;
+				stress >> holder;
+			}
+			cout << searchQ << endl;
+
 			vector<Result*> results = qprocessor->searchIndex(searchQ, indexhandler);
 			if (results.size() > 0)
 				for (auto e: results)
@@ -192,28 +205,36 @@ void UserInterface::stressTest()
 
 		if(doFunc.compare("CS")==0)
 		{
+			cout << "creating structure..." << endl;
 			stress >> indexType;
-			createStructure(indexType);
-		}
-
-		if(doFunc.compare("LI")==0)
-		{
-			stress >> indexType;
-			if (indexType.compare("HashTable")==0)
+			if(indexType.compare("HashTable")==0)
+			{
 				indexhandler = new HashTable();
+			}
+
 			else
 				indexhandler = new AVLTree();
 
+
 			docparser->readInParsedFile(indexhandler);
 			docparser->writeToStructure(indexhandler);
+		}
 
+		if(doFunc.compare("SI")==0)
+		{
+			cout << "saving to index.." << endl;
+			saveIndexToDisk();
 		}
 
 		if(doFunc.compare("CI")==0)
 		{
+			cout << "clear index..." << endl;
 			clearIndex();
 		}
-		cout << "Time: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 100) << " s" << std::endl;
+
+		end = std::chrono::system_clock::now();
+		unsigned int milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
+		std::cout << " Time: " << milliseconds << " seconds" << std::endl;
 	}
 }
 
