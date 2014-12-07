@@ -16,3 +16,5 @@ void IndexHandler::addPage(Page* nextPage)
 	}
 
 }
+
+IndexHandler::~IndexHandler(){}

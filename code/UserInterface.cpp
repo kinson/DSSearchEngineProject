@@ -119,7 +119,7 @@ void UserInterface::interactiveMode()
 	}
 	else
 	{
-		cout << "Index Status: " << (indexhandler->getClassType() == "HashTable" ? "Hash Table" : "AVL Tree")  << "filled with " << docparser->getCollectionSize() << " pages" << endl;
+		cout << "Index Status: " << (indexhandler->getClassType() == "HashTable" ? "Hash Table" : "AVL Tree")  << " filled with " << docparser->getCollectionSize() << " pages" << endl;
 		cout << "1: Search Index" << endl;
 		cout << "2: Clear Index" << endl;
 		cout << "3: Switch to " << (indexhandler->getClassType() == "HashTable" ? "AVL Tree" : "Hash Table") << endl;
@@ -284,10 +284,10 @@ bool UserInterface::fexists(const string& filename)
 
 void UserInterface::clearIndex()
 {
+	
 	if (indexhandler != nullptr)
 	{
-		indexhandler->destroyStructure();
-		delete indexhandler;
+	 cout << "we could delete things here" << endl;
 	}
 }
 

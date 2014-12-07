@@ -22,3 +22,5 @@ HashNode::HashNode(Node*& node)
 {
 
 }
+
+HashNode::~HashNode(){}

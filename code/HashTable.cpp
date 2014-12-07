@@ -63,7 +63,10 @@ string HashTable::getClassType()
   return "HashTable";
 }
 
-void HashTable::destroyStructure()
+
+HashTable::~HashTable()
 {
-  cout << "destroying table" << endl;
+  cout << "Bitches aint shit" << endl;
+  for(int i = 0; i < hashVector.size(); i++)
+    delete[] hashVector[i];
 }

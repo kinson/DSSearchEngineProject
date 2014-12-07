@@ -11,6 +11,7 @@ using namespace std;
 
 class AVLTree : public IndexHandler
 {
+
 friend class AVLNode;
 
 private:
@@ -19,6 +20,7 @@ private:
 
 public:
   AVLTree(); //defualt constructor
+ ~AVLTree();
   void addToIndex(Page*&, string&); //virtual overridden function
   AVLNode*& insert(string&, Page*&, AVLNode*&);
   AVLNode*& balance(AVLNode*); //manages balancing of tree
@@ -35,14 +37,10 @@ public:
   AVLNode*& doubleLeft(AVLNode*);
   AVLNode*& doubleRight(AVLNode*);
 
-
   void printTable();
   void display(AVLNode*, int);
   void inorder(AVLNode*);
 
-
-  string getClassType(); // return AVLTree
-  void destroyStructure(); //delete the structure
-
+  string getClassType(); //return AVLTree
 };
 #endif

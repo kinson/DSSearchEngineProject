@@ -185,7 +185,8 @@ string AVLTree::getClassType()
   return "AVLTree";
 }
 
-void AVLTree::destroyStructure()
+AVLTree::~AVLTree()
 {
-  cout << "destroying tree" << endl;
+  cout << "destroying" << endl;
+  delete[] root;
 }

@@ -16,15 +16,12 @@ class HashTable: public IndexHandler
 {
 public:
   HashTable(); //default constructor
-  void addToIndex(Page*&, string&); //add an individual word node to the hash table
-  //set<Page*> searchIndex(string); //search index based on key
-  //unsigned long hashString(string); //hash a string return an index to place the word in
+  ~HashTable();
+  void addToIndex(Page*&, std::string&); //add an individual word node to the hash table
   void printTable(); //print out hashtable
-  set<Page*> searchIndex(string);
+  set<Page*> searchIndex(std::string);
   void saveIndex(); //save index in offline file
-  string getClassType(); //return HashTable
-  void destroyStructure(); //delete the structure
-
+  std::string getClassType(); //return HashTable
 
 private:
   vector<HashNode*> hashVector;

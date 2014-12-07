@@ -1,7 +1,1 @@
-PD hugewikibookdump.xml
-SQ AND cat dog NOT hebrew
-SQ running NOT walking
-SQ flowers NOT biology
-CS HashTable
-CS AVLTree
-CI
+PD hugewikibookdump.
