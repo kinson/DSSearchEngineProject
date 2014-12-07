@@ -166,10 +166,17 @@ void UserInterface::stressTest()
 	{
 		start = clock();
 		stress >> doFunc;
-		if(doFunc.compare("PD")==0)
+		if(doFunc.compare("AF")==0)
 		{
 			stress >> path;
 			addFilesToIndex(path);
+		}
+
+		if(doFunc.compare("PD")==0)
+		{
+			stress >> path;
+			cout << "parsing..." << endl;
+			docparser->parseDrive(path, indexhandler);
 		}
 
 		if(doFunc.compare("SQ")==0)
@@ -222,7 +229,8 @@ void UserInterface::createStructure(string structtype)
 	}
 
 	if (structtype == "HashTable")
-		indexhandler = new HashTable();
+		{cout<< "this creates a hashtable";
+		indexhandler = new HashTable();}
 	else
 		indexhandler = new AVLTree();
 
@@ -269,9 +277,7 @@ void UserInterface::addFilesToIndex()
 
 void UserInterface::addFilesToIndex(string xmlPath)
 {
-		addFilesToIndex();
 		paths.push_back(xmlPath);
-
 }
 
 bool UserInterface::fexists(const string& filename)

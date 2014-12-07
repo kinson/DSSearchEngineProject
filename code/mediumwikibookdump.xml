@@ -1,0 +1,2893 @@
+<page>
+    <title>Ruby Programming/Creating Ruby programs</title>
+    <ns>0</ns>
+    <id>95237</id>
+    <redirect title="Ruby Programming/Hello world" />
+    <revision>
+      <id>611771</id>
+      <parentid>610617</parentid>
+      <timestamp>2006-10-15T06:47:00Z</timestamp>
+      <contributor>
+        <username>Guanaco</username>
+        <id>1043</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edit of [[Special:Contributions/Darklama|Darklama]], changed back to last version by Briand</comment>
+      <text xml:space="preserve">#REDIRECT [[Ruby Programming/Hello world]]</text>
+      <sha1>e3hgowkq3hcvx12aglfemkxpymq4dve</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Ruby Programming/Creating Ruby programs</title>
+    <ns>1</ns>
+    <id>95238</id>
+    <redirect title="Talk:Ruby Programming/Hello world" />
+    <revision>
+      <id>598049</id>
+      <timestamp>2006-09-30T00:03:07Z</timestamp>
+      <contributor>
+        <username>Briand</username>
+        <id>37067</id>
+      </contributor>
+      <comment>[[Talk:Ruby Programming/Creating Ruby programs]] moved to [[Talk:Ruby Programming/Hello world]]: Everybody knows Hello world.</comment>
+      <text xml:space="preserve">#REDIRECT [[Talk:Ruby Programming/Hello world]]</text>
+      <sha1>an7lohn2001gb57gnzu88ct188x1plz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>ZZT-oop</title>
+    <ns>0</ns>
+    <id>95241</id>
+    <redirect title="ZZT-OOP" />
+    <revision>
+      <id>598108</id>
+      <timestamp>2006-09-30T01:14:14Z</timestamp>
+      <contributor>
+        <ip>222.153.190.75</ip>
+      </contributor>
+      <comment>redirect --thematrixeatsyou</comment>
+      <text xml:space="preserve">#REDIRECT: [[ZZT-OOP]]</text>
+      <sha1>3xrv8i0ghg1xpk6v4s0elzs0vi9opgw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User talk:67.183.167.216</title>
+    <ns>3</ns>
+    <id>95242</id>
+    <revision>
+      <id>598115</id>
+      <parentid>598113</parentid>
+      <timestamp>2006-09-30T01:32:57Z</timestamp>
+      <contributor>
+        <username>Az1568</username>
+        <id>37227</id>
+      </contributor>
+      <comment>--&gt;{{Blatant vandal}}</comment>
+      <text xml:space="preserve">[[Image:Stop hand.svg|left|30px]] Welcome to Wikibooks. We invite everyone to contribute '''constructively'''. Take a look at the [[Wikibooks:Welcome, newcomers|welcome page]] if you would like to learn more about contributing. However, unconstructive edits are considered [[Wikibooks:Vandalism|vandalism]], and if you continue in this manner you may be '''blocked from editing without further warning'''. Please stop, and consider improving rather than damaging the work of others. Thank you. &lt;!-- Template:Blatantvandal (serious warning) --&gt;--[[User:Az1568|Az1568]] 01:32, 30 September 2006 (UTC)</text>
+      <sha1>qav9gha20y72vpsv9vp650sk853gfzw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Pathfinders</title>
+    <ns>0</ns>
+    <id>95243</id>
+    <redirect title="Adventist Youth Honors Answer Book" />
+    <revision>
+      <id>1094773</id>
+      <parentid>1029353</parentid>
+      <timestamp>2008-01-27T14:01:15Z</timestamp>
+      <contributor>
+        <username>Webaware</username>
+        <id>27565</id>
+      </contributor>
+      <minor />
+      <comment>redirect</comment>
+      <text xml:space="preserve">#REDIRECT [[Adventist Youth Honors Answer Book]]</text>
+      <sha1>9ncdjeeb9tk7k0utoq876uamklpv6m4</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User talk:Kempm</title>
+    <ns>3</ns>
+    <id>95245</id>
+    <revision>
+      <id>2174182</id>
+      <parentid>2174110</parentid>
+      <timestamp>2011-10-02T15:50:28Z</timestamp>
+      <contributor>
+        <username>Snek01</username>
+        <id>101527</id>
+      </contributor>
+      <comment>/* Copyvio */ +others</comment>
+      <text xml:space="preserve">== Nomenclatural citations template ==
+
+I noticed the book, [[Nomenclatural citations]], which you started. Just in case you hadn't thought of it, I figured I'd mention that using a template such as the infoboxes on Wikipedia, might be useful for standardising the information in the book's sub-pages. See [[w:Wikipedia:Infoboxes]] and [[mw:Help:templates]]. --[[User:Swift|Swift]] 02:50, 30 September 2006 (UTC)
+
+: Hi, yes thanks for the information. I need to look into this kind of things. I started this yesterday, and my first priority was to get some data in. I'm not really good in all this fancy webstuff, but I understand there need to be templates to keep everything in one look, and to color up some things. Ofc, feel free to help ;) --[[User:Kempm|Kempm]] 07:14, 30 September 2006 (UTC)
+
+:: I've changed [[Template:Nomenclatural citations infobox]] a bit. Please review these and let me know how this fits with what you are looking for (personally, I find this just more visually appealing).
+:: Also, does any page use the &quot;image&quot; variable? It will have to be formatted properly, but without having an example picture, I didn't bother experimenting. Cheers, --[[User:Swift|Swift]] 19:28, 6 October 2006 (UTC)
+
+:::Hi Swift, thanks for your modifications, if the changes are good for you, then they are good for me, I only look at the data hehe. As for the pictures... at the moment I'm only adding fungi (my personal field of interest), and there's not many pictures on commons I can use for that. I'll try add a few mammals and add a picture as well in the next few days. Thx for taking care ;) --[[User:Kempm|Kempm]] 21:13, 6 October 2006 (UTC)
+:::I used a picture on [[Nomenclatural_citations/Allium/scorodoprasum]]. --[[User:Kempm|Kempm]] 22:36, 6 October 2006 (UTC)
+
+== A book that might interest you... ==
+
+[[Dichotomous Key]] appears to be an abandoned stub, and I was wondering if you'd be interested in working on it, or perhaps know some people at wikispecies who'd enjoy this kind of project?
+
+It's currently using an old naming convention, which I'll work on a bit, but it could be quite interesting if it's more developed. --[[User:SBJohnny|&lt;font color=&quot;green&quot;&gt;'''SB_Johnny'''&lt;/font&gt;]] | &lt;sup&gt;[[User talk:SBJohnny|&lt;font color=&quot;green&quot;&gt;talk&lt;/font&gt;]]&lt;/sup&gt; 22:07, 12 October 2006 (UTC)
+
+: Hi, yes I think the Dichotomous Key is an interesting project. It is known on Wikispecies and they're linking articles to the book, when a taxon is available. Personally I wouldn't mind trying to contribute, my main interest (coming from a professional point of view) is Fungi. Do you think there is any need for that? My specialism is the so-called Ascomycetes. I doubt 'normal people' have a great interest in that field :), but if I can contribute with this I'd be happy to do so. It would actually help me also. --[[User:Kempm|Kempm]] 07:38, 13 October 2006 (UTC)
+
+== Vandalism ==
+
+Thank you for your help with today's vandalism! --[[User:Whiteknight|Whiteknight]] &lt;small&gt;([[User talk:Whiteknight|talk]]) ([[User:Whiteknight/Proposed Books|projects]])&lt;/small&gt; 16:10, 25 October 2006 (UTC)
+
+: Patrolling credits should goto [[User:Herbythyme]]. Good idea to make the image protected. Hope this attention-seeking dude is solved for ever now. --[[User:Kempm|Kempm]] 16:28, 25 October 2006 (UTC)
+
+::I don't think that protecting the page will prevent the image from being uploaded again in the future though. But, it's a good symbolic statement. --[[User:Whiteknight|Whiteknight]] &lt;small&gt;([[User talk:Whiteknight|talk]]) ([[User:Whiteknight/Proposed Books|projects]])&lt;/small&gt; 19:39, 25 October 2006 (UTC)
+
+==Your invited!==
+&lt;div class=&quot;boilerplate metadata&quot; id=&quot;stub&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;background-color:#cef2e0;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;
+Hello,&lt;br&gt;
+As a previous contributor to Chess topics, I'd like inform you of the creation of a new project called [[Wikibooks:Chess]]&lt;br&gt; 
+Recently this project page has been created and it is hoped that you will join.&lt;br&gt;
+To overcome issues of communicating, the project has it's own central page and talk area along with navigation system of useful pages and many new features to make communication among users much slicker and easier, including a [[Special:RecentChangesLinked/List_of_chess_topics|public chess watchlist]]. No need to have your own watchlist anymore, one click and you can see all recent Chess edits!&lt;br&gt;
+Also added recently is a new opening navigator(See below), a chess diagram upgrade(looks nice), and a chess stub category. All the [[Opening theory in chess]] pages now have this built in, that's over 500 pages upgraded.&lt;br&gt;
+
+Hope to hear from you.
+Regards
+[[User:ChessCreator|ChessCreator]] ([[User talk:ChessCreator|talk]]) 19:47, 2 April 2008 (UTC)
+{{ChessOpenings}}
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+== Copyvio ==
+{{tmbox|type=notice|text='''Wikibooks cannot accept [[Wikibooks:Copyrights|copyrighted]] materials.'''&lt;br /&gt;We [[Wikibooks:Welcome, newcomers|welcome]] and appreciate your contributions. If [[:Nomenclatural Citations/Albugo/chardiniae]] uses an acceptable copyleft license or the copyright holder(s) are willing to give [[Wikibooks:Boilerplate_request_for_permission|permission]] to use it under an acceptable copyleft license, then you need to include the licensing information with it. Please read [[Wikibooks:Media]] to learn more about the requirements. After 7 days if this is not addressed appropriately we will have to delete it [[WB:COPYVIO|per policy]]. If you have any questions you can ask me personally or ask in the [[WB:HELP|reading room]]. Thank you; Happy editing! [[User:Snek01|Snek01]] ([[User talk:Snek01|discuss]] • [[Special:Contributions/Snek01|contribs]]) 11:09, 2 October 2011 (UTC)}}
+
+{{tmbox|type=notice|text='''Wikibooks cannot accept [[Wikibooks:Copyrights|copyrighted]] materials.'''&lt;br /&gt;We [[Wikibooks:Welcome, newcomers|welcome]] and appreciate your contributions. If [[:Nomenclatural Citations/Bacillus/odysseyi]] uses an acceptable copyleft license or the copyright holder(s) are willing to give [[Wikibooks:Boilerplate_request_for_permission|permission]] to use it under an acceptable copyleft license, then you need to include the licensing information with it. Please read [[Wikibooks:Media]] to learn more about the requirements. After 7 days if this is not addressed appropriately we will have to delete it [[WB:COPYVIO|per policy]]. If you have any questions you can ask me personally or ask in the [[WB:HELP|reading room]]. Thank you; Happy editing! [[User:Snek01|Snek01]] ([[User talk:Snek01|discuss]] • [[Special:Contributions/Snek01|contribs]]) 15:50, 2 October 2011 (UTC)}}</text>
+      <sha1>amvhaks705mhqaflso5u6248yq0eb4a</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>William Shakespeare's Works/Comedies/All's Well That Ends Well/Plot Summary</title>
+    <ns>0</ns>
+    <id>95246</id>
+    <revision>
+      <id>2677870</id>
+      <parentid>2677835</parentid>
+      <timestamp>2014-07-01T15:25:52Z</timestamp>
+      <contributor>
+        <username>CallumPoole</username>
+        <id>1620806</id>
+      </contributor>
+      <comment>Rejected the last text change (by [[Special:Contributions/195.194.13.3|195.194.13.3]]) and restored revision 2304877 by QuiteUnusual</comment>
+      <text xml:space="preserve">
+==Plot Summary==
+
+'''Introductory Note:''' This play is unlike Shakespeare's other romance comedies in that it focuses on a female character aggressively pursuing a male character rather than a male pursuing a female. The female character, an appealing young woman named Helena, traps the male character, Bertram, into marriage. He is an immature young man who despises her because of her inferior social standing. After he abandons her on their wedding night, she continues to pursue him and eventually wins him back in a scheme of deception.
+
+The Countess of Rousillon [Shakespeare spells Roussillon with one &quot;s&quot; but the modern spelling has two] has taken in an appealing young woman named Helena after the death of her father, Gerad de Narbon, a highly respected physician. While in the household, Helena falls in love with the countess's son, Bertram, but keeps her feelings to herself. Bertram pays her no heed and does not hesitate to go off to serve in the court of the King of France, a friend of Bertram's late father. Accompanying Bertram is his friend, Parolles, a braggart who is a corrupting influence on Bertram throughout the play.
+The king suffers from what is believed to be an incurable fistula. When he greets Bertram and his friends, he says, 
+
+I would I had that corporal soundness now, 
+
+As when thy father and myself in friendship
+
+First tried our soldiership! (Act I, Scene II, Lines 30-32)
+
+The king says he would submit himself to treatment under Gerad de Narbon, who also attended Bertram's father, if the great physician were still alive. All other physicians have done him no good, and the king thinks death is near.
+While Bertram is in Paris, Helena pines for him even though he may be out of reach because of his high social station. Under prodding from the countess, Helena admits the cause of her melancholy: her seperation from Bertram. Then Helena reveals a plan to go to Paris to heal the king with a potion left behind by her father. While in Paris, she will have an opportunity to be with Bertram. The countess, pleased that Helena loves her son, encourages her in her plan. After Helena arrives in Paris, an old lord of the court, Lafeu--who had accompanied Bertram and Parolles to Paris--tells the king of her wondrous healing powers:
+
+.......I have seen a medicine
+
+That's able to breathe life into a stone, 
+
+Quicken a rock, and make you dance canary
+
+With spritely fire and motion; whose simple touch, 
+
+Is powerful to araise King Pepin, nay, 
+
+To give great Charlemain a pen in's hand, 
+
+And write to her a love-line. (Act II, Scene 1, Lines 75-81)
+
+But the king at first refuses to let her treat him because he has had his fill of failed cures. She then stakes her life on the efficacy of her medicine, but stipulates a condition: If her treatment works, the king wil allow her to select a husband from among the eligible bachelors at court. The king aggrees. Within days, his illness disappears, and the king presents five worthy gentlemen for her to chose from. Helena rejects all of them and selects Bertram as her husband-to-be. However, Bertram complains that she is the daughter of a mere physician and, thus, unworthy of him. He vows and that he cannot and will not love her. Helena, heartbroken, is wiling to let the matter end there. The king is not. After elevating Helena to a higher social rank, he commands Bertram to marry her, telling him,
+
+My honour's at the stake; which to defeat, 
+
+I must produce my power. Here, take her hand, 
+
+Pround scornful boy, unworthy this good gift. (Act II, Scene III, Lines 156-158)
+
+Bertram yields, and the wedding ceremony takes place that evening. Meantime, Lafeu and Parolles discuss the events of the evening. When Lafeu criticizes Bertram for his ungentlemanly conduct, Parolles threatens the old man but backs down, revealing himself as a coward, after Lafeu threatens him in return. 
+After the wedding, headstrong Bertram refuses to stay with Helena even for a single night, preferring instead to hie off to join other young French lords in a military campaign in Florence, Italy. Parolles praises his decision, saying it is better to seek glory in war than wallow in the hellhole of France. As Bertram prepares for his military venture, Lafeu warns him that Parolles is cowardly and untrustworthy, but Bertram is heedless. Befre leaving, Bertram orders Helena to return home to Rousillon with a letter for his mother. In the letter, Bertram infuriates his mother by writing, &quot;I have sent you a daughter in-law: she hath recovered the king and undone me. I have wedded her, not bedded her; and sworn to make the NOT eternal.&quot; Helena then receives a letter of her own from Bertram. It says, 
+
+When thou canst get the ring upon my finger which
+
+never shall come off, and show me a child begotten 
+
+of thy body that I am father to, then call me
+
+husband: but in such a 'then' I write a 'never.'
+
+This is a dreadful sentence. (Act III, Scene II, Lines 59-63)
+
+Deeply hurt, Helena leaves Roussillon and goes on a pilgramage to Saint Jaques monastery in Spain. However, her feet do not cooperate, and, instead, lead her to Florence, where Bertram is encamped with troops. Helena stays at a lodging house for pilgrims run by an elderly widow. The widow's daughter, Diana, tells Helena that a certain Count Rousillon (Bertram) has distinguished himself in battle. &quot;Know you such a one?&quot; she asks. Helena says she has heard of him, but does not know him personally. Helena also learns that Bertram has been trying to seduce Diana. In public, Diana points out the Count Roussillon to Helena.
+Later Helena tells her whole sad story to the widow, revealing herself as the rejected wife of the young court. Then she enlists Diana's help in a plot to win back her husband. Diana agrees to help her. Here is the stratagem. Bertram has been attempting to seduce Diana. Diana will agree to a midnight tryst with Bertram if he will give her his ring, yielding her chastity in exchange. When Bertram agrees to all the conditions, Diana says, 
+
+And on your finger in the night I'll put
+
+Another ring, that what in time proceeds 
+
+May token to the future our past deeds. (Act IV, Scene II, Lines 71-73)
+
+After Diana obtains the ring, all goes well. At the appointed hour, Helena takes Diana's place in a darkened room, going unrecognised, and she and Bertram make love. During the night she places on his finger a ring given to her by the King of France. Meanwhile, Parolles has been exposed as a simpering coward by French lords who ambushed and captured him, then make him think he was in the custody of the enemy. Parolles, whose name means &quot;words&quot; in French, tells his &quot;captors&quot; everything they want to know in order to save his skin.
+Elsewhere, Bertram's mother, who has ben led to believe that Helena has died, sends a letter to Bertram announcing Helena's death and asking her son to return home. After he arrives, he begins to realize what a good and loving woman Helena was. When the king visits Roussillon, Bertram claims that he loved Helena.
+The king forgives him for rejecting her. But life must go on, and the king thinks Bertram should now marry Lefeu's daughter. However, before he makes the match, the king notices the ring on Bertram's finger--the very ring he gave Helena, the ring that Helena placed on Bertram's finger in the dark room after first removing Bertram's own ring. While Bertram lamely tries to explain how he obtained the king's ring, Diana shows up, saying it was she who placed the ring on Bertram's finger while in bed with him. Then she demands that Bertram marry her. (Diana is really acting on Helena's behalf. Helena must first prove that a midnight meeting took place before she can disclose that it was she, not Diana, who met with Bertram.) Next, the widow arrives with Helena. Helena announces that not only does she have Bertram's own ring, but she also carries his child. Thus, she has met both of the conditions Bertram set forth in his letter to her. The whole truth of what happened in Florence then unravels, and Bertram accepts his wife. The king says, &quot;All is well ended&quot; (Act V, Scene III, Line 336).
+
+==Characters==
+
+Protagonist: Helena
+
+Antagonist: Class System That Discriminates Against Persons Of Low Birth
+
+Bertram: Self-centred and immature Count of Roussillon, who rejects the woman who loves him because of her inferior social status. 
+
+Countess of Roussillon: Kindly and level-headed mother of Bertram.
+
+Helena: Gentlewoman protected by the Countess; she is in love with Bertram even though he believes she is not good enough for him. When he leaves his home in Roussillon to make his mark in Paris at the court of the King of France, she later follows him in hopes of winning his love. Bertram's mother, the countess, abets her in her plan.
+
+King of France: He suffers from a chronic ailment which Helena, schooled in the healing arts, has the power to cure. 
+
+Duke of Florence
+
+Parolles: Follower of Bertram. Parolles is a bad influence on the young man and is, in part, responsible for Bertram's less than gentlemanly behaviour. 
+
+Lafeu: An old lord who warns Bertram that Parolles is a coward. 
+
+Steward, Clown: Servants to the Countess of Roussillon. 
+
+Old Widow of Florence
+
+Diana: Daughter of the Widow. Diana cooperates with Helena in a scheme to trick Bertram into pledging his love for Helena. 
+
+Violenta, Mariana: Neighbours and friends of the Widow
+
+Minor Characters: Lords, Officers, Soldiers, Gentlemen (French and Florentine).
+
+==Settings==
+
+The action begins in Roussillon, a region in southern France, then moves to other locales, including Paris, France; Florence, Italy; and Marseilles, France. Bertram, one of the central characters in the play, is the Count of Roussillon.
+
+==Climax==
+
+The climax of a play or another narrative work, such as a short story or a novel, can be defined as (1) the turning point at which the conflict begins to resolve itself for better or worse, or as (2) the final and most exciting event in a series of events. The climax of All's Well That Ends Well occurs, according to the first definition, when Helena, through trickery, takes Bertram's ring while he is asleep. (Bertram had vowed that he would never return to Helena unless she obtained the ring on his finger--a task he thought impossible, given his determination never to willingly yield it to her.) At this point, the plot begins to resolve itself. According to the second definition, the climax occurs in the final act when Helena shows Bertram the ring and he vows to love her forever.
+
+==Themes==
+
+Theme 1: A human being should be judged on his or her inner qualities, not on social standing. Bertram rejects Helena (until the end of the play) because she is below him on the social scale. Blinded by his prejudices, he fails to see her good qualities. This theme foreshadows the themes of later English writers, such as Jane Austen, Emily Bronte and Charles Dickens. 
+
+Theme 2: Women have the intelligence and know how to compete with men. Examples: (1) Only Helena can cure the king's fistula. (2) Helena and Diana team up to trick Bertram. The motif of women struggling to prove their worth--or suffering under male domination--is a recurring theme in literature. For example, in the 5th Century B.C., Sophocles dealt with this theme in Antigone, a play in which a teenage girl challenges the authority of a king. In the 19th Century A.D., Kate Chopin dealt with this theme in several of her works, including a splendid short story entitled &quot;The Story of an Hour,&quot; in which an oppressed women fails to assert herself in a male world but does enjoy an hour of freedom. 
+
+Theme 3: All things are not as they seem. Bertram thinks high standing brings happiness. In reality, he discovers later, only love, honesty, and other virtues can bring happiness.
+
+==Dates and Sources==
+
+Date Written: 1603-1604
+
+First Printing: 1623 as part of the First Folio
+
+Probable Main Source: The Decameron, by Boccaccio (1313-1375). The Decameron, written between 1349 and 1353, consists of 100 tales told by seven men and three women to pass the time after they isolate themselves in a villa to escape the plague. The subjects of the tales include romance, deceit, and the power of the human will. 
+
+Number of Words in Complete Text: 24,505
+
+==Type of Play==
+
+All's Well That Ends Well is a romance comedy. It is also clasified as one of three of Shakespeare's &quot;problem plays&quot; (along with Measure for Measure and Troilus and Cressida) because it presents as heroes or heroines characters who are seriously flawed in some way. In All's Well, Bertram is a problem because he consistently mistreats Helena, the woman who loves him; he regards her as unworthy of him because of her inferior social status. Helena is also a problem because, though intelligent and appealing, she resorts to trickery to win Bertram. Only at the end of the play does Bertram accept Helena, but his sincerity remains a question. Consequently, because the heroes are less than heroic and because the ending of the play is abrupt and somewhat forced, many critics regard All's Well as one of Shakespeare's weaker comedies. These critics may be entirely right in their assessment. However, one may fairly speculate that Shakespeare intended the play as a satire on social conventions of the day, pointing out the problems that arise from snobbery and hauteur, as personified in Bertram. In this context, the play becomes far more palatable and the character development and plot artifices more artistically acceptable.
+
+==Epigrams==
+
+In the dialogue of All's Well That Ends Well and other Shakespeare plays, characters sometimes speak wise or witty sayings couched in memorable figurative language. Although these sayings are brief, they often express a profound universal truth or make a thought-provoking observation. Such sayings are called epigrams or aphorisms. Because many of Shakespeare's epigrams are so memorable, writers and speakers use them again and again. Many of Shakespeare's epigrams have become part of our everyday language; often we use them without realizing that it was Shakespeare who coined them. Examples of phrases Shakespeare originated in his plays include &quot;all's well that ends well,&quot; &quot;every dog will have its day,&quot; &quot;give the devil his due,&quot; &quot;green-eyed monster,&quot; &quot;my own flesh and blood,&quot; &quot;neither rhyme nor reason,&quot; &quot;one fell swoop,&quot; &quot;primrose path,&quot; &quot;spotless reputation,&quot; and &quot;too much of a good thing.&quot; Among the more memorable sayings in All's Well That Ends Well are the following: 
+
+Moderate lamentation is the right of the dead,
+
+excessive grief the enemy to the living. 
+
+(Lafeu to Helena on her expressions of grief, Act I, Scene I, Lines 44-45)
+
+Oft expectation fails, and most oft there
+
+Where most it promises. 
+
+(Helena to the King of France on Failed Cures for His Fistula, Act I, Scene II, Lines 145-146)
+
+A young man married is a man that's marred.
+
+(Parolles to Bertram after Bertram's Wedding, Act II, Scene III, Line 315)
+
+The web of our life is a mingled yarn, good and ill together. 
+
+(First Lord to Second Lord on Bertram's changing fortunes, Act IV, Scene III, Line 83).
+
+==Imagery==
+
+All's Well That Ends Well contains standard verse and soaring poetry demonstrating a maturity of style equal, in many instances, to that displayed in Shakespeare's greatest plays. Some of the most beautiful imagery in the play is expressed by Helena. In the following touching passage, she compares Bertram to a bright star too high for her to reach. The light imagery is reminiscent of that in Romeo and Juliet, written ten years before. 
+
+'Twere all one
+
+That I should a bright particular star 
+
+And think to wed it, he is so above me:
+
+In his bright radiance and collateral light
+
+Must I be comforted, not in his sphere.
+
+The ambition in my love thus plagues itself:
+
+The hind that would be mated by the lion
+
+Must die for love. 'Twas pretty, though plague, 
+
+To see him every hour; to sit and draw
+
+His arched brows, his hawking eye, his curls, 
+
+In our heart's table; heart too capable
+
+Of every line and trick of his sweet favour:
+
+But now he's gone, and my idoltrous fancy
+
+Must sanctify his reliques. Who comes here?
+
+Helena also alludes to Apollo, the sun god who drives his chariot across the sky, when telling the King of France that her medicine will produce a quick cure. Note, too, the end rhyme in the passage:
+
+The great'st grace lending grace
+
+Ere twice the horses of the sun shall bring
+
+Their fiery torcher his diurnal ring, 
+
+Ere twice in murk and occidental damp
+
+Moist Hesperus hath quench'd his sleep lamb, 
+
+Or four and twenty times the pilot's glass
+
+Hath told the thievish minutes how they pass, 
+
+What is infirm from your sound parts shall fly, 
+
+Health shall live free and sickness freely die.
+
+==Strong Women==
+
+Helena and the Countess of Rousillon are both strong women. Helena is courageous and persistent; she is also highly intelligent, the proof of which is her mastery of the medical arts. When Bertram takes no notice of her and goes off to Paris, she pines for a while, then acts decisively, traveling to Paris herself. There the king suffers from an apparently incurable fistula. When Helena claims that she can cure him, the king allows her to treat him under penalty of death if she fails. With the king's promise that if she succeeds she may choose a future husband from among the men at court, she proceeds and heals the king. She chooses Bertram, of course, and the king orders him to marry her. When Bertram abandons her after their wedding, she is broken-hearted. But thanks to a little luck and help from other women, she wins Bertram back. The Countess, well aware of Helena's excellent qualities, encourages Helena in her pursuit of her spoiled son, perhaps in the realization that Helena can help Bertram to mature. Her support of Helena underscores her strength of character. In an age when other mothers of high social standing attempted to make a match for their sons based on pedigree, the countess has the courage to endorse a woman of the lower class as a possible future daughter-in-law. It is interesting to note that the countess acts in a fatherly role in advising Bertram on the ways of the world. She gives Bertram a short farewell &quot;lecture&quot; reminiscent of the lecture Polonious gives to Laertes (in Hamlet: Act I, Scene III, Lines 59-81) before Laertes leaves home. Following is the advice the countess gives: 
+
+Be thou blest, Bertram, and succeed thy father
+
+In manners, as in shape! thy blood and virtue 
+
+Contend for empire in thee, and thy goodness
+
+Share with thy birthright! Love all, trust a few, 
+
+Do wrong to none; be able for thine enemy 
+
+Rather in power than use, and keep thy friend
+
+Under thy own life's key; be cheque'd for silence, 
+
+But never tax'd for speech. What heaven more will, 
+
+That thee may furnish and my prayers pluck down, 
+
+Fall on thy head! Farewell, my lord; 
+
+'Tis an unseason'd courtier; good my lord, 
+
+Advise him.
+
+==Significance of the Title==
+
+The title is based on lines spoken by Helena to point out that the success or failure of an event or a course of action depends entirely on how it ends: 
+
+But with the word the time will bring on summer, 
+
+When briers shall have leaves as well as thorns, 
+
+And be as sweet as sharp. We must away; 
+
+Our wagon is prepared, and time revives us: 
+
+All's well that ends well; still the fine's the crown;
+
+Whate'er the course, the end is the renown.
+
+==Study Questions==
+
+# In the age of Shakespeare, it was not uncommon for a young man of high social standing to reject a woman because of her low social standing--and vice versa? How important is social status to marriageable young men and women in today's society?
+# If you were to write a psychological profile of Bertram, what characteristics would you focus on?
+# If you were to write a psychological profile of Helena, what characteristics would you focus on? 
+# Bertram and Helena are reconciled at the end. Will their marriage last?
+
+{{BookCat}}</text>
+      <sha1>bxj0otboxiw0f3n7ub6o6y1qq450oij</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:Sowsearsoup</title>
+    <ns>2</ns>
+    <id>95247</id>
+    <revision>
+      <id>598158</id>
+      <timestamp>2006-09-30T03:26:13Z</timestamp>
+      <contributor>
+        <username>Sowsearsoup</username>
+        <id>39511</id>
+      </contributor>
+      <text xml:space="preserve">Brand new Wikipedian/Wikibookian.
+
+Still learning. Having fun though!</text>
+      <sha1>pm8pmqp5qmbl9u7wzt3e1mrlwlfkq3q</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User talk:Tannersf</title>
+    <ns>3</ns>
+    <id>95248</id>
+    <revision>
+      <id>2606937</id>
+      <parentid>1957979</parentid>
+      <timestamp>2014-02-06T04:45:34Z</timestamp>
+      <contributor>
+        <username>Dcljr</username>
+        <id>2099</id>
+      </contributor>
+      <comment>RFD warning</comment>
+      <text xml:space="preserve">== Perl ==
+
+I noticed your attempts to try to fix issues with the naming convinctions used with the Programming:Perl book. I deleted all the duplications, I could find that you made under Begining Perl TOC and moved some of the Programming:Perl pages to use a name begining with [[Perl Programming]] instead. Copy pasting doesn't preserve the edit history like moving/renaming a page does, which is important to keep. I kept the kept the top Begining Perl TOC page, but renamed it as [[Perl Programming/TOC]] in case you or other people need it or intend to continue to develop it. --&lt;span style=&quot;font: bold 10pt 'courier new', comic, sans, ms;&quot;&gt;[[User:Darklama|&lt;font color=&quot;midnightblue&quot;&gt;dark&lt;/font&gt;]][[Image:Yin yang.svg|12px]][[User_talk:Darklama|&lt;font color=&quot;green&quot;&gt;lama&lt;/font&gt;]]&lt;/span&gt; 04:18, 22 December 2006 (UTC)
+
+== Your historical documents project ==
+
+Hi - closing the VfD on this I have moved the pages into your user space to work on [[User:Tannersf/Historical Documents]].  Maybe when this is something more than a collection of redlinks you will consider offering it as a book again - thanks --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 11:06, 22 December 2006 (UTC)
+
+== [[Star Trek Starships]] ==
+
+I'm curious about the direction you want to go with this book.  Wikibooks really shound't be just about a collection of encyclopedia-like articles but should be something a little more substantial.  And from what I've seen, you are essentially writing a bunch of semi-related articles of a topical nature.
+
+I'm not really trying to discourage you from contributing to Wikibooks, but I'm not entirely sure that this is the appropriate setting for writing content of this nature.  This is also something called a &quot;Macropedia&quot;, and is explicitly mentioned in the official policy [[WB:WIW]].
+
+From a personal viewpoint, I love Star Trek myself.  This is nothing against trying to develop a Wikibook with a Star Trek related theme (like the [[Klingon]] Wikibook), but rather trying to duplicate Wikipedia or Wikipedia-like content here on Wikibooks.  There is a long history about trying to make a distinction between the two projects (Wikibooks and Wikipedia), and I understand if it isn't exactly easy to tell the difference.   That some Wikibooks do have a similar collection of article flavor may also be true, but these are exceptions and something that may in the future be removed from Wikibooks.  I would rather not see you put large amounts of effort into something only to see it being removed become of being inappropriate to Wikibooks.
+
+The only reason it survived the VfD earlier was mainly due to the fact that this was a brand-new Wikibook, and slapping a VfD on something totally new is generally discouraged.  --[[User:Robert Horning|Rob Horning]] 13:20, 24 December 2006 (UTC)
+
+== print versions and images ==
+
+Don't worry about them... just remove it from the other pages, and it will no longer show up as linked from the print version. The print versions are just collections of transcluded pages, so if you remove them from the included pages, it is automatically removed from the print version as well. --[[User:SBJohnny|&lt;font color=&quot;green&quot;&gt;'''SB_Johnny'''&lt;/font&gt;]] | &lt;sup&gt;[[User talk:SBJohnny|&lt;font color=&quot;green&quot;&gt;talk&lt;/font&gt;]]&lt;/sup&gt; 04:21, 30 December 2006 (UTC)
+
+== Image removal ==
+
+Uh, what exactly are you doing with the images? You haven't left edit summaries for any of your changes. If this is part of the image cleanup, there isn't any reason to actually remove the links to the images in many cases (e.g. on the Cookbook talk page archives). What you should do instead is just delete the image and leave the redlink. People will have to clean these up in the future. At the minimum, you need to explain each edit in the summary field. [[User:Kellen|Kellen]]&amp;nbsp;&lt;sup&gt;[[User_talk:Kellen|T]]&lt;/sup&gt; 09:39, 30 December 2006 (UTC)
+
+Hope you haven't taken my slow pace attempt to help remove images from pages from the end as a reason to stop from working on it from the begining of the category. Just trying to help meet in the middle. Using an edit summery as Kellen suggested is a good idea though. Should explain the edit is to remove an image that lacks a license tag. --&lt;span style=&quot;font: bold 10pt 'courier new', comic, sans, ms;&quot;&gt;[[User:Darklama|&lt;font color=&quot;midnightblue&quot;&gt;dark&lt;/font&gt;]][[Image:Yin yang.svg|12px]][[User_talk:Darklama|&lt;font color=&quot;green&quot;&gt;lama&lt;/font&gt;]]&lt;/span&gt; 19:49, 30 December 2006 (UTC)
+
+== Seasonality ==
+
+G'day, I just reverted your edits to the Seasonality of the following foodstuffs: [[Cookbook:Alfalfa]], [[Cookbook:Artichoke]], [[Cookbook:Arugula]], [[Cookbook:Asparagus]]. Your edit summaries indicate that they were part of &quot;image cleanup&quot;, but the actual impact was to break these pages. Please perform a preview of your edits before saving. 
+
+Additionally, I think that in these instances you took the wrong approach. The image was a simple single-colour GIF that could easily be recreated and uploaded with public domain license. I have now done this, solving the problem of license without breaking all pages that linked to it. Please bear this in mind when &quot;cleaning up&quot; further pages - don't let the &quot;fix&quot; become the problem. [[User:Webaware|Webaware]] 02:14, 31 December 2006 (UTC)
+
+== Image cleanup ==
+
+Just to say thanks for your help in this - it has been a big job but hopefully we are nearly there - regards --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 14:07, 31 December 2006 (UTC)
+
+I'd also like to say thanks, and one more thing - '''please stop'''. There are images now missing, with no links saying that they're even missing, and for no better reason than that they had no licensing information. I don't have the time to pick over ''long'' lists of contribs for you and others who are removing these images and any links to them, so please desist for now. 
+
+At least some of these images are either in existence on Wiki Commons or are easy to recreate (e.g. maths formulas). It would be far better for the project if these images were replaced, substituted, or fixed rather than deleted along with any reference to them. For just a couple of examples, please check out these pages:
+
+[[Engineering Acoustics/Piezoelectric Transducers]]
+[[Swahili]]
+
+cheers, [[User:Webaware|Webaware]] 13:27, 1 January 2007 (UTC)
+
+== [[Acoustics/Human Vocal Fold]] ==
+
+I notice you took out a link on the bottom of this page - could you say why please?  I am not aware of this being either practice or policy (use of the edit summary would help if you are doing that sort of thing) - thanks --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 12:48, 1 January 2007 (UTC)
+:No problem - now I understand, thanks and regards --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 13:11, 1 January 2007 (UTC)
+
+== Naming of new pages ==
+
+Hi - looking at the &quot;new pages&quot; log I see you have started another book which looks interesting [[8th Grade Science]].  I see you have renamed one page but could you look at [[Section 1: How Science Works]] which I think you probably mean to be part of the book?  Thanks --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 12:28, 6 January 2007 (UTC)
+:No problem I've made plenty and will probably make more - I prefer folk to point them out to me.  Regards --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 12:38, 6 January 2007 (UTC)
+
+== POV Concerns ==
+
+I have left a message about my POV concerns with your Ten Commandments book on its [[Talk:The Ten Commandments|talk page]]. --[[User:Munchkinguy|Munchkinguy]] 03:16, 9 January 2007 (UTC)
+
+== Volcanos book ==
+
+Hi - yesterday I was doing some tidying on stub type pages and marked some as qr-em (ie they become speedy in 7 days).  I then realised one of them was a page of your Volcano book.  I have taken it off again however I then noticed that there are a number of pages in the book that show up in special:Shortpages.  This means that it is quite possible that others will find them and maybe mark them - could you give me any idea of your plans with the book?  I'm not sure whether you feel some redlinks would be better than leading to a page that just has headings at present?  Please do let me know if I can help - regards --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 10:58, 16 January 2007 (UTC)
+
+== [[Big Bend Country]] ==
+
+Should this be a sub page of [[Texas State Travel Guide]] - thanks --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 12:27, 17 February 2007 (UTC)
+:And [[Alpine]]? --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 13:21, 17 February 2007 (UTC)
+
+== Help on rendering in Blender Eye tutorial ==
+
+I am trying to go through the eye tutorial for Blender to make the corresponding file (and to verify tutorial steps). But, I cannot get the render to look good, and you can see my attempt at http://nusoy.com/blender . I'd appreciate any help you can provide on this. Thanks in advance.
+
+re: http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Creating_Pixar-looking_eyes_in_Blender
+
+== Wikijunior Voting ==
+
+I noticed you voted on an out-of date version of the New Title Voting page. I have fixed the link on the front page that probably took you there. Sorry that I missed that one. The current voting page is at [[Wikijunior:New_Book_of_the_Quarter/2007-3rd_Quarter_Vote|2007 3rd Quarter Vote]] Thank you for your contributions to Wikijunior. --[[User:Xixtas|&lt;span style=&quot;color:turquoise&quot;&gt;xixtas&lt;/span&gt;]] &lt;sup&gt;[[User_Talk:Xixtas|&lt;span style=&quot;color:magenta&quot;&gt;talk&lt;/span&gt;]]&lt;/sup&gt; 03:32, 15 April 2007 (UTC)
+
+== Page naming ==
+
+Can you please check out your naming of pages - [[Chapter 1: Repair]] needs dealing with --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 16:16, 22 April 2007 (UTC)
+
+== [[Tannersf/A Certain Ratio]] ==
+
+I imagine this was intended to be in your userspace?  Thanks --[[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 06:55, 30 April 2007 (UTC)
+
+== [[Wikijunior:World War II]] ==
+
+You are listed as either an interested participant or at one time voted for &quot;[[Wikijunior:World War II|World War II]]&quot; for Wikijunior New Book of the Quarter. This message is to let you know that we are starting work on World War II because it was selected for 3rd quarter 2007. --[[User:Xixtas|&lt;span style=&quot;color:turquoise&quot;&gt;xixtas&lt;/span&gt;]] &lt;sup&gt;[[User_Talk:Xixtas|&lt;span style=&quot;color:magenta&quot;&gt;talk&lt;/span&gt;]]&lt;/sup&gt; 01:11, 12 July 2007 (UTC)
+
+==[[:Volcanoes]]==
+{{mbox|type=warning|msg=
+'''[[:Volcanoes|Volcanoes]] has been nominated for deletion.'''&lt;br/&gt;You are being notified because you have contributed to this work. Please see its [[WB:VFD#Volcanoes|votes for deletion entry]] for the specific reasons why its been nominated for deletion, and if you wish to participate in the discussion for or against its deletion. If you haven't already, please see our [[WB:DP|deletion policy]]. [[User:Herbythyme|&lt;font color=&quot;green&quot;&gt;Herby&lt;/font&gt;]] &lt;b&gt;&lt;sup&gt;&lt;small&gt;&lt;span style=&quot;color:#90F&quot;&gt;[[User talk:Herbythyme|talk thyme]]&lt;/span&gt;&lt;/small&gt;&lt;/sup&gt;&lt;/b&gt; 09:04, 14 January 2008 (UTC)
+}}
+
+==[[:Solar System]]==
+{{mbox|type=warning|msg=
+'''[[:Solar System|Solar System]] has been nominated for deletion.'''&lt;br/&gt;You are being notified because you have contributed to this work. Please see its [[WB:VFD#Solar System|votes for deletion entry]] for the specific reasons why its been nominated for deletion, and if you wish to participate in the discussion for or against its deletion. If you haven't already, please see our [[WB:DP|deletion policy]]. - &lt;strong&gt;[[User:Anonymous Dissident|&lt;span style=&quot;font-family:Script MT Bold;color:Silver&quot;&gt;Anonymous Dissident&lt;/span&gt;]]&lt;/strong&gt;[[User_talk:Anonymous Dissident|&lt;sup&gt;&lt;span style=&quot;font-family:Verdana;color:Gray&quot;&gt;Talk&lt;/span&gt;&lt;/sup&gt;]] 09:28, 14 January 2008 (UTC)
+}}
+
+==[[:The Ten Commandments]]==
+{{tmbox|type=delete|text=
+'''[[:The Ten Commandments|The Ten Commandments]] has been nominated for deletion. Please [[Wikibooks:Requests for deletion#The Ten Commandments|share your thoughts]].'''&lt;br/&gt;You are being notified because you have contributed to this work. If you haven't already, please see our [[WB:DP|deletion policy]]. [[User:Thenub314|Thenub314]] ([[User talk:Thenub314|talk]]) 09:36, 13 May 2010 (UTC)}}
+
+== Historical documents ==
+
+could you please define a scope for historical documents? Thanks. [[User:Kayau|Kayau]] ([[User talk:Kayau|talk]] &amp;#124; [[Special:Emailuser/Kayau|email]] &amp;#124; [[Special:Contributions/Kayau|contribs]]) 07:26, 19 September 2010 (UTC)
+
+==[[:Star Trek Starships]]==
+{{tmbox|type=delete|text=
+'''[[:Star Trek Starships|Star Trek Starships]] has been nominated for deletion. Please [[Wikibooks:Requests for deletion#Star Trek Starships|share your thoughts]].'''&lt;br/&gt;You are being notified because you have contributed to this work. If you haven't read it already, please see our [[WB:DP|deletion policy]]. &amp;ndash;&amp;nbsp;[[User:Adrignola|Adrignola]]&amp;nbsp;&lt;small&gt;[[User talk:Adrignola|talk]]&lt;/small&gt; 15:00, 25 October 2010 (UTC)}}
+
+==[[:Texas State Travel Guide]]==
+{{tmbox|type=delete|text='''Tannersf, please [[Wikibooks:Requests for deletion#Texas State Travel Guide|share your thoughts]] about whether to [[WB:WIW|keep]] or [[WB:DP|delete]] &quot;[[:Texas State Travel Guide|Texas State Travel Guide]]&quot;.'''&lt;br /&gt;You are being notified because you have contributed to this work. - [[User:Dcljr|dcljr]] ([[User talk:Dcljr|discuss]] • [[Special:Contributions/Dcljr|contribs]]) 04:45, 6 February 2014 (UTC)}}</text>
+      <sha1>o3el2raat6oz89bt422plx2l635irc1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User talk:24.136.21.23</title>
+    <ns>3</ns>
+    <id>95249</id>
+    <revision>
+      <id>992898</id>
+      <parentid>598170</parentid>
+      <timestamp>2007-10-04T16:10:50Z</timestamp>
+      <contributor>
+        <username>Mike's bot account</username>
+        <id>67847</id>
+      </contributor>
+      <minor />
+      <comment>substituting templates</comment>
+      <text xml:space="preserve">==Welcome!==
+[[Help:Welcome, newcomers|Welcome to Wikibooks]], a collection of open-content textbooks! You don't have to [[Special:Userlogin|log in]] to read or edit articles on Wikibooks, but creating an account is quick, free and non-intrusive, requires no personal information, and gives you many benefits, including:
+*The use of a username of your choice
+*The ability to view all your contributions via a &quot;My contributions&quot; link 
+*Your own [[wikipedia:user page|user page]] 
+*Your own talk page which, if you choose, also allows users to send you messages without knowing your e-mail address
+*The use of your own personal [[Special:Watchlist|watchlist]] to which you can add articles that interest you
+*The ability to rename pages.
+*The ability to [[Special:Upload|upload images]] 
+*The ability to customize the appearance and behavior of the website
+*The eligibility to become an [[Help:Administrators|administrator]] 
+*The right to be heard in votes and elections
+*Your IP address will no longer be visible to other users.
+
+We hope that you choose to become a Wikibookian and '''[[Special:Userlogin|create an account]]'''. Feel free to ask me any questions you may have on my talk page. By the way, make sure to sign your posts and comments with four tildes ('''&amp;#126;&amp;#126;&amp;#126;&amp;#126;'''), which will let others know who left it.
+
+--[[User:Mirtone|Mir]][[User:Mirtone/myskin.css|'''t''']][[User talk:Mirtone|'''one''']] 03:58, 30 September 2006 (UTC)</text>
+      <sha1>l5rl34ochcfr7qq9mep1br7qthlrgb6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Cookbook:Tuna Glop</title>
+    <ns>102</ns>
+    <id>95250</id>
+    <revision>
+      <id>2691847</id>
+      <parentid>1760404</parentid>
+      <timestamp>2014-08-16T10:48:05Z</timestamp>
+      <contributor>
+        <username>Austncorp</username>
+        <id>1540792</id>
+      </contributor>
+      <comment>Added appropriate cats.</comment>
+      <text xml:space="preserve">{{recipesummary| |4|15 minutes|1}}
+
+{{recipe}}
+
+'''Tuna glop''' - A simple, quick-to-make meal
+
+==Ingredients==
+*2 [[Cookbook:Cup|cup]] (240 [[Cookbook:mL|mL]]) elbow macaroni
+*1 can (10 oz, 300 g) cream of mushroom soup
+*1 can (6 oz, 170 g) chunk [[Cookbook:tuna|tuna]] in water
+*2 cups frozen vegetables, such as peas and carrots
+*1 cup crushed potato chips (crisps)
+
+==Procedure==
+# Prepare macaroni according to directions on the package, but without salt.  Drain and return to pot.
+# Add cream of mushroom soup.
+# Drain tuna and add.
+# Add frozen vegetables and mix well.
+# If you prefer crunchy vegetables, heat five minutes over low heat, stirring frequently.  Heat longer if you prefer softer vegetables.
+# Serve topped with crushed potato chips (crisps).
+
+==Notes, tips, and variations==
+This is a recipe with a great deal of room for variation.  All the ingredients can be substituted: other small noodles for the macaroni, chopped turkey or chicken for tuna, cream of celery for cream of mushroom, or fresh chopped vegetables for frozen. I've even had it with corn flakes cereal substituted for the chips (crisps).
+
+[[Category:Inexpensive recipes|{{PAGENAME}}]]
+[[Category:Tuna recipes|{{PAGENAME}}]]
+[[Category:Vegetable recipes]]
+[[Category:Dairy recipes]]
+[[Category:Pan fried recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes_with_metric_units|{{PAGENAME}}]]</text>
+      <sha1>893ohswjlnjqrly3eu69m5ek8dlidqy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Tcl Programming/expr</title>
+    <ns>0</ns>
+    <id>95253</id>
+    <revision>
+      <id>1517208</id>
+      <parentid>1188586</parentid>
+      <timestamp>2009-06-03T01:10:42Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>+category</comment>
+      <text xml:space="preserve">=== Overview ===
+Arithmetic and logical operations (plus some string comparisons) are in Tcl concentrated in the '''expr''' command. It takes one or more arguments, evaluates them as an expression, and returns the result. The language of the '''expr''' command (also used in condition arguments of the '''if''', '''for''', '''while''' commands) is basically equivalent to C's expressions, with infix operators and functions. Unlike C, references to variables have to be done with ''$var''. Examples:
+ set a [expr {($b + sin($c))/2.}]
+ if {$a &gt; $b &amp;&amp; $b &gt; $c} {puts &quot;ordered&quot;}
+ for {set i 10} {$i &gt;= 0} {incr i -1} {puts $i...} ;# countdown
+
+The difference between Tcl syntax and ''expr'' syntax can be contrasted like this:
+ [f $x $y]  ;# Tcl:  embedded command
+  f($x,$y)  ;# expr: function call, comma between arguments
+In another contrast to Tcl syntax, whitespace between &quot;words&quot; is optional (but still recommended for better readability :) And string constants must always be quoted (or braced if you wish):
+ if {$keyword eq &quot;foo&quot;} ...
+
+Then again, Tcl commands can always be embedded into expressions, in square brackets as usual:
+ proc max {x y} {expr {$x&gt;$y? $x: $y}}
+ expr {[max $a $b] + [max $c $d]}
+
+In expressions with numbers of mixed types, integers are coerced to doubles:
+ % expr 1+2.
+ 3.0
+It is important to know that division of two integers is done as integer division:
+ % expr 1/2
+ 0
+You get the (probably expected) floating-point division if at least one operand is ''double'':
+ % expr 1/2.
+ 0.5
+If you want to evaluate a string input by the user, but always use floating-point division, just transform it, before the call to expr, by replacing &quot;/&quot; with &quot;*1./&quot; (multiply with floating-point 1. before every division):
+ expr [string map {/ *1./} $input]
+
+=== Brace your expressions ===
+In most cases it is safer and more efficient to pass a single braced argument to ''expr''. Exceptions are:
+* no variables or embedded commands to substitute
+* operators or whole expressions to substitute
+
+The reason is that the Tcl parser parses unbraced expressions, while expr parses that result again. This may result in success for malicious code exploits:
+ % set e {[file delete -force *]}
+ % expr $e   ;# will delete all files and directories
+ % expr {$e} ;# will just return the string value of e
+
+That braced expressions evaluate much faster than unbraced ones, can be easily tested:
+ % proc unbraced x {expr  $x*$x}
+ % proc braced x   {expr {$x*$x}}
+ % time {unbraced 42} 1000
+ 197 microseconds per iteration
+ % time {braced 42} 1000
+ 34 microseconds per iteration
+
+The precision of the string representation of floating-point numbers is also controlled by the tcl_precision variable. The following example returns nonzero because the second term was clipped to 12 digits in making the string representation:
+ % expr 1./3-[expr 1./3]
+ 3.33288951992e-013
+while this braced expression works more like expected:
+ % expr {1./3-[expr 1./3]}
+ 0.0
+
+=== Operators ===
+Arithmetic, bitwise and logical operators are like in C, as is the conditional operator found in other languages (notably C):
+* c?a:b -- if c is true, evaluate a, else b
+The conditional operator can be used for compact functional code (note that the following example requires Tcl 8.5 so that fac() can be called inside its own definition):
+ % proc tcl::mathfunc::fac x {expr {$x&lt;2? 1 : $x*fac($x-1)}}
+ % expr fac(5)
+ 120
+
+==== Arithmetic operators ====
+The arithmetic operators are also like those found in C:
+* + addition
+* - (binary: subtraction. unary: change sign)
+* * multiplication
+* / (integer division if both operands are integer
+* % (modulo, only on integers)
+* ** power (available from Tcl 8.5)
+
+==== Bitwise operators ====
+The following operators work on integers only:
+* &amp; (AND)
+* | (OR)
+* ^ (XOR)
+* ~ (NOT)
+* &lt;&lt; shift left
+* &gt;&gt; shift right
+
+==== Logical operators ====
+The following operators take integers (where 0 is considered false, everything else true) and return a truth value, 0 or 1:
+* &amp;&amp; (and)
+* || (or)
+* ! (not - unary)
+
+==== Comparison operators ====
+If operands on both side are numeric, these operators compare them as numbers. Otherwise, string comparison is done. They return a truth value, 0 (false) or 1 (true):
+* == equal
+* != not equal
+* &gt; greater than
+* &gt;= greater or equal than
+* &lt; less than
+* &lt;= less or equal than
+As truth values are integers, you can use them as such for further computing, as the sign function demonstrates:
+ proc sgn x {expr {($x&gt;0) - ($x&lt;0)}}
+ % sgn 42
+ 1
+ % sgn -42
+ -1
+ % sgn 0
+ 0
+
+==== String operators ====
+The following operators work on the string representation of their operands:
+* eq string-equal
+* ne not string-equal
+Examples how &quot;equal&quot; and &quot;string equal&quot; differ:
+ % expr {1 == 1.0}
+ 1
+ % expr {1 eq 1.0}
+ 0
+
+==== List operators ====
+From Tcl 8.5, the following operators are also available:
+* a '''in''' b - 1 if a is a member of list b, else 0
+* a '''ni''' b - 1 if a is not a member of list b, else 0
+
+Before 8.5, it's easy to write an equivalent function
+ proc in {list el} {expr {[lsearch -exact $list $el]&gt;=0}}
+Usage example:
+ if [in $keys $key] ...
+which you can rewrite, once 8.5 is available wherever your work is to run, with
+ if {$key in $keys} ...
+
+=== Functions ===
+The following functions are built-in:
+* abs(x) - absolute value
+* acos(x) - arc cosine. acos(-1) = 3.14159265359 (Pi)
+* asin(x) - arc sine
+* atan(x) - arc tangent
+* atan2(y,x) 
+* ceil(x) - next-highest integral value
+* cos(x) - cosine
+* cosh(x) - hyperbolic cosine
+* double(x) - convert to floating-point number
+* exp(x) - e to the x-th power. exp(1) = 2.71828182846 (Euler number, e)
+* floor(x) - next-lower integral value
+* fmod(x,y) - floating-point modulo
+* hypot(y,x) - hypotenuse (sqrt($y*$y+$x*$x), but at higher precision)
+* int(x) - convert to integer (32-bit)
+* log(x) - logarithm to base e
+* log10(x) - logarithm to base 10
+* pow(x,y) - x to the y-th power
+* rand() - random number &gt; 0.0 and &lt; 1.0
+* round(x) - round a number to nearest integral value
+* sin(x) - sine
+* sinh(x) - hyperbolic sine
+* sqrt(x) - square root
+* srand(x) - initialize random number generation with seed x
+* tan(x) - tangent
+* tanh(x) - hyperbolic tangent
+* wide(x) - convert to wide (64-bit) integer
+
+Find out which functions are available with ''info functions'':
+ % info functions
+ round wide sqrt sin double log10 atan hypot rand abs acos atan2 srand
+ sinh floor log int tanh tan asin ceil cos cosh exp pow fmod
+
+=== Exporting expr functionalities ===
+If you don't want to write [[expr {$x+5}]] every time you need a little calculation, you can easily export operators as Tcl commands:
+ foreach op {+ - * / %} {proc $op {a b} &quot;expr {\$a $op \$b}&quot;}
+After that, you can call these operators like in LISP:
+ % + 6 7
+ 13
+ % * 6 7
+ 42
+Of course, one can refine this by allowing variable arguments at least for + and *, or the single-argument case for -:
+ proc - {a {b &quot;&quot;}} {expr {$b eq &quot;&quot;? -$a: $a-$b}}
+
+Similarly, expr functions can be exposed:
+ foreach f {sin cos tan sqrt} {proc $f x &quot;expr {$f($x)}&quot;}
+
+In Tcl 8.5, the operators can be called as commands in the ''::tcl::mathop'' namespace:
+ % tcl::mathop::+ 6 7
+ 13
+You can import them into the current namespace, for shorthand math commands:
+ % namespace import ::tcl::mathop::*
+ % + 3 4 ;# way shorter than [expr {3 + 4}]
+ 7
+ % * 6 7
+ 42
+
+=== User-defined functions ===
+From Tcl 8.5, you can provide procs in the ''::tcl::mathfunc'' namespace, which can then be used inside ''expr'' expressions:
+ % proc tcl::mathfunc::fac x {expr {$x &lt; 2? 1: $x * fac($x-1)}}
+ % expr fac(100)
+ 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+
+This is especially useful for recursive functions, or functions whose arguments need some expr calculations:
+
+ % proc ::tcl::mathfunc::fib n {expr {$n&lt;2? 1: fib($n-2)+fib($n-1)}} 
+ % expr fib(6)
+ 13
+
+[[Category:{{FULLBOOKNAME}}|{{FULLCHAPTERNAME}}]]</text>
+      <sha1>hwzcds74q7mi64wiao9zb1dvxrjgsyx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Horticulture/Muhlenbergia schreberi</title>
+    <ns>0</ns>
+    <id>95255</id>
+    <revision>
+      <id>1503716</id>
+      <parentid>1305077</parentid>
+      <timestamp>2009-05-20T15:01:45Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <comment>Added headings for standard page layout.</comment>
+      <text xml:space="preserve">{{weedbox|Nimblewill
+| Binomial    = Muhlenbergia schreberi
+| Type         = perennial
+| Conditions   = sun to medium shade, prefers moist soils
+| Image       = Muhlenbergia shreberi drawing.jpg
+| Seed Dispersal   = 
+| Seed Banking    =  
+| Vegetative Spread  =  rhizomes, and roots off the stolons
+| Allelopathy =  
+}}
+'''Nimblewill''' is a perennial grass that often grows as a weed of lawns.
+
+==Description==
+&lt;!--Physical description of the plant.--&gt;
+
+==Ecology==
+&lt;!--Distribution, invasiveness, allelopathy, noxious weed status, etc.--&gt;
+
+==Uses==
+&lt;!--Garden, crop, fodder, medicinal, material etc.--&gt;
+
+==Control==
+{{weedcontrol|
+| Mowing = 
+| Cultivation = 
+| Mulching (for prevention) = 
+| Girdling = 
+| Coppicing = 
+| Grinding = 
+| Pulling = 
+| Flame = 
+| Barriers = 
+| Solarization = 
+| Pre-emergents (organic) = 
+| Pre-emergents (synthetic) = 
+| Contact herbicides (organic) = 
+| Contact herbicides (synthetic) = 
+| Systemic herbicides (organic) = 
+| Systemic herbicides (synthetic) = 
+| Drench herbicides (organic) = 
+| Drench herbicides (synthetic) = 
+| Biocontrols (microorganisms) = 
+| Biocontrols (animal) = 
+| Biocontrols (plants) = 
+| Grazing = 
+| Nutritional controls = 
+| Disposal = 
+}}
+
+==References==
+{{commons|{{SUBPAGENAME}}}}
+&lt;references/&gt;</text>
+      <sha1>jzcs6yxk62d385sdfhfbdaiz0gyp0wm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Weedcultprof</title>
+    <ns>10</ns>
+    <id>95256</id>
+    <revision>
+      <id>1503806</id>
+      <parentid>1503476</parentid>
+      <timestamp>2009-05-20T16:19:37Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>/* Harvest */ Harvest-&gt;Harvesting</comment>
+      <text xml:space="preserve">&lt;noinclude&gt;To start a new profile page for a weed that is occasionally cultivated, add &lt;nowiki&gt;{{subst:Weedcultprof}}&lt;/nowiki&gt; to the page, then save.
+__NOTOC__
+This template should '''always''' be substituted. The included templates {{tlx|Hortibox}}, {{tlx|weedcontrol}}, and {{tlx|Horticat (add &quot;y&quot; where applicable)}} should '''never''' be substituted.
+[[Category:Horticulture/Templates/Profiles|{{PAGENAME}}]]
+----&lt;/noinclude&gt;&lt;includeonly&gt;{{Hortibox|
+| Image = 
+| Binomial = 
+| Genus = 
+| Family = 
+| Variety = 
+| Type = 
+| Sun = 
+| Water = 
+| Soil = 
+| USDA Hardiness Zone = 
+| Sunset Zone = 
+| Propagation = 
+| Pruning season = 
+| Pruning tolerance = 
+| Forcing = 
+| Transplant = 
+| Pest issues = 
+| Disease issues = 
+| Bloom season = 
+| Fruit season = 
+| Sowing methods = 
+| Harvest = 
+| Storage = 
+| Weediness = 
+| Pollination = 
+| Seed Dispersal =
+| Germination Time =
+| Germination Signal =
+| Ripe Seed =
+| Seed Banking =
+| Vegetative Spread =
+| Allelopathy =
+| Group =
+| Sowing time =
+| Days to germination =
+| Days to baby =
+| Days to maturity =
+| Bolting =
+| Flat cropping =
+| Planting depth =
+| Plant spacing =
+| Row spacing =
+| Seed collection =
+| Height and spread =
+| Root =
+| Growth rate =
+| Shade cast =
+| Underplanting =
+| Toxicity and edibility =
+}}
+&lt;!---Introductory notes go here: common names, general type, native and adopted range.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Introductory notes go here: common names, general type, native and adopted range.&lt;/noinclude&gt;
+
+==Description==
+&lt;includeonly&gt;&lt;!--Physical description of the plant.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Physical description of the plant.&lt;/noinclude&gt;
+
+==Growing conditions==
+&lt;includeonly&gt;&lt;!--Sun, soil, etc.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Sun, soil, etc.&lt;/noinclude&gt;
+
+==Varieties==
+&lt;includeonly&gt;&lt;!--General discussion or bulleted list.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;General discussion or bulleted list.&lt;/noinclude&gt;
+
+==Uses==
+&lt;includeonly&gt;&lt;!--Ornamental uses, food crop, material use (lumber, cut flower), etc.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Ornamental uses, food crop, material use (lumber, cut flower), etc.&lt;/noinclude&gt;
+
+==Maintenance==
+&lt;includeonly&gt;&lt;!--Discuss any special maintenance concerns, such as pruning, transplanting, monitoring, etc.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Discuss any special maintenance concerns, such as pruning, transplanting, monitoring, etc.&lt;/noinclude&gt;
+
+==Propagation==
+&lt;includeonly&gt;&lt;!--Discuss propagation.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Discuss propagation.&lt;/noinclude&gt;
+
+==Control==
+&lt;noinclude&gt;Means of controlling the plant's growth and spread when considered a weed.&lt;/noinclude&gt;&lt;includeonly&gt;{{weedcontrol|
+| Mowing = 
+| Cultivation =  
+| Mulching (for prevention) = 
+| Girdling = 
+| Coppicing = 
+| Grinding = 
+| Pulling = 
+| Flame = 
+| Barriers = 
+| Solarization = 
+| Pre-emergents (organic) = 
+| Pre-emergents (synthetic) = 
+| Contact herbicides (organic) = 
+| Contact herbicides (synthetic) = 
+| Systemic herbicides (organic) = 
+| Systemic herbicides (synthetic) = 
+| Drench herbicides (organic) = 
+| Drench herbicides (synthetic) = 
+| Biocontrols (microorganisms) = 
+| Biocontrols (animal) = 
+| Biocontrols (plants) = 
+| Grazing = 
+| Nutritional controls = 
+| Disposal = 
+}}&lt;/includeonly&gt;
+
+==Harvesting==
+&lt;includeonly&gt;&lt;!--Discuss harvesting and storage.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Discuss harvesting and storage.&lt;/noinclude&gt;
+
+==Pests and diseases==
+&lt;includeonly&gt;&lt;!--Discuss pests and diseases.--&gt;&lt;/includeonly&gt;&lt;noinclude&gt;Discuss pests and diseases.&lt;/noinclude&gt;
+
+==References==
+{{Commons|{{SUBPAGENAME}}}}
+&lt;references/&gt;
+&lt;includeonly&gt;
+{{Horticat (add &quot;y&quot; where applicable)|
+| taxa level (family, genus, species, variety) = 
+| large tree = 
+| small tree = 
+| large shrub = 
+| small shrub = 
+| woody vine = 
+| herbaceous vine = 
+| herbaceous plant = 
+| herbaceous ground cover = 
+| woody ground cover = 
+| aquatic = 
+| evergreen = 
+| ephemeral =
+| spring flowers = 
+| summer flowers = 
+| fall flowers = 
+| winter flowers = 
+| weedy or aggressive = 
+| perennial = 
+| annual = 
+| biennial = 
+| full shade = 
+| part shade = 
+| full sun = 
+| drought tolerant = 
+| wet soil tolerant = 
+| quality nectar source = 
+| attracts songbirds = 
+| attracts hummingbirds = 
+| attracts butterflies = 
+| fruit or vegetable = 
+| culinary herb = 
+| edible flower =
+| medicinal uses = 
+| good for cut flowers = 
+| good for cut fruit = 
+| good for dried cut flowers = 
+| good fragrance = 
+| pest and disease resistant = 
+| deer resistant = 
+| frequently deer browsed = 
+| North America native =  
+| North America invasive =  
+| South America native =  
+| South America invasive =  
+| Europe native =  
+| Europe invasive =  
+| Asia native =  
+| Asia invasive =  
+| Africa native = 
+| Africa invasive = 
+| Australia native = 
+| Australia invasive = 
+| USDA 1 = 
+| USDA 2 = 
+| USDA 3 = 
+| USDA 4 = 
+| USDA 5 = 
+| USDA 6 = 
+| USDA 7 = 
+| USDA 8 = 
+| USDA 9 = 
+| USDA 10 = 
+| USDA 11 = 
+| USDA 12 = 
+| white flowers = 
+| pink flowers = 
+| red flowers = 
+| orange flowers = 
+| yellow flowers = 
+| green flowers = 
+| blue flowers = 
+| purple flowers = 
+| brown flowers = 
+| black flowers = 
+| poisonous to humans = 
+| poisonous to livestock or pets = 
+}}&lt;/includeonly&gt;</text>
+      <sha1>1wg2llqobm55g5sk67e62yfx1hqvvjv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Weedcontrol</title>
+    <ns>10</ns>
+    <id>95257</id>
+    <revision>
+      <id>1501797</id>
+      <parentid>1500927</parentid>
+      <timestamp>2009-05-17T06:38:28Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>Added includeonly code.</comment>
+      <text xml:space="preserve">&lt;table&gt;{{ #if: {{{Mowing|{{{1|}}}}}}|*'''[[Horticulture/Mowing for Weed Control|Mowing]]''': {{{Mowing|{{{1}}}}}}|
+}}{{
+ #if: {{{Cultivation|{{{2|}}}}}}|*'''[[Horticulture/Cultivation for Weed Control|Cultivation]]''': {{{Cultivation|{{{2}}}}}}|
+}}{{
+ #if: {{{Mulching (for prevention)|{{{3|}}}}}}|*'''[[Horticulture/Mulching to Prevent Weeds|Mulching (for prevention)]]''': {{{Mulching (for prevention)|{{{3}}}}}}|
+}}{{
+ #if: {{{Girdling|{{{3|}}}}}}|*'''[[Horticulture/Girdling|Girdling]]''': {{{Girdling|{{{3}}}}}}|
+}}{{
+ #if: {{{Coppicing|{{{4|}}}}}}|*'''[[Horticulture/Coppicing for Weed Control|Coppicing]]''': {{{Coppicing|{{{4}}}}}} 
+}}{{
+ #if: {{{Grinding|{{{5|}}}}}}|*'''[[Horticulture/Stump Grinding|Grinding]]''': {{{Grinding|{{{5}}}}}} 
+}}{{
+ #if: {{{Pulling|{{{6|}}}}}}|*'''[[Horticulture/Pulling Weeds|Pulling]]''': {{{Pulling|{{{6}}}}}} 
+}}{{
+ #if: {{{Flame|{{{7|}}}}}}|*'''[[Horticulture/Heat as a Weed Control|Flame]]''': {{{Flame|{{{7}}}}}} 
+}}{{
+ #if: {{{Barriers|{{{8|}}}}}}|*'''[[Horticulture/Soil and Root Barriers|Barriers]]''': {{{Barriers|{{{8}}}}}} 
+}}{{
+ #if: {{{Solarization|{{{23|}}}}}}|*'''[[Horticulture/Soil Solarization|Solarization]]''': {{{Solarization|{{{23}}}}}} 
+}}{{
+ #if: {{{Pre-emergents (organic)|{{{9|}}}}}}|*'''[[Horticulture/Pre-emergent Herbicides|Pre-emergents]] (organic)''': {{{Pre-emergents (organic)|{{{9}}}}}}
+}}{{
+ #if: {{{Pre-emergents (synthetic)|{{{10|}}}}}}|*'''[[Horticulture/Pre-emergent Herbicides|Pre-emergents]] (synthetic)''': {{{Pre-emergents (synthetic)|{{{10}}}}}}
+}}{{
+ #if: {{{Contact herbicides (organic)|{{{11|}}}}}}|*'''[[Horticulture/Contact Herbicides|Contact herbicides]] (organic)''': {{{Contact herbicides (organic)|{{{11}}}}}}
+}}{{
+ #if: {{{Contact herbicides (synthetic)|{{{12|}}}}}}|*'''[[Horticulture/Contact Herbicides|Contact herbicides]] (synthetic)''': {{{Contact herbicides (synthetic)|{{{12}}}}}}
+}}{{
+ #if: {{{Systemic herbicides (organic)|{{{21|}}}}}}|*'''[[Horticulture/Systemic Herbicides|Systemic herbicides]] (organic)''': {{{Systemic herbicides (organic)|{{{21}}}}}}
+}}{{
+ #if: {{{Systemic herbicides (synthetic)|{{{22|}}}}}}|*'''[[Horticulture/Systemic Herbicides|Systemic herbicides]] (synthetic)''': {{{Systemic herbicides (synthetic)|{{{22}}}}}}
+}}{{
+ #if: {{{Drench herbicides (organic)|{{{19|}}}}}}|*'''[[Horticulture/Drench Herbicides|Drench herbicides]] (organic)''': {{{Contact herbicides (organic)|{{{19}}}}}}
+}}{{
+ #if: {{{Drench herbicides (synthetic)|{{{20|}}}}}}|*'''[[Horticulture/Drench Herbicides|Drench herbicides]] (synthetic)''': {{{Drench herbicides (synthetic)|{{{20}}}}}}
+}}{{
+ #if: {{{Biocontrols (microorganisms)|{{{13|}}}}}}|*'''[[Horticulture/Biocontrols for Weeds|Biocontrols]] (microorganisms)''': {{{Biocontrols (microorganisms)|{{{13}}}}}}
+}}{{
+ #if: {{{Biocontrols (animal)|{{{14|}}}}}}|*'''[[Horticulture/Biocontrols for Weeds|Biocontrols]] (animal)''': {{{Biocontrols (animal)|{{{14}}}}}}
+}}{{
+ #if: {{{Biocontrols (plants)|{{{15|}}}}}}|*'''[[Horticulture/Biocontrols for Weeds|Biocontrols]] (plants)''': {{{Biocontrols (plants)|{{{15}}}}}}
+}}{{
+ #if: {{{Grazing|{{{16|}}}}}}|*'''[[Horticulture/Grazing as a Weed Control|Grazing]]''': {{{Grazing|{{{16}}}}}}
+}}{{
+ #if: {{{Nutritional controls|{{{17|}}}}}}|*'''[[Horticulture/Modifying Soils for Control of Weeds|Nutritional controls]]''': {{{Nutritional controls|{{{17}}}}}}
+}}{{
+ #if: {{{Disposal|{{{18|}}}}}}|*'''[[Horticulture/Disposing of Garden Wastes|Disposal]]''': {{{Disposal|{{{18}}}}}}}}
+&lt;/table&gt;&lt;includeonly&gt;{{#if:{{NAMESPACE}}| |[[Category:Horticulture/Weeds|{{SUBPAGENAME}}]] {{Displaytitle|title={{SUBPAGENAME}}|tab=Weed}}}}&lt;/includeonly&gt;&lt;noinclude&gt;
+'''Do not''' edit this template unless you know what you are doing.
+&lt;!-- Edit documentation at [[Template:Weedcontrol/Examples]] --&gt;
+{{Weedcontrol/Examples}}
+[[Category:Horticulture/Templates|{{PAGENAME}}]]
+&lt;/noinclude&gt;</text>
+      <sha1>lfbb37qn86elc9lbuly7er2tqvro6uu</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Weedcontrol/Examples</title>
+    <ns>10</ns>
+    <id>95258</id>
+    <revision>
+      <id>1500995</id>
+      <parentid>1500926</parentid>
+      <timestamp>2009-05-16T01:42:06Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>recat</comment>
+      <text xml:space="preserve">__NOTOC__
+This template provides structure and links for weed control methods. It should be added to the &quot;Controls&quot; section of weed profiles.
+
+==Using [[Template:Weedcontrol]]==
+This template is automatically included by the page template {{tlx|Weedprof}}.
+
+Fill in only the fields for which there is information. Unused lines should be left blank to be filled in later.
+{{weedcontrol|
+| Mowing    = discuss here whether mowing is effective, and if it should be done at any particular time
+| Cultivation   =  discuss whether cultivating is effective
+| Mulching (for prevention)   = discuss whether mulching as a preventative is effective (e.g.: will this weed germinate if it gets no exposure to light? will this weed germinate in a mulch if seeds land on it?)
+| Girdling  = Is girdling effective? (Applies to trees, shrubs, and vines only.)
+| Coppicing  = Can the plant be kept coppiced to prevent seed production? (Applies to trees, shrubs, and vines only.)
+| Grinding  = Will the tree sprout from outer roots after grinding? (Applies to trees, shrubs, and vines only.)
+| Pulling  = is the plant hard to pull? are there any particular techniques that should be used?
+| Flame  = is flame-weeding effective?
+| Barriers  = are barriers effective? how long do they need to be kept in place?
+| Solarization  = is solarization a good approach for controlling this weed?
+| Pre-emergents (organic)  = discuss whether organic pre-emergents (such as Corn Gluten meal) are effective, and when to apply
+| Pre-emergents (synthetic)  = discuss whether synthetic pre-emergents are effective, which ones, and when to apply
+| Contact herbicides (organic)  = discuss whether organic contact herbicides are effective, which ones, and when to apply
+| Contact herbicides (synthetic)  = discuss whether synthetic contact herbicides are effective, which ones, and when to apply
+| Systemic herbicides (organic)  = discuss whether organic systemic herbicides are effective, which ones, and when to apply
+| Systemic herbicides (synthetic)  = discuss whether synthetic systemic herbicides are effective, which ones, and when to apply
+| Drench herbicides (organic)  = discuss whether organic drench herbicides are effective, which ones, and when to apply
+| Drench herbicides (synthetic)  = discuss whether synthetic drench herbicides are effective, which ones, and when to apply
+| Biocontrols (microorganisms)  = discuss any fungi, bacteria, viri, etc. that are used as biocontrols of this weed
+| Biocontrols (animal)  = discuss any animals (insects, etc.) that are used as biocontrols of this weed
+| Biocontrols (plants)  = discuss any plants that are used as biocontrols of this weed (e.g., allelopathic plants, smothering vines, etc.)
+| Grazing  = discuss whether grazing can be used to control this weed, and which animals
+| Nutritional controls  = discuss whether altering the nutrient levels or pH of the soil can control this weed
+| Disposal  = can this plant be safely composted? if so, only in certain times during it's development? Hot piles only? Is the plant so aggressive that it should always be burned? Does the plant contain persistent allelopathic chemicals that should be kept out of the compost pile? 
+}}
+
+==Copy-paste==
+'''Note:''' since this template uses parser functions, please copy and paste '''all''' of it to the weed profile page under the heading &quot;Control&quot;. 
+
+&lt;pre&gt;{{weedcontrol|
+| Mowing    = 
+| Cultivation   =  
+| Mulching (for prevention)   = 
+| Girdling  = 
+| Coppicing  = 
+| Grinding  = 
+| Pulling  = 
+| Flame  = 
+| Barriers  = 
+| Solarization  = 
+| Pre-emergents (organic)  = 
+| Pre-emergents (synthetic)  = 
+| Contact herbicides (organic)  = 
+| Contact herbicides (synthetic)  = 
+| Systemic herbicides (organic)  = 
+| Systemic herbicides (synthetic)  = 
+| Drench herbicides (organic)  = 
+| Drench herbicides (synthetic)  = 
+| Biocontrols (microorganisms)  = 
+| Biocontrols (animal)  = 
+| Biocontrols (plants)  = 
+| Grazing  = 
+| Nutritional controls  = 
+| Disposal  = 
+}}&lt;/pre&gt;
+
+==Example==
+{{weedcontrol|
+| Mowing    = This plant can be controlled easily by regular mowing, but can be allowed to grow during the summer as competition for other weeds and as a green manure. It should be pulled or cut as soon as it begins to flower, to avoid re-seeding.
+| Cultivation   =  
+| Mulching (for prevention)   = 
+| Girdling  = 
+| Coppicing  = 
+| Grinding  = 
+| Pulling  = Pulls easily
+| Flame  = 
+| Barriers  = 
+| Solarization  = 
+| Pre-emergents (organic)  = 
+| Pre-emergents (synthetic)  = 
+| Contact herbicides (organic)  = 
+| Contact herbicides (synthetic)  = 
+| Systemic herbicides (organic)  = 
+| Systemic herbicides (synthetic)  = 
+| Drench herbicides (organic)  = 
+| Drench herbicides (synthetic)  = 
+| Biocontrols (microorganisms)  = 
+| Biocontrols (animal)  = 
+| Biocontrols (plants)  = 
+| Grazing  = 
+| Nutritional controls  = 
+| Disposal  = Materials are safe to compost so long as well-covered and if pulled before seeds are set.
+}}
+&lt;pre&gt;{{weedcontrol|
+| Mowing    = This plant can be controlled easily by regular mowing, but can be allowed to grow during the summer as competition for other weeds and as a green manure. It should be pulled or cut as soon as it begins to flower, to avoid re-seeding.
+| Cultivation   =  
+| Mulching (for prevention)   = 
+| Girdling  = 
+| Coppicing  = 
+| Grinding  = 
+| Pulling  = Pulls easily
+| Flame  = 
+| Barriers  = 
+| Solarization  = 
+| Pre-emergents (organic)  = 
+| Pre-emergents (synthetic)  = 
+| Contact herbicides (organic)  = 
+| Contact herbicides (synthetic)  = 
+| Systemic herbicides (organic)  = 
+| Systemic herbicides (synthetic)  = 
+| Drench herbicides (organic)  = 
+| Drench herbicides (synthetic)  = 
+| Biocontrols (microorganisms)  = 
+| Biocontrols (animal)  = 
+| Biocontrols (plants)  = 
+| Grazing  = 
+| Nutritional controls  = 
+| Disposal  = Materials are safe to compost so long as well-covered and if pulled before seeds are set.
+}}&lt;/pre&gt;
+&lt;noinclude&gt;[[Category:Horticulture/Templates/Examples|{{PAGENAME}}]]&lt;/noinclude&gt;</text>
+      <sha1>ilsmv3682k4i9d7cj9gwuzo9ug9pe56</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Wikispecies</title>
+    <ns>10</ns>
+    <id>95259</id>
+    <revision>
+      <id>1772256</id>
+      <parentid>1772253</parentid>
+      <timestamp>2010-04-24T13:47:32Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>Protected &quot;[[Template:Wikispecies]]&quot;: High-impact page ([edit=sysop] (indefinite) [move=sysop] (indefinite))</comment>
+      <text xml:space="preserve">{{sister|project=species
+|text=[[Wikispecies:|Wikispecies]] has information related to: '''''[[Wikispecies:{{{1|Special:Search/{{PAGENAME}}}}}|{{{2|{{{1|{{PAGENAME}}}}}}}}]]'''''
+}}&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Add cats and interwikis to the /doc subpage, not here! --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>8whli5g5onmc9jdv7y38gx2spiz2icv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Muggles' Guide to Harry Potter/Magic/Marauder's Map</title>
+    <ns>0</ns>
+    <id>95260</id>
+    <revision>
+      <id>2227049</id>
+      <parentid>2226932</parentid>
+      <timestamp>2011-12-03T21:34:12Z</timestamp>
+      <contributor>
+        <username>Chazz</username>
+        <id>32521</id>
+      </contributor>
+      <minor />
+      <comment>Shift a block of analysis to greater picture; formatting of book names</comment>
+      <text xml:space="preserve">{{Muggles' Guide to Harry Potter/Magic|
+name=Marauder's Map|
+type=magical artifact|
+features=map of Hogwarts and its grounds including secret passages|
+appearance=[[Muggles' Guide to Harry Potter/Books/Prisoner of Azkaban|''Harry Potter and the Prisoner of Azkaban'']]}}
+
+== Overview ==
+
+The '''''Marauder's Map''''' is a map that shows Hogwarts and its grounds. It is one of a kind.
+
+== Extended Description ==
+{{Muggles' Guide to Harry Potter/Beginner Spoiler}}
+
+The '''''Marauder's Map''''' is a magical parchment showing Hogwarts castle and grounds in its entirety, including seven secret passages into the castle. These passages are unknown to most, though [[Muggles' Guide to Harry Potter/Characters/Argus Filch|Filch]] apparently knows four. The map also shows every person's location within the castle's premises, identified by their names in minuscule writing.
+
+When the map is inactive, it appears to be large blank parchment. It is activated by placing a wand tip on it and saying, &quot;I solemnly swear that I am up to no good.&quot; To restore its blanked appearance, a wand taps it again as the holder says, &quot;Mischief managed,&quot; causing the map to go blank.
+
+When the map is activated, the parchment will reveal a writing:
+
+&lt;center&gt;'''Messrs. Moony, Wormtail, Padfoot and Prongs'''&lt;br /&gt;'''Purveyors of Aids to Magical Mischief-Makers'''&lt;br /&gt;'''are proud to present'''&lt;br /&gt;'''the Marauder's Map'''&lt;/center&gt;
+
+The map was created by the [[Muggles' Guide to Harry Potter/Characters/Marauders|Marauders]]: [[Muggles' Guide to Harry Potter/Characters/Remus Lupin|Remus Lupin]] (Moony), [[Muggles' Guide to Harry Potter/Characters/Peter Pettigrew|Peter Pettigrew]] (Wormtail), [[Muggles' Guide to Harry Potter/Characters/Sirius Black|Sirius Black]] (Padfoot) and [[Muggles' Guide to Harry Potter/Characters/James Potter|James Potter]] (Prongs) during their years at Hogwarts, and was confiscated by Filch because he believed it to be a dark object, though he apparently never discovered its secret. [[Muggles' Guide to Harry Potter/Characters/Fred and George Weasley|The Weasley twins]] stole it from his files, and it became useful in their own mischief-making; they, in turn, passed it on to [[Muggles' Guide to Harry Potter/Characters/Harry Potter|Harry]] when it appeared that he would otherwise be unable to visit [[Muggles' Guide to Harry Potter/Places/Hogsmeade|Hogsmeade]]. Harry has used it extensively since.
+
+== Analysis ==
+
+Magic can, if handled incautiously in a story, render the plot pointless by making anything possible. If a character or an artifact is capable of doing anything, the story devolves into a simple chase of the character or artifact. Rowling makes the series exciting and dynamic in part by limiting people's abilities – not all wizards are equally magical, and even the most powerful have their blind spots – and by limiting artifacts' availability or capabilities.
+
+The Marauder's Map is just such an artifact. It shows people's exact positions in real time everywhere in a nine-story (or more) castle, even identifying by name individuals who have never been there before. The map sees them by their psyche, thus making it proof against [[Muggles' Guide to Harry Potter/Magic/Invisibility Cloak|Invisibility Cloaks]] and [[Muggles' Guide to Harry Potter/Magic/Animagus|Animagi]]. And when not in use, it looks like a simple blank parchment. It is necessary to show it has limitations (it is unable to reveal the [[Muggles' Guide to Harry Potter/Places/Room of Requirement|Room of Requirement]], for instance), and it is necessary in several situations to have it be unavailable to Harry, because it has been either borrowed or confiscated.
+
+== Questions ==
+{{Muggles' Guide to Harry Potter/Questions}}
+# How did the Weasley twins happen upon the particular spell that activates the Map? (&quot;I solemnly swear I am up to no good.&quot;)
+# What was there about the Map that would convince Filch that it was Dark magic? It is often described as just looking like a bit of parchment.
+
+== Greater Picture ==
+
+{{Muggles' Guide to Harry Potter/Intermediate Spoiler}}
+
+One question that comes up is whether [[Muggles' Guide to Harry Potter/Characters/Severus Snape|Professor Snape]] knows what the map is. He finds it in [[Muggles' Guide to Harry Potter/Characters/Harry Potter|Harry's]] pocket in [[Muggles' Guide to Harry Potter/Books/Prisoner of Azkaban/Chapter 14|''Harry Potter and the Prisoner of Azkaban'']], at which time it identifies its creators and insults Snape. Snape may know who Moony, Wormtail, Padfoot, and Prongs are or were, which is likely why he summons [[Muggles' Guide to Harry Potter/Characters/Remus Lupin|Professor Lupin]] to inspect it and makes such pointed comments about the map's manufacturers; Lupin is the only Marauder he can talk to immediately. Snape immediately recognizes the Marauder's Map in [[Muggles' Guide to Harry Potter/Books/Goblet of Fire/Chapter 25|''Harry Potter and the Goblet of Fire'']] as being Harry's property. That, plus the Egg, causes Snape to be certain that Harry is hiding nearby under his Invisibility Cloak. Snape, by this time, knows the map's function, as [[Muggles' Guide to Harry Potter/Books/Prisoner of Azkaban/Chapter 19|he has seen it working]] on Lupin's desk.
+
+Another question is how Harry gets the Map back; [[Muggles' Guide to Harry Potter/Characters/Alastor Moody|the fake Professor Moody]] [[Muggles' Guide to Harry Potter/Books/Goblet of Fire/Chapter 25|borrows it]], and, when he is transformed back as [[Muggles' Guide to Harry Potter/Characters/Barty Crouch Jr.|Barty Crouch]], confesses [[Muggles' Guide to Harry Potter/Books/Goblet of Fire/Chapter 35|that he used it]], in ''Harry Potter and the Goblet of Fire''. Though [[Muggles' Guide to Harry Potter/Characters/Albus Dumbledore|Professor Dumbledore]] expresses interest in it, we do not see it at that time, nor is Harry seen getting it back. However, he does put it to good use in later books. The author, in an interview, has stated that this was an oversight, and in the book's next edition, Harry collects it from Moody's desk while Barty is incapacitated.
+
+[[Category:Muggles' Guide to Harry Potter]]</text>
+      <sha1>5xunfiq750y5tqd4ami7zatjs335n91</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Dichotomous Key/Passeriformes</title>
+    <ns>1</ns>
+    <id>95264</id>
+    <revision>
+      <id>784307</id>
+      <parentid>598351</parentid>
+      <timestamp>2007-03-13T12:44:08Z</timestamp>
+      <contributor>
+        <username>Tannersf</username>
+        <id>39006</id>
+      </contributor>
+      <minor />
+      <comment>[[Talk:Dichotomous Key:Passeriformes]] moved to [[Talk:Dichotomous Key/Passeriformes]]: naming convention</comment>
+      <text xml:space="preserve">This needs to be utterly reworked when the taxonomical suggestions of the post-2000 research have been worked out. Monophlyly of Corvida seems to be a fiction, for example. Expand at your own risk. --dysmorodrepanis</text>
+      <sha1>sp8ucw4u0cf9fdj11uzaau0gfqwaj5y</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Kapampangan</title>
+    <ns>0</ns>
+    <id>95267</id>
+    <revision>
+      <id>2613147</id>
+      <parentid>1937368</parentid>
+      <timestamp>2014-03-01T15:36:45Z</timestamp>
+      <contributor>
+        <username>Franz710</username>
+        <id>1399181</id>
+      </contributor>
+      <comment>/* Table of contents */</comment>
+      <text xml:space="preserve">{{book title|Learn Modern Kapampangan in X lessons}}
+
+
+==Table of contents==
+[[File:Ph seal of pampanga.PNG|thumb|400px|Seal of the province of Pampanga]]
+#[[/Disclaimer/]]  {{stage short|50%|Oct 10, 2006}}
+#[[/Introduction/]]  {{stage short|100%|Oct 10, 2006}}
+#[[/How to use this book/]]  {{stage short|100%|Oct 10, 2006}}
+#Lesson 1: [[/Pronouncing Kapampangan/]]  {{stage short|100%|Oct 10, 2006}}
+#Lesson 2: [[/Greeting/]]  {{stage short|100%|Oct 10, 2006}}
+#Lesson 3: [[/Introducing Yourself/]]  {{stage short|100%|Oct 10, 2006}}
+#Lesson 4: [[/Introducing Yourself, Part Two/]]  {{stage short|100%|Oct 10, 2006}}
+#Lesson 5: [[/Where Are You From?/]]  {{stage short|75%|Oct 10, 2006}}
+#Lesson 6: [[/Inclusive And Exclusive We/]]  {{stage short|25%|Oct 10, 2006}}
+#Lesson 7 [[/Nouns/]]{{stage short|25%|March 10, 2014}}
+#Lesson 7.1[[/Other Pronouns/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 9: [[/Numbers To Twenty/]]  {{stage short|25%|Oct 10, 2006}}
+#Lesson 8: [[/Numbers To One Hundred/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 10: [[/Numbers Above One Hundred/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 11: [[/A Little Bit More Vocabulary/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 12: [[/Verbs At The Future Tense/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 13: [[/Verbs At The Present Tense/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 14: [[/Verbs At The Past Tense/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 15: [[/Ergativity/]]  {{stage short|00%|Oct 10, 2006}}
+#Lesson 16: [[/Days Of The Week/]]  {{stage short|25%|Nov 10, 2006}}
+#Lesson 17: [[/Months/]]  {{stage short|25%|Nov 10, 2006}}
+#[[/Kapampangan To English Lexicon/]]   {{stage short|00%|Oct 10, 2006}}
+#[[/English To Kapampangan Lexicon/]]   {{stage short|00%|Oct 10, 2006}}
+#[[/Solutions to all exercises/]]  {{stage short|25%|Oct 10, 2006}}
+#[[/Alphabetical Index/]]   {{stage short|00%|Oct 10, 2006}}
+#[[/References/]]  {{stage short|50%|Oct 10, 2006}}
+
+== TODO list ==
+
+* plural of '''y''' is '''di''', plural of '''ing''' is '''deng'''
+* verbs: insert um for the future, in for the past, duplicate the syllable for the present
+* mag verbs: mág for present, mig for past
+* '''nang''' means ''of'' sing., plural is '''dari'''
+* ku -&gt; ku, ka -&gt; mu, ya -&gt; na
+* '''at''' means ''and''
+* a from mayap a bengi can become ng if final letter of adjective is vowel
+* adjective-noun construction
+* '''cang''' '''yang''' '''lang''' and '''cung''' meaning
+* clean country list
+* numbers
+* add examples, exercices and solutions for the days of the week
+* add examples, exercices and solutions for the months
+* explain '''da''' for the introcing yourself lesson
+
+{{Subjects|Languages of Asia}}
+{{alphabetical|K}}
+{{status|25%}}</text>
+      <sha1>pg0v13atafz3pp6q9zzvf0kn78pp1oz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Horticulture/Stub</title>
+    <ns>10</ns>
+    <id>95268</id>
+    <revision>
+      <id>1833386</id>
+      <parentid>1833384</parentid>
+      <timestamp>2010-06-08T15:37:16Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>fixed includeonly category</comment>
+      <text xml:space="preserve">&lt;div style=&quot;background-color: #ccffcc; width:50%;&quot;&gt;
+[[Image:English_Daisy_(Bellis_Perennis).jpg|left|32px|Stub]]
+''This page is a [[Help:Stub|stub]] entry in [[Horticulture]].''&lt;br /&gt;
+''Please see the [[Horticulture/Manual of Style|Manual of Style]] for guidelines on how to expand it.''
+&lt;/div&gt;
+&lt;includeonly&gt;{{#ifeq:{{{example|no}}}|no|[[Category:Horticulture/Stubs|{{FULLCHAPTERNAME}}]]}}&lt;/includeonly&gt;
+&lt;noinclude&gt;:''This template adds the page to [[:Category:Horticulture/Stubs]].''
+{{BookCat}}&lt;/noinclude&gt;</text>
+      <sha1>p8our18ac69xrn8fxev2sek2mn9gt4p</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Horticulture/Mowing for Weed Control</title>
+    <ns>0</ns>
+    <id>95269</id>
+    <revision>
+      <id>1845383</id>
+      <parentid>1503988</parentid>
+      <timestamp>2010-06-18T22:03:38Z</timestamp>
+      <contributor>
+        <username>QuiteUnusual</username>
+        <id>134830</id>
+      </contributor>
+      <text xml:space="preserve">{{WMOG-header}}
+Many weeds can be controlled effectively by simply mowing or cutting them down. This can be done with a mower, brusher, string-trimmer, or scythe.
+
+Weeds that are susceptible to this method includes all trees and shrubs, most vines, and large herbaceous plants. Lawn weeds are of course not controllable by this method, since they are adapted to regular mowing.
+
+Depending on the plant in question mowing can either be done regularly to continually weaken the plant, or in the case of annual weeds simply cut down before seed production to prevent their return the following year. 
+
+Disposal of the clippings can generally be done by composting, although care should be taken if seeds are present. 
+
+{{Horticulture/Stub}}
+[[Category:Horticulture/Weeds/Controls|{{SUBPAGENAME}}]]</text>
+      <sha1>ps6iyv5x4ell3pw8rh1yqzr16sef4s5</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Kapampangan/How to use this book</title>
+    <ns>0</ns>
+    <id>95272</id>
+    <revision>
+      <id>1471764</id>
+      <parentid>1069547</parentid>
+      <timestamp>2009-04-16T09:51:58Z</timestamp>
+      <contributor>
+        <username>Van der Hoorn</username>
+        <id>167488</id>
+      </contributor>
+      <minor />
+      <comment>typo fixes</comment>
+      <text xml:space="preserve">{{TOCright}}
+== Organisation of the book == 
+
+This book contains:
+* 40 lessons, 
+* a Kapampangan to English lexicon, 
+* an English to Kapampangan lexicon, 
+* the solutions to all the exercises, 
+* an index.
+
+Each of the 40 lessons is organised in four parts plus one optional part:
+* Part A: presentation of the aspect of the language that we learn in this lesson,
+* Part B: application of the principles,
+* Part C: exercises,
+* Part D: summary and list of newly learned words and phrases,
+* Part E: extras (optional part): linguistic information related to the lesson's subject for the curious reader that wants to know more about the language or its history, or wants more explanations on grammatical points. You can skip this part if you only wish to understand and speak Kapampangan, and have no other linguistic interest.
+
+== General advice == 
+
+# Work regularly: if you can spread your work, go through only one lesson per day. It is during your sleep that your brain will organise your new knowledge, but there is only so much that it can organise.
+# Plan your effort: Allocate in advance your time for learning. This will help not having large periods without any work, which could cause you to forget what you have previously learned, and would cause you to have to double your effort.
+# Go back: Do some revision with the previous lessons, and redo some exercises. You need to know (and remember) the basics before you can move on.
+
+== Conventions in this book ==
+
+*The alphabet we use here for the purpose of sorting alphabetically Kapampangan words is a,b,d,g,h,i,k,l,m,n (including ng),o,p,r,s,t,u,w,y. &lt;ref&gt;For easier computer processing of word lists, the letter ng is considered to be two separate letters, so are the letters dy, ts and sy. The glottal stop indicated by ' is not used for sorting. This means that the same sorting rules can be used for the English word lists and Kapampangan word lists.&lt;/ref&gt;
+
+*New Kapampangan words are always indicated in '''bold'''. 
+*Translations in English are indicated in ''italic''.
+*The origin of new words, when they can be identified, is indicated with the following abbreviation the first time that a word is mentioned: 
+**''Span.'' Spanish
+**''Eng.'' English
+**''Tag.'' Tagalog
+**''Chin.'' Chinese
+**''Arab.'' Arabic
+
+'''''Continue to [[../Pronouncing Kapampangan/]]'''''
+
+==Notes==
+&lt;references /&gt;
+
+
+[[Category:Kapampangan]]</text>
+      <sha1>28n7goxrao5ufd2v907tpon8a0izvam</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>SwisTrack</title>
+    <ns>0</ns>
+    <id>95274</id>
+    <revision>
+      <id>2600193</id>
+      <parentid>2600192</parentid>
+      <timestamp>2014-01-13T04:39:46Z</timestamp>
+      <contributor>
+        <username>DavidCary</username>
+        <id>973</id>
+      </contributor>
+      <comment>does removing blank lines make it look better?</comment>
+      <text xml:space="preserve">[[File:SwisTrack4-Ubuntu.png|thumb|SwisTrack 4 running on Ubuntu 8.04]]
+[[File:SwisTrack4-Windows.png|thumb|SwisTrack 4 running on Windows XP]]
+
+&lt;b&gt;SwisTrack 4&lt;/b&gt; is a powerful software for tracking robots, humans, animals and objects using a camera or a recorded video as input source. It uses Intel's OpenCV library for fast image processing and contains interfaces for USB, FireWire and GigE cameras, as well as AVI files.
+
+SwisTrack is an open-source project hosted on [http://sourceforge.net/projects/swistrack SourceForge]. It is written in C++ and easily extensible through components (plug-ins).
+
+== Contents ==
+{{wikipedia|SwisTrack}}
+# [[/Download and Installation/]]
+# [[/Using SwisTrack - an Introduction/]]
+# [[/Working with the Display/]]
+# [[/The Timeline/]]
+# [[/Interfacing SwisTrack/]]
+## [[/Interfacing SwisTrack/3rd party software|3rd party software]]
+# [[/Components/]]
+## background subtraction
+### [[/Components/AdaptiveBackgroundSubtractionMedian/]]
+### [[/Components/AdaptiveBackgroundSubtractionGray/]]
+### [[/Components/AdaptiveBackgroundSubtractionColor/]]
+### [[/Components/AdaptiveBackgroundSubtractionCheungKamath/]]
+### [[/Components/BackgroundSubtractionGray/]]
+### [[/Components/SpecificColorSubtraction/]]
+### [[/Components/HSVBackgroundSubtractionColor/]]
+### [[/Components/BackgroundSubtractionColor/]]
+## [[/Components/ConvertToGray/]]
+## [[/Components/ConvertToColor/]]
+## [[/Components/ColorSwapper/]]
+## [[/Components/ColorBlur/]]
+## [[/Components/ConvertBayerToColor/]]
+## blobs
+### [[/Components/BlobDetectionMinMax/]]
+### [[/Components/BlobDetectionRedGreen/]]
+### [[/Components/BlobDetectionTwoColors/]]
+### [[/Components/BlobSelection/]]
+## [[/Components/ConvertToGray/]]
+## [[/Components/ConvertToGray/]]
+## [[/Components/ConvertToGray/]]
+## [[/Components/ConvertToGray/]]
+## mask
+### [[/Components/BinaryMask/]]
+### [[/Components/GrayMask/]]
+### [[/Components/ColorMask/]]
+## [[/Components/BinaryDilation/]]
+## [[/Components/BinaryErosion/]]
+## [[/Components/Calibration/]]
+### [[/Components/CalibrationTSAI/]]
+### [[/Components/CalibrationFileTSAI/]]
+### [[/Components/CalibrationLinear/]]
+## [[/Components/Input/]]
+### [[/Components/Input Conversion/]]
+### [[/Components/InputCamera1394/]]
+### [[/Components/InputCameraGigE/]]
+### [[/Components/InputCameraUSB/]]
+### [[/Components/InputFileAVI/]]
+### [[/Components/OutputFileAVI/]]
+### [[/Components/InputFileImage/]]
+## [[/Components/OutputSQLite/]]
+## [[/Components/Particle Detection/]]
+### [[/Components/MotionTemplateParticleDetector/]]
+## [[/Components/FilterParticles/]]
+## [[/Components/Preprocessing (binary)/]]
+## [[/Components/Preprocessing (color)/]]
+## [[/Components/Preprocessing (grayscale)/]]
+## [[/Components/Thresholding/]]
+### [[/Components/ThresholdGray/]]
+### [[/Components/ThresholdColorCommon/]]
+### [[/Components/ThresholdColorIndependent/]]
+### [[/Components/DoubleThresholdColorIndependent/]]
+## [[/Components/Tracking/]]
+### [[/Components/NearestNeighborTracking/]]
+### [[/Components/DynamicNearestNeighborTracking/]]
+### [[/Components/KalmanFilterTrack/]]
+### [[/Components/TrackSmoothing/]]
+## [[/Components/Trigger/]]
+### [[/Components/TriggerTimer/]]
+### [[/Components/TriggerCounter/]]
+## [[/Components/IDReaderRing/]]
+## [[/Components/SimulationParticles/]]
+## [[/Components/OutputFile/]]
+## [[/Components/OutputFramesImages/]]
+## [[/Components/OutputImageStatisticsColor/]]
+## [[/Components/OutputImageStatisticsGray/]]
+## [[/Components/OutputImageStatisticsBinary/]]
+## [[/Components/OutputMarkFrameManual/]]
+## [[/Components/OutputParticles/]]
+## [[/Components/MoveBinaryToColor/]]
+## [[/Components/CamShiftTracking/]]
+# [[/Batch|Batch Mode]]
+# [[/Examples/]]
+## [[/Examples/Calibration/]]
+### [[/Examples/Calibration/SemiAutomatic/]]
+### [[/Examples/Calibration/AutomaticSequential/]]
+## [[/Examples/IDReaderRing/]]
+## [[/Examples/MultiCamera/]]
+## [[/Examples/OutputProcessing/]]
+## [[/Examples/RobotTracking/]]
+# [[/FAQ|Frequently Asked Questions]]
+# [[/Developers|SwisTrack for Developers]]
+## [[/Developers/Setting up a development environment|Setting up a development environment]]
+### [[/Developers/Setting up a development environment/Linux/|Linux]]
+### [[/Developers/Setting up a development environment/Mac OS X/|Mac OS X]]
+### [[/Developers/Setting up a development environment/Windows/|Windows]]
+## [[/Developers/Implementing a new component|Implementing a new component]]
+## [[/Developers/Mailing list|Mailing list]]
+## [[/Developers/Last Compiling Releases|Last Compiling Releases]]
+# Related Software
+## [[/Multi-Camera Client/]]
+# [[/Contributing|License and Contributions]]
+
+== Further reading ==
+If you are using version 3 of SwisTrack, you may be looking for the [[SwisTrack/Version 3|documentation of version 3 of SwisTrack]].
+
+{{Alphabetical|S}}
+{{Subjects|Computer software}}
+{{status|50%}}</text>
+      <sha1>qq2dbw7pmpxwtzeggd0y4976xr35rs1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Kapampangan/Introduction</title>
+    <ns>0</ns>
+    <id>95275</id>
+    <revision>
+      <id>1928019</id>
+      <parentid>1668059</parentid>
+      <timestamp>2010-09-04T13:10:49Z</timestamp>
+      <contributor>
+        <username>Heinah</username>
+        <id>341606</id>
+      </contributor>
+      <text xml:space="preserve">{{TOCright}}
+This book offers you the possibility to learn the Filipino language called Kapampangan.
+
+== Who should read this book? ==
+
+To our knowledge, there is no such book available in print, it will therefore be the first of its kind.
+This book is intended for those who wish to learn Kapampangan at a conversational and written level. It requires you to have a good knowledge of English, but does not require any knowledge of Tagalog: we will only refer to Tagalog to indicate borrowings of the Kapampangan language from its mighty neighbour.
+
+The pronunciation of Kapampangan is reasonably straightforward, and we will not require you to understand the full International Phonetic Alphabet (IPA) system to be able to pronounce the words we describe (although IPA sounds are indicated in the first lesson for those who prefer it).
+
+We do recommend, however, a basic understanding of grammatical words like subject, object, agent, transitive, pronoun etc.
+
+The vocabulary and pronunciation presented here is the one of the two biggest cities of Pampanga: Angeles and San Fernando. We will not discuss the rural variations or local town accents, since their speakers can all understand the main dialect.
+
+Here is a brief introduction on the language history and geography before our first lesson.
+
+== The Kapampangan language ==
+
+[[Image:Kapampagan cultural center.PNG|thumb|300px|Map of the provinces where Kapampangan is most popular. This also shows the locations of the main cities of Pampanga, from which we base our vocabulary and pronunciation]]
+
+Kapampangan is a language of the Philippines spoken as mother tongue by roughly two million people in Central Luzon.
+Most speakers live in the province of Pampanga and Tarlac, although there are a few speakers in the provinces of Nueva Ecija, Bulacan, Bataan and Zambales . The map below shows the extent of the language cover.
+
+Most of the Kapampangan people are tri-lingual: Kapampangan, Tagalog and English, since the education system is English and Tagalog, nearly all master these languages well enough to get around. However, when together with other Kapampangan people, they will prefer to use their mother tongue over the other two.
+Very little books have been written in Kapampangan, as the language is not considered “formal” enough for the purpose of written documents. This is a biased but common view from a people whose education system is not in their own mother tongue. 
+
+For those of you that are linguists, you may want to know that Kapampangan is, generally classified in the central Luzon branch of languages of the Malayo-Polynesian branch of Austronesian family. It is also an an ergative-absolutive language, so there is a little difficulty in the grammar that will appear early in the learning process for those who know only English and other nominative-accusative languages.
+
+== A bit of history of the Kapampangan language ==
+
+The first modern people to arrive in Luzon are the people sometimes called Negrito, Ayta, Aeta, or Atis which were probably related to the aboriginals of New Guinea and Australia. Their original language is today extinct, but may have influenced Kapampangan at some point since a reasonable number of them still live in the mountain area around Pampanga.
+The majority of today’s Kapampangans descend from the second wave of population: the Austronesian people that immigrated from Taiwan around 2500 B.C.E. and which settled in the whole of the Philippines within 1000 years. In Luzon, it is unclear why the various languages separated from each other into separate languages, but time caused them to drift apart, since there were already many languages in Luzon when the Spanish arrived in 1521.
+The Philippines have been under Spanish influence from 1521 until 1898 A.D. and this has caused Kapampangan to import a large number of words from Spanish, like the days of the week, the days of the months, a lot of religious words, and words from cooking.
+Then in 1898, the United States took over power from the Spanish, and later made the Philippines a colony. They established an education system entirely in English throughout the country. The Philippines were made independent in 1946, but English is still now one of the 2 official languages in the country, and therefore Kapampangan has been, since 1898, heavily borrowing words from it.
+[[Image:Extent of Kapampangan language.PNG|left|thumb|350px|Current extent of the Kapampagan language in the island of Luzon. Click to enlarge.]]
+The Kapampangan people are surrounded by other languages of the Philippines and therefore you should expect influences from these neighbours to influence the vocabulary over time. Tagalog has now got the advantage of also being the national language, and the language of Manila, the capital of the Philippines, and therefore Kapampangan has a large number of words borrowed from Tagalog.
+
+== Modern Kapampangan ==
+
+Kapampangan is still very much alive in the barrios, although not taught at school, even the youngest children use it among themselves and it is not in danger of being extinct.
+
+More and more frequently, some Kapampangan speakers replace, in their every day language, the Kapampangan words and phrases by their English equivalent, although keeping most of the sentence structure in Kapampangan. This mixed language is referred to as Kapanglish (in the same way that Taglish refers to Tagalog mixed with English words and phrases). We will avoid describing Kapanglish here, since you will naturally understand, and even practice if required, Kapanglish once your knowledge of Kapampangan is sufficient.
+
+Modern Kapanpangan is exclusively written in the Latin alphabet, therefore you will not have to learn a different writing system. The old Spanish-like spelling is being abandoned (e.g. Capampañgan), and the modern Tagalog-like spelling has widely taken over, which is the spelling we use here.
+
+
+
+
+'''''Continue to [[../How to use this book/]]'''''
+
+
+[[Category:Kapampangan]]</text>
+      <sha1>9uj1g3qcvqx571blngcy4s6ekaugm9f</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Happiness/Meditation</title>
+    <ns>1</ns>
+    <id>95276</id>
+    <revision>
+      <id>1683771</id>
+      <parentid>1649293</parentid>
+      <timestamp>2009-12-20T22:26:57Z</timestamp>
+      <contributor>
+        <username>QuiteUnusual</username>
+        <id>134830</id>
+      </contributor>
+      <minor />
+      <comment>moved [[Talk:Meditation]] to [[Talk:Happiness/Meditation]]: Put it in a book....</comment>
+      <text xml:space="preserve">==Deletion==
+Either this wikibook should be deleted, moved or fixed. It's not completely neutral (e.g. telling us that this is the author's way of meditating, since a wikibook on meditation should focus on popular or most ways of meditating). Also, on the subject of neutrality, it describes what not to do instead of reccomending what not to do - or even further it should tell you that some people don't think meditation should be done with non-calming music.
+==Rewrite==
+I've Been Bold and did a major rewrite, hoping that someone would notice and add to what I started.  I will be the first to say that I don't edit that much and learning by doing  I already feel it's a little too conversational, but I'll work on that soon.  
+
+I saw the very sad state of the current page and thought &quot;even though I'm no expert, I know more about this than this page&quot;.  I had to edit it.  There are some major things missing (using smells, music, devotional, etc.) and I hope someone with more experience might update what I started.  I may be re-reading some of the text I have and I'll be back in a week to update this. [[User:Seer|Seer]] 03:42, 13 August 2007 (UTC)
+
+== Cool Book ==
+I managed to quit biting my nails using some ideas of this book in a slightly modified way. I am a programmer, and this book is just a cool software library that I can run on my brain. Yours Dirk Hünniger (see german wikibooks for contact) [[Special:Contributions/80.141.122.251|80.141.122.251]] ([[User talk:80.141.122.251|talk]]) 12:41, 28 October 2009 (UTC)</text>
+      <sha1>1hm5jxvxf897c1oaczptr1nydtouscp</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Relationships/Sex</title>
+    <ns>1</ns>
+    <id>95277</id>
+    <revision>
+      <id>1894573</id>
+      <parentid>911440</parentid>
+      <timestamp>2010-07-19T20:46:42Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>links to old discussions</comment>
+      <text xml:space="preserve">{{rfd-survived2|discussions=See [[Wikibooks:Requests for deletion/Relationships/Sex]] and [[Wikibooks:Requests for deletion/Relationships/Sex (2)]].}}
+
+==Utterly prejudiced==
+Deletion should really be advised... avoid promiscuous partners, buy this book or pay child support, follow these rules or get AIDs... whoever wrote this should really consider deleting it before they get warned for vandilism. [[User:Wikisquared|Wikisquared]] 12:48, 30 September 2006 (UTC)
+:The chapter has 36 references, mostly to scientific studies, including some highly authoritative studies (which is rare in this field). Perhaps you don't like advice such as &quot;avoid promiscuous partners&quot; if you don't want STDs, or you don't want to follow the rules of safe(r) sex to avoid AIDS. Whether you follow this advice is your choice, but the facts are established. More important, these facts are little-known among the general public. The Wikibooks mandate is to present authoratative factual materials, regardless of how unpopular or politically incorrect the facts may be.--[[User:Tdkehoe|Thomas David Kehoe]] 04:11, 2 October 2006 (UTC)
+
+==Helpful, but sexist==
+I think it's a real helpful book, but it focuses to solely on how; men like to blabber about their sex-life, whilst women don't, women tend to get hurt easily, even how boys have much more interest in sex compared to girls. Now, I '''don't''' think it should be deleted, since it has certain usefulness- but alot of material has to be fixed. [[User:BiT|BiT]] 12:54, 30 September 2006 (UTC)
+
+:Maybe... it really depends on whether or not it won't be vandilised by the same person who placed spam inside it. I still say it should be deleted. I put it on the page for deletion :) [[User:Wikisquared|Wikisquared]] 13:18, 30 September 2006 (UTC)
+
+::The phrase &quot;it focuses to solely on&quot; is difficult to square with the wide range of material in this chapter. The entire book, and especially this chapter, establishes over and over that men and women are different. Of course that's sexist. An earlier chapter says that some women think and act more like men, and some men think and act more like women. When this book says &quot;men do this, women do that,&quot; the intended meaning is &quot;persons who think and act in masculine patterns, which are mostly but not always men, so this, and persons who act in feminine patterns...&quot; Perhaps that disclaimer should be put at the top of every chapter.--[[User:Tdkehoe|Thomas David Kehoe]] 04:11, 2 October 2006 (UTC)
+
+::: Or simply reword it more clearly. --[[User:Swift|Swift]] 08:36, 2 October 2006 (UTC)
+
+==This material will always be controversial==
+Sexually transmitted diseases, consent issues, how parents should guide their teenagers&amp;#151;these are extremely controversial issues in our society. If you find scientific studies not included in this chapter, please add material, or correct outdated material. But please don't delete materials just because you're offended by it.--[[User:Tdkehoe|Thomas David Kehoe]] 04:11, 2 October 2006 (UTC)
+
+: In similar vain, please strive for NPOV, mentioning existing differences on issues and referring to expert consensus with readily available (possibly internet available) sources. Also keep in mind that uncontested POV isn't NPOV. --[[User:Swift|Swift]] 08:34, 2 October 2006 (UTC)
+
+== &quot;The Twenty-Four-Hour Rule&quot; and &quot;Men's Talk and Women's Reputations&quot; removed ==
+
+I removed these two sections because the former was a very specific rule that cannot be applied to the general, and the second as it completely failed to mention cultural backgrounds, cultural differences and was therefore not helpful. I think the book is better without these sections than with them in that state. --[[User:Swift|Swift]] 08:28, 2 October 2006 (UTC)
+
+:Perhaps the last two sections (&quot;Five Tips for Better Kissing,&quot; &quot;What Women Want in Bed&quot;) should be removed, or moved to a new chapter. The rest of the chapter is about why you should avoid sex (outside of committed monogamous relationships) and then the last two, short sections are about how to please a partner in bed. On the other hand, it's nice to end on a positive note, after so much negative material. IMHO, &quot;The Twenty-Four-Hour Rule&quot; and Men's Talk and Women's Reputations&quot; goes with &quot;What Women Want in Bed,&quot; I don't see any reason to delete those sections. Maybe move the deleted sections and the remaining two sections to a new chapter.--[[User:Tdkehoe|Thomas David Kehoe]] 15:05, 2 October 2006 (UTC)
+
+:: No. Those two shouldn't stay unless elaborated on in a way that adresses the comments I made.
+:: ''The rest of the chapter is about why you should avoid sex''. This is a bad approach to NPOV. Wikibooks is supposed to be informative, not advocative. The scope should be &quot;how&quot; to have sex. Now, emotional issues and desease prevention may warrant mentioning what are considered good practices (here it is important to present multiple views) and expert opinion on those so that the reader can make up his/her own educated mind. This is an official policy here at Wikibooks. --[[User:Swift|Swift]] 02:34, 3 October 2006 (UTC)
+
+== Correlation doesn't mean causation ==
+
+Re the lead section: Maybe people are more likely to stay monogamous if they have a good sex life, rather than vice-versa as this section claims. And maybe the reason so relatively few are happy with their secondary partners is that they have to spend so little time together to keep the primary partner from getting suspicious. (AFAIK, with most bigamists, the primary partner is unaware of the secondary partner's existence.) [[User:Seahen|Seahen]] 03:11, 26 January 2007 (UTC)
+
+== Ridiculous ==
+This module is probably the most harming POV article I've ever seen on a WMF-project (believe me, I've seen a few). I would strongly recommend deleting it and start over. Unfortunately I don't write articles in English, otherwise I would love to rewrite the article. Regards, [[User:.Koen|.Koen]] 21:37, 26 February 2007 (UTC)
+
+This book is outrageous!  It reads like some US religious or political propoganda and the time has come for it to be deleted.  Wikibooks is not the place for books like this which pick and choose the information that they see fit to push a particular religious or political viewpoint.  It also focuses too much on the USA and current &quot;trends&quot; in that country like celibacy and &quot;drug wars&quot;. [[User:Xania|Xania]] [[Image:Flag_of_Italy.svg|15px]][[User talk:Xania|&lt;sup&gt;talk&lt;/sup&gt;]] 18:26, 28 June 2007 (UTC)</text>
+      <sha1>0ehitijuguctawunerq2t4rkkvs9zlm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Old Church Slavonic</title>
+    <ns>0</ns>
+    <id>95278</id>
+    <revision>
+      <id>2383508</id>
+      <parentid>2051153</parentid>
+      <timestamp>2012-07-25T11:20:55Z</timestamp>
+      <contributor>
+        <username>MacedonianBoy</username>
+        <id>149884</id>
+      </contributor>
+      <comment>neutral intro as is the EN wiki page</comment>
+      <text xml:space="preserve">__NOTOC__ __NOEDITSECTION__
+&lt;font face=&quot;tahoma&quot;; size=&quot;5&quot;&gt;&lt;big&gt;&lt;center&gt;'''O&lt;small&gt;LD&lt;/small&gt; S&lt;small&gt;LAVONIC&lt;/small&gt;'''&lt;/center&gt;&lt;/big&gt;&lt;/font&gt;&lt;br /&gt;
+&lt;font face=&quot;tahoma&quot;; size=&quot;4&quot;&gt;&lt;center&gt;словѣньскъ&lt;/center&gt;&lt;/font&gt;
+&lt;font face=&quot;tahoma&quot;&gt;&lt;center&gt;chrestomathy for English-speaking slavicists&lt;/center&gt;&lt;/font&gt;&lt;br /&gt;
+
+&lt;table cellpadding=10&gt;
+&lt;td&gt;
+&lt;center&gt;[[Image:Kodex.Zograf.JPG|100px|]]&lt;br&gt;
+'''[[/Lessons|Lessons]]'''
+&lt;/center&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;center&gt;
+'''Old Church Slavonic''', '''Old Church Slavic''' (OCS) (словѣ́ньскъ ѩзꙑ́къ, slověnĭskŭ językŭ) was the first literary Slavic language, developed by the 9th century Byzantine Greek missionaries Saints Cyril and Methodius who were credited with standardizing the language and using it for translating the Bible and other Ancient Greek ecclesiastical texts as part of the Christianisation of the Slavic peoples. It played an important role in the history of the Slavic languages and served as a basis and model for later Church Slavonic traditions, and some Eastern Orthodox and Eastern Catholic churches use Church Slavonic as a liturgical language to this day.&lt;/center&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;center&gt;[[Image:Csl-luke20.png|100px|]]&lt;br&gt;
+'''[[/Glossary|Glossary]]'''
+&lt;/center&gt;
+&lt;/td&gt;
+&lt;/table&gt;
+
+{{South Slavonic languages}}
+
+{{Subjects|Languages of Europe}}
+{{alphabetical|O}}
+{{status|0%}}</text>
+      <sha1>pvlpushz8apxx1l333fye7u5fc9soxi</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>A Wikimanual of Gardening/Heat as a Weed Control</title>
+    <ns>0</ns>
+    <id>95279</id>
+    <redirect title="Horticulture/Flame Weeders" />
+    <revision>
+      <id>1529954</id>
+      <parentid>1304738</parentid>
+      <timestamp>2009-06-12T14:51:27Z</timestamp>
+      <contributor>
+        <username>Mike's bot account</username>
+        <id>67847</id>
+      </contributor>
+      <minor />
+      <comment>Robot: Fixing double redirect</comment>
+      <text xml:space="preserve">#REDIRECT [[Horticulture/Flame Weeders]]</text>
+      <sha1>5ozdj1hexp79557nseaquujokzgr44u</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Horticulture/Soil and Root Barriers</title>
+    <ns>0</ns>
+    <id>95280</id>
+    <revision>
+      <id>1845384</id>
+      <parentid>1305455</parentid>
+      <timestamp>2010-06-18T22:03:56Z</timestamp>
+      <contributor>
+        <username>QuiteUnusual</username>
+        <id>134830</id>
+      </contributor>
+      <text xml:space="preserve">Soil and root barriers are used to control weeds or limit the spread of an aggressive plant.
+
+Surface barriers prevent any exposure to light (and sometimes water), or simply prevent plant shoots from reaching light.
+
+Root zone barriers are vertical barriers that prevent the roots of plants from extending into adjacent areas, and are most often used for running plants such as mints and bamboos.
+
+{{Horticulture/Stub}}</text>
+      <sha1>k2m6yf0qyf074fko71ddu4zkt41psou</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Introduction to Philosophy/The Social Contract</title>
+    <ns>0</ns>
+    <id>95281</id>
+    <revision>
+      <id>1565953</id>
+      <parentid>1032681</parentid>
+      <timestamp>2009-07-11T01:28:17Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>+category</comment>
+      <text xml:space="preserve">An idea of a '''social contract''' draws from [[w:Teleology|teleological]] thinking as opposed to a modern [[w:Sociological_naturalism|naturalistic]] view of [[w:Sociocultural_evolution|sociocultural evolution]]. A social contract is a hypothetical agreement between primitive, &quot;unsocialized&quot; people, who decided to form a society in order to avoid wars and violence, by instead creating specific rules - [[w:Law|laws]] - that would organize the group life. A notable founder of the social contract model, [[w:Thomas Hobbes|Thomas Hobbes]], presents a totally rationalistic view on human nature, which is a main point of contemporary critique.
+
+{{BookCat}}</text>
+      <sha1>cok8wxr1h7kyxnb1wpty2pm8vfh47e3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Horticulture/Disposing of Garden Wastes</title>
+    <ns>0</ns>
+    <id>95282</id>
+    <revision>
+      <id>1845385</id>
+      <parentid>1304687</parentid>
+      <timestamp>2010-06-18T22:04:14Z</timestamp>
+      <contributor>
+        <username>QuiteUnusual</username>
+        <id>134830</id>
+      </contributor>
+      <text xml:space="preserve">Disposing of garden wastes is a science all to itself, mostly involving composting.
+
+Deciding what plant materials to compost, what to burn, what to throw out:
+
+*Does the material contain seeds
+*Does the material contain disease organisms
+*Does the material contain chemicals that might be harmful to compost piles
+*Will the material colonize the compost pile
+*Will the material break down in the compost pile in a reasonable amount of time
+
+Other materials:
+*Plastic pots
+*Fence posts, etc.
+*Wire
+*Stakes
+
+{{Horticulture/Stub}}</text>
+      <sha1>brdhl6hrnn1v7wobaifgx7fl2qpmke3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Kapampangan/References</title>
+    <ns>0</ns>
+    <id>95283</id>
+    <revision>
+      <id>2613323</id>
+      <parentid>617149</parentid>
+      <timestamp>2014-03-02T16:14:36Z</timestamp>
+      <contributor>
+        <username>Franz710</username>
+        <id>1399181</id>
+      </contributor>
+      <text xml:space="preserve">This book has been possible only thanks to the few references that are available on the Web.
+
+Those notable are:
+
+*[http://en.wikipedia.org/w/index.php?title=Kapampangan_language&amp;oldid=77439766| Wikipedia:Kapampangan language]
+*[http://en.wikipedia.org/w/index.php?title=Kapampangan_people&amp;oldid=72583097| Wikipedia:Kapampangan people]
+*[http://en.wikipedia.org/w/index.php?title=Languages_of_the_Philippines&amp;oldid=77274814| Wikipedia:Languages of the Philippines]
+*[http://www.ethnologue.com/show_country.asp?name=PH| Ethnologue: Languages of the Philippines]
+*[http://pam.wikipedia.org/wiki/Main_Page The Kapampangan Wikipedia]
+*[http://pam.wiktinary.org/wiki/Main_Page The Kapampangan Wiki Dictionary]
+
+Word lists from Native speakers also helped us:
+
+* [http://maxpages.com/lesson Maxpages: learn Kapampangan in 10 (12?) lessons]
+* [http://www-rcf.usc.edu/~camiling/Spanish.html Words of Spanish origin]
+* [http://www-rcf.usc.edu/~camiling/malay.html Words of Malayo-Polynesian origin]
+
+We also refered to a few print books:
+
+* Michael L. Forman, 1971, ''Kapampagan Dictionary'', PALI language texts: Phlippines, University Of Hawai Press, Honolulu. ISBN 0-87022-266-X
+
+
+[[Category:Kapampangan]]</text>
+      <sha1>e2gydj79exidjsklmdxvrs7fxy534db</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Contents</title>
+    <ns>10</ns>
+    <id>95284</id>
+    <revision>
+      <id>1768308</id>
+      <parentid>598448</parentid>
+      <timestamp>2010-04-22T03:22:29Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>updating template link</comment>
+      <text xml:space="preserve">&lt;div class=&quot;top&quot;&gt;
+{| align=center style=&quot;border: 2px solid SlateBlue; background: #F7F7FF; padding: 0.5em; font-size: small; text-align: center; -moz-border-radius: 15px&quot; 
+|align=&quot;left&quot; width=&quot;50px&quot; |&lt;small&gt;({{navbar|Indonesian Contents|mini=1|nodiv=1}})&lt;/small&gt;
+|align=&quot;center&quot;|[[Indonesian/Contents|&lt;big&gt;&lt;big&gt;Indonesian Language Course&lt;/big&gt;&lt;/big&gt;]]
+|align=&quot;right&quot;|&lt;small&gt;([[Talk:Indonesian|discussion]])&lt;/small&gt;
+|-
+|colspan=3|Learning the Indonesian Language&lt;/font&gt; &amp;nbsp;•&amp;nbsp; [[Indonesian/About#Downloadable_and_Print_Versions|Downloadable and Print Versions]] 
+----
+[[Indonesian/Lessons|Lessons]] • 
+[[Indonesian/Grammar|Grammar]] • 
+[[Indonesian/Appendices|Appendices]] • 
+[[Indonesian/Texts|Texts]] • 
+[[Indonesian/About|About]] • 
+[[Indonesian/Q&amp;A|Q&amp;A]] • 
+[[Indonesian/Lessons/Planning|Planning]]
+&lt;br&gt; 
+[[Indonesian/Lessons/Introductory|Introductory]] &amp;nbsp;•&amp;nbsp;
+[[Indonesian/Lessons/Level one|Level One]] &amp;nbsp;•&amp;nbsp;
+[[Indonesian/Lessons/Level two|Level Two]] &amp;nbsp;•&amp;nbsp;
+[[Indonesian/Lessons/Level three|Level Three]] &amp;nbsp;•&amp;nbsp;
+[[Indonesian/Lessons/Level four|Level Four]]
+|}
+&lt;/div&gt; &lt;br&gt; [[id:Bahasa Indonesia]]&lt;noinclude&gt; [[Category:Indonesian Templates|Misc.]] &lt;/noinclude&gt;</text>
+      <sha1>apbxbzlvdla4ou3mco5tb95p5sud0on</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Indonesian/Contents</title>
+    <ns>0</ns>
+    <id>95285</id>
+    <revision>
+      <id>1758142</id>
+      <parentid>970336</parentid>
+      <timestamp>2010-04-16T19:59:31Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>fixed category, removed bookshelf - deprecated</comment>
+      <text xml:space="preserve">{| align=center width=95%
+| {{Indonesian Contents}} &lt;p&gt;
+{{Indonesian Template|f}}
+| &lt;font size=&quot;+1&quot;&gt; &amp;nbsp; [[Indonesian/Lessons/Introduction|Begin the Wikibooks Indonesian Language Course!]] &amp;nbsp; &lt;/font&gt;
+|}
+| align=&quot;right&quot; width=280px |
+|}
+
+{{Indonesian Lessons Compact|.|95%}} {{Indonesian Grammar Footer|.|95%}} {{Indonesian Texts Footer|.|95%}} {{Indonesian Appendices Footer|.|95%}} {{Indonesian Lessons|.|95%}} {{Indonesian Texts|.|95%}}
+&lt;noinclude&gt;{{BookCat}}&lt;/noinclude&gt;
+
+[[fr:Enseignement de l'indonésien/Contenus]]</text>
+      <sha1>lex36wl2oqdxb6u7ccnsucola9vyj6n</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>SwisTrack/Version 3/Using SwisTrack</title>
+    <ns>0</ns>
+    <id>95287</id>
+    <revision>
+      <id>952671</id>
+      <parentid>952661</parentid>
+      <timestamp>2007-08-28T09:39:08Z</timestamp>
+      <contributor>
+        <username>Thomas.lochmatter</username>
+        <id>67419</id>
+      </contributor>
+      <text xml:space="preserve">&lt;p style=&quot;padding: 2px 2px 2px 2px; background-color: #ffffcc; border: 1px solid #cccc00&quot;&gt;&lt;span style=&quot;font-weight:bold; color:#cc0000&quot;&gt;This page refers to version 3 of SwisTrack.&lt;/span&gt; Unless you are still using this old version, you may want to read the [[SwisTrack|documentation of the most recent version of SwisTrack]].&lt;/p&gt;
+
+=Using SwisTrack=
+
+SwisTrack processes the images in various steps, whereas each step can be performed in a particular mode. For instance you can acquire images from device A, segment it with method B, and perform tracking with method C. This choices are independent from each other, e.g. it does not matter whether the image comes from a camera or a video. Rather, every step expects data to be available in a certain format, and produces output accordingly.
+
+The organization of this manual follows the same scheme that SwisTrack uses for image processing, which is summarized in the table below
+
+{| border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;
+|-
+!Step
+!Input
+!Output
+!Example
+|-
+|
+Input
+|
+Any video source (camera or file).
+|
+A raw image
+|
+[[Image:swistrack_input_panel.png]]
+|-
+|
+Segmenter
+|
+A raw image
+|
+A binary image with potential targets as white blobs.
+|
+[[Image:swistrack_segmenter_panel.PNG]]
+|-
+|
+Segmenter Post-Processing
+|
+A binary image
+|
+Segmenter post-processing performs some filtering on the image (erosion/dilution) to get smoother blobs that ease the detection of contours. Also, it is possible to apply a mask image (right) that rejects blobs outside a certain region of the image.
+|
+[[Image:swistrack_segmentermask.png]]
+|-
+|
+Particle filter
+|
+A binary image
+|
+A list of contours that fulfill certain criteria (size, shape, etc.). Contours (&quot;particles&quot;) that have been rejected are indicated with red circles, whereas accepted contours are indicated with green circles.
+|
+[[Image:swistrack_particlefilter.png]]
+|-
+|
+Tracker
+|
+A list of particles
+|
+A list of trajectories
+|
+[[Image:swistrack_trajectories.png]]
+|-
+|
+Calibration
+| 
+A list of trajectories
+|
+A list of trajectories (calibrated)
+|
+n.a.
+|-
+|
+Output
+|
+A list of trajectories
+|
+A text file with trajectory coordinates and time stamp.
+|
+n.a.
+|}
+
+==Input==
+===AVI video driver===
+This mode uses Intel OpenCV's video acquisition features which uses Video for Windows (VfW) codecs for loading AVI and MPEG files. Make sure that you have the correct codec installed, SwisTrack does not work with DirectShow drivers! A good test is to use the software VirtualDub (open source), which allows you to get more specific information about the codec in use. 
+
+===CMU 1394 Digital Camera Driver===
+This mode uses the firewire driver developed at Carnegie Mellon University. Make sure you deinstall the driver that comes with your camera before! There is a little test application shipped with the CMU driver, which allows you to test your camera, and also to make some settings that are not yet accessible from SwisTrack.
+
+===Native Video Driver===
+This mode makes use of the native video driver of your operating system. Under Windows, this mode allows accessing standard USB cameras (&quot;Webcams&quot;). Under Linux, it should allow accessing Firewire cameras also, which has not been tested yet.
+
+==Segmenter==
+===Static Background (fixed threshold)===
+The image is segmented by subtracting a background image of the scene from each video frame. A fixed threshold defines the minimum difference required to count a pixel as not belonging to the background.
+
+This mode is sensible to changes in lighting condition.
+
+Apparently, you need to be careful that the background image has the exact same dimensions of the video file.  The bmp exported from SwisTrack itself does not always have the same dimensions.
+
+===Running Average===
+This mode does not require a background image, which is instead the running average of all video frames processed so far. The parameter ''alpha'' specifies the speed of the running average, i.e. the ratio of how much every new frame contributes to the average.
+
+This mode is more capabale when dealing with changing lighting conditions, but is not able to cope with objects that stop moving for a longer period of time as they become part of the background. 
+
+===Static Background (color ratio)===
+
+===Fixed Color===
+
+==Segmenter Post-Processing==
+
+
+==Particle Filter==
+===Min-Max Size Filter===
+===Circular Shape Filter===
+
+==Mask==
+===No Mask===
+===Binary Mask===
+
+This feature is currently under revision.
+
+==Tracker==
+===Nearest Neighbor===
+
+The option ''Maximum allowed speed'' is given in pixels and defines the radius SwisTrack should look for potential targets. '''Maximum allowed speed'' is not necessary the physical speed of an object but should also take into account scenarios where objects are merged and split afterwards, which induces displacement on the trajectories without that the objects were moving.
+
+The option ''Can trajectories share a particle?'' allows you to specify whether trajectories can merge on a single particle (as for instance when two insects are overlapping) or if this behavior is not desired (as for instance when tracking robots equipped with markers).
+
+==Calibration==
+===No Calibration===
+===2nd Order Polynomial Fit===
+
+==Output==
+===Output uncalibrated data===
+
+
+[[Category:SwisTrack]]</text>
+      <sha1>4uvqgig14vo7biiu6tiqq59jci6dv4c</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Template</title>
+    <ns>10</ns>
+    <id>95288</id>
+    <revision>
+      <id>1565417</id>
+      <parentid>598459</parentid>
+      <timestamp>2009-07-09T23:31:57Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <minor />
+      <comment>+category</comment>
+      <text xml:space="preserve">{{ #switch:{{{1|}}}f=&lt;br&gt;|}}
+{| &lt;!--
+--&gt;{{{3|}}}&lt;!--
+--&gt;{{ #switch:{{{1|}}}|f=align=&quot;center&quot;|c=align=&quot;center&quot;|}} &lt;!--
+--&gt;{{ #if: {{{2|}}}|width=&quot;{{{2}}}&quot;|}} &lt;!--
+--&gt;cellspacing=0 &lt;!--
+--&gt;class=&quot;top&quot; &lt;!--
+--&gt;style=&quot;margin-bottom: .5em; -moz-border-radius: 10px; clear:right; &lt;!--
+       --&gt;border: 2px solid SlateBlue; background: #F7F7FF; padding: .2em .2em .2em .2em; font-size: small;&lt;!--
+--&gt;{{ #if: {{{4|}}}| {{{4}}};|}}&lt;!--
+--&gt;{{ #switch:{{{1|}}}|h= float: right;|}}&lt;!--
+--&gt;{{ #switch:{{{1|}}}|f=text-align: center|c=text-align: center|}}&quot; &lt;!--
+--&gt;&lt;noinclude&gt;
+[[Category:Indonesian/Templates| ]]&lt;/noinclude&gt;</text>
+      <sha1>mm3yidym4bz0eof2vov3v8qreysa084</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>SwisTrack/Version 3/Installing SwisTrack</title>
+    <ns>0</ns>
+    <id>95289</id>
+    <revision>
+      <id>952669</id>
+      <parentid>952659</parentid>
+      <timestamp>2007-08-28T09:38:26Z</timestamp>
+      <contributor>
+        <username>Thomas.lochmatter</username>
+        <id>67419</id>
+      </contributor>
+      <text xml:space="preserve">&lt;p style=&quot;padding: 2px 2px 2px 2px; background-color: #ffffcc; border: 1px solid #cccc00&quot;&gt;&lt;span style=&quot;font-weight:bold; color:#cc0000&quot;&gt;This page refers to version 3 of SwisTrack.&lt;/span&gt; Unless you are still using this old version, you may want to read the [[SwisTrack|documentation of the most recent version of SwisTrack]].&lt;/p&gt;
+
+=Installing Swistrack=
+
+SwisTrack is shipped as a Windows installer, which walks you through the installation process. Download the installer from [http://swistrack.sourceforge.net SourceForge]. For other platforms, SwisTrack has to be built from the sources.
+
+==Installing Swistrack Sources (developers only)==
+
+
+Download the SwisTrack sources with an SVN client of your choice, under Linux the SVN instruction will be 
+
+
+ svn co https://svn.sourceforge.net/svnroot/swistrack swistrack
+
+
+under Windows you only need to enter the address [https://svn.sourceforge.net/svnroot/swistrack https://svn.sourceforge.net/svnroot/swistrack].
+
+You will also need the following libraries:
+
+* All Platforms: OpenCV 1.0, WxWidgets 2.6.3
+* Windows: CMU 1394 camera driver
+* Linux: FFMPEG (needs to be installed prior to OpenCV, and OpenCV needs to be build with FFMPEG support enabled)
+
+We use the following tools for developing SwisTrack:
+
+* All Platforms: Doxygen
+* Windows: Visual Studio 2005, NullSoft Installer
+
+
+[[Category:SwisTrack]]</text>
+      <sha1>pfj9elx98ky1w1lscn5vv2g3v3y3cbn</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Lessons Compact</title>
+    <ns>10</ns>
+    <id>95291</id>
+    <revision>
+      <id>2614456</id>
+      <parentid>2611158</parentid>
+      <timestamp>2014-03-05T18:30:54Z</timestamp>
+      <contributor>
+        <username>Aldnonymous</username>
+        <id>414537</id>
+      </contributor>
+      <comment>Update.</comment>
+      <text xml:space="preserve">{{Indonesian Template|f|{{ #if: {{{2|}}}|{{{2}}}| }}}}
+|
+&lt;div style=&quot;float: left;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/w/wiki.phtml?title=Template:Indonesian_Lessons_Compact&amp;action=edit edit template])&lt;/small&gt;&lt;/div&gt;&lt;div style=&quot;float: right;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/wiki/Indonesian/Lessons/Planning#Comments discussion])&lt;/small&gt;&lt;/div&gt; [[image:Graduation hat.svg|30px]] ''' &lt;font size=&quot;+1&quot;&gt; [[Indonesian/Lessons|Lessons]] &lt;/font&gt; ''' &lt;br&gt;
+[[Indonesian/Lessons/Information|Information]] 
+• [[Indonesian/Lessons/Introductory|Introductory]]  {{stage short|50%|May 29, 2006}}
+• [[Indonesian/Lessons/Level one|Level One]] {{stage short|50%|May 29, 2006}}
+• [[Indonesian/Lessons/Level two|Level Two]] {{stage short|50%|May 29, 2006}}
+• [[Indonesian/Lessons/Level three|Level Three]] {{stage short|00%|May 29, 2006}}
+• [[Indonesian/Lessons/Level four|Level Four]]  {{stage short|00%|May 29, 2006}}
+• [[Indonesian/Q&amp;A|Q&amp;A]] 
+• [[Indonesian/Lessons/Planning|Planning]] {{stage short|50%|May 29, 2006}}
+|}
+&lt;/div&gt; {{ #if: {{{1|}}}| |{{Indonesian Contents Footer}}}} &lt;noinclude&gt; [[Category:Indonesian Templates|Lessons]] &lt;/noinclude&gt;</text>
+      <sha1>m01i132w6hcle09pbvs9tgarfnzkyil</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Contents Footer</title>
+    <ns>10</ns>
+    <id>95292</id>
+    <revision>
+      <id>2557822</id>
+      <parentid>2556302</parentid>
+      <timestamp>2013-09-18T10:58:14Z</timestamp>
+      <contributor>
+        <username>QuiteUnusual</username>
+        <id>134830</id>
+      </contributor>
+      <minor />
+      <comment>[[WB:REVERT|Reverted]] edits by [[Special:Contributions/112.215.36.144|112.215.36.144]] ([[User talk:112.215.36.144|talk]]) to last version by Chaerani</comment>
+      <text xml:space="preserve">{{Indonesian Template|c|{{ #if: {{{1|}}}|{{ #switch: {{{1}}}|100=100%|{{{1}}}}}| }}}}
+|align=&quot;left&quot;|&lt;small&gt;({{ed|Indonesian Contents Footer|template}})&lt;/small&gt;
+|width=10px| 
+|align=&quot;center&quot;|
+'''[[Indonesian/Contents|Indonesian]] : ''' 
+[[Indonesian/About#Downloadable_and_Print_Versions|Print Versions]] • 
+[[Indonesian/Lessons|Lessons]] • 
+[[Indonesian/Grammar|Grammar]] • 
+[[Indonesian/Appendices|Appendices]] • 
+[[Indonesian/Texts|Texts]] • 
+[[Indonesian/About|About]] • 
+[[Indonesian/Q&amp;A|Q&amp;A]] • 
+[[Indonesian/Lessons/Planning|Planning]]
+|width=10px| 
+|align=&quot;right&quot;|&lt;small&gt;([[Talk:Indonesian|discussion]])&lt;/small&gt;
+|}
+&lt;/div&gt; &lt;noinclude&gt; [[Category:Indonesian Templates|Misc.]] &lt;/noinclude&gt;</text>
+      <sha1>3wbdawvbfpfw28pzvara197ufgusce0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Grammar Footer</title>
+    <ns>10</ns>
+    <id>95293</id>
+    <revision>
+      <id>2611160</id>
+      <parentid>2240581</parentid>
+      <timestamp>2014-02-22T19:04:10Z</timestamp>
+      <contributor>
+        <username>Aldnonymous</username>
+        <id>414537</id>
+      </contributor>
+      <text xml:space="preserve">{{Indonesian Template|f|{{ #if: {{{2|}}}|{{{2}}}| }}}}
+|
+&lt;div style=&quot;float: left;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/w/wiki.phtml?title=Template:Indonesian_Grammar_Footer&amp;action=edit edit template])&lt;/small&gt;&lt;/div&gt;&lt;div style=&quot;float: right;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/wiki/Talk:Indonesian/Grammar discussion])&lt;/small&gt;&lt;/div&gt; [[image:Note.svg|20px]] ''' &lt;font size=&quot;+1&quot;&gt; [[Indonesian/Grammar|Grammar]] &lt;/font&gt; '''
+
+[[Indonesian/Grammar/Adjectives|Adjectives]] [[File:25%.svg]] • 
+[[Indonesian/Grammar/Adverbs|Adverbs]] [[File:00%.svg]] • 
+[[Indonesian/Grammar/Gender|Gender]] [[File:00%.svg]] • 
+[[Indonesian/Grammar/Negation|Negation]] [[File:00%.svg]] • 
+[[Indonesian/Grammar/Prepositions|Prepositions]] [[File:75%.svg]] • 
+[[Indonesian/Grammar/Pronouns|Pronouns]] [[File:100%.svg]] • 
+[[Indonesian/Grammar/Sentences|Sentences]] [[File:00%.svg]] • 
+[[Indonesian/Grammar/Tenses|Tenses]] [[File:50%.svg]] • 
+[[Indonesian/Grammar/Verbs|Verbs]] [[File:25%.svg]]
+|}
+&lt;/div&gt; {{ #if: {{{1|}}}| |{{Indonesian Contents Footer}}}} &lt;noinclude&gt; [[Category:Indonesian Templates|Grammar]] 
+*Use &lt;nowiki&gt; {{Indonesian Grammar Footer|.}} &lt;/nowiki&gt; to not include the general contents in the middle. &lt;/noinclude&gt;</text>
+      <sha1>ge148m8rwcos68cl71tga9sn6xv5srn</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Texts Footer</title>
+    <ns>10</ns>
+    <id>95294</id>
+    <revision>
+      <id>1211160</id>
+      <parentid>819997</parentid>
+      <timestamp>2008-06-13T18:57:27Z</timestamp>
+      <contributor>
+        <username>CommonsDelinker</username>
+        <id>49843</id>
+      </contributor>
+      <minor />
+      <comment>Replacing [[Image:Paperback_book_black_gal_.svg]] with [[Image:Paperback_book_black_gal.svg]] (by [[commons:User:Siebrand|Siebrand]] because: Was in category &quot;Duplicate&quot;, exact duplicate).</comment>
+      <text xml:space="preserve">{{Indonesian Template|f|{{ #if: {{{2|}}}|{{{2}}}| }}}}
+|
+&lt;div style=&quot;float: left;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/w/wiki.phtml?title=Template:Indonesian_Texts_Footer&amp;action=edit edit template])&lt;/small&gt;&lt;/div&gt;&lt;div style=&quot;float: right;&quot;&gt;&lt;small&gt;([http://en.wikibooks.org/wiki/Talk:Indonesian/Texts discussion])&lt;/small&gt;&lt;/div&gt; [[image:Paperback_book_black_gal.svg|20px]] ''' &lt;font size=&quot;+1&quot;&gt; [[Indonesian/Texts|Texts]] &lt;/font&gt;'''
+
+[[Indonesian/Texts/National songs|National Songs]] • 
+[[Indonesian/Texts|Miscellaneous]]
+|}
+&lt;/div&gt; {{ #if: {{{1|}}}| |{{Indonesian Contents Footer}}}} &lt;noinclude&gt; [[Category:Indonesian Templates|Texts]] 
+* Use &lt;nowiki&gt; {{Indonesian Texts|.}} &lt;/nowiki&gt; to not include the general contents in the middle. &lt;/noinclude&gt;</text>
+      <sha1>8bsuic4yyyacn59bs607sxfaylty41w</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Indonesian Templates</title>
+    <ns>14</ns>
+    <id>95295</id>
+    <revision>
+      <id>718859</id>
+      <parentid>598486</parentid>
+      <timestamp>2007-01-15T06:18:54Z</timestamp>
+      <contributor>
+        <username>Iamunknown</username>
+        <id>3310</id>
+      </contributor>
+      <minor />
+      <comment>alphabetise category listing</comment>
+      <text xml:space="preserve">[[Category:Indonesian|Templates]]</text>
+      <sha1>fpn5z8yw57j53biuvdspfdleq73brjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Horticulture/Mulching to Prevent Weeds</title>
+    <ns>0</ns>
+    <id>95296</id>
+    <revision>
+      <id>1503917</id>
+      <parentid>1305089</parentid>
+      <timestamp>2009-05-20T20:41:22Z</timestamp>
+      <contributor>
+        <username>Adrignola</username>
+        <id>169232</id>
+      </contributor>
+      <comment>Replaced {{horticat-topic...}} with two category entries. Added header.</comment>
+      <text xml:space="preserve">{{WMOG-header}}
+Mulches, when applied at the right time, can be very good for weed control and prevention. The important thing is timing: if mulches are applied at a time when weed seeds are fully dormant, they will prevent any exposure of the seed to sunlight, which is for many weed seeds the primary signal that causes them to start growing.
+
+Mulches are most commonly applied in spring for this purpose, but many biennial and perennial weeds actually germinate in autumn, so some gardeners will mulch twice per year, or even add mulches whenever they pull weeds or otherwise disturb the soil.
+
+Mulches are sometimes applied in combination with a pre-emergent. For organic gardeners, the pre-emergent used is [[../Corn Gluten Meal|corn gluten meal]], which is applied under the mulch.
+
+[[Category:Horticulture/Mulches| {{SUBPAGENAME}}]]
+[[Category:Horticulture/Weeds/Controls|{{SUBPAGENAME}}]]</text>
+      <sha1>57qwoqwidilog0a74r9ilwc4kgagolq</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Appendices Footer</title>
+    <ns>10</ns>
+    <id>95297</id>
+    <revision>
+      <id>2611157</id>
+      <parentid>2611156</parentid>
+      <timestamp>2014-02-22T18:58:58Z</timestamp>
+      <contributor>
+        <username>Aldnonymous</username>
+        <id>414537</id>
+      </contributor>
+      <comment>Not even close to KBBI, but it's already contain the most crucial part for foreigners to start a conversation.</comment>
+      <text xml:space="preserve">{{Indonesian Template|f|{{ #if: {{{2|}}}|{{{2}}}| }}}}
+|align=&quot;left&quot;|&lt;small&gt;({{ed|Indonesian Appendices Footer|template}})&lt;/small&gt;
+|align=&quot;center&quot;|[[Image:Books-aj.svg aj ashton 01.svg|20px]] ''' &lt;font size=&quot;+1&quot;&gt; [[Indonesian/Appendices|Appendices]] &lt;/font&gt; '''
+|align=&quot;right&quot;|&lt;small&gt;([http://en.wikibooks.org/wiki/Talk:Indonesian/Appendices discussion])&lt;/small&gt;
+|-
+|colspan=3|
+[[Indonesian/Appendices/Dates, time, and numbers|Dates, Time, and Numbers]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Exercises|Exercises]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/English-Indonesian dictionary|E-I dictionary]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Indonesian-English dictionary|I-E dictionary]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/List of authors|Indonesian authors]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Hints and common errors|Hints and Common Errors]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/History|History]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Nations of the world|Nations of the World]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Phrasebook|Phrasebook]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Pronunciation index|Pronunciation Index]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Slang|Slang]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Vocabulary index|Vocabulary Index]] [[File:00%.svg]] • 
+[[Indonesian/Appendices/Typing characters|Typing Characters]] [[File:00%.svg]] • 
+[[wiktionary:Category:Indonesian verbs|Verb Dictionary]] [[File:50%.svg]] • 
+[[Indonesian/Appendices/Web resources|Web Resources]] [[File:00%.svg]]
+|}
+&lt;/div&gt; {{ #if: {{{1|}}}| |{{Indonesian Contents Footer|100%}}}} &lt;noinclude&gt; [[Category:Indonesian Templates|Appendices]] 
+* Use &lt;nowiki&gt; {{Indonesian Appendices Footer|.}} &lt;/nowiki&gt; to not include the general contents in the middle. &lt;/noinclude&gt;</text>
+      <sha1>2pw0lv90suxoxrb41ybe3gbw347wtzo</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User talk:Tardis</title>
+    <ns>3</ns>
+    <id>95298</id>
+    <revision>
+      <id>598495</id>
+      <timestamp>2006-09-30T13:41:22Z</timestamp>
+      <contributor>
+        <username>Panic2k4</username>
+        <id>2865</id>
+      </contributor>
+      <text xml:space="preserve">== [[C++ Programming]] ==
+About the '''Nested anonymous namespaces''' post, I have answered you in [[Talk:C++ Programming/Content]]--[[User:Panic2k4|Panic]] 13:41, 30 September 2006 (UTC)</text>
+      <sha1>lrzksnkmnst23cw9r4p2fiarwdlxsbe</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Indonesian Lessons</title>
+    <ns>10</ns>
+    <id>95299</id>
+    <revision>
+      <id>2017901</id>
+      <parentid>2017842</parentid>
+      <timestamp>2011-01-15T11:45:38Z</timestamp>
+      <contributor>
+        <username>Recent Runes</username>
+        <id>66908</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/124.168.128.209|124.168.128.209]] ([[User talk:124.168.128.209|talk]]) to last revision by [[User:Darklama|Darklama]]</comment>
+      <text xml:space="preserve">&lt;div class=&quot;collapsible&quot; style=&quot;clear:both; margin:0.5em auto; width:{{{2|100%}}}; border:2px solid SlateBlue; background-color:#F7F7FF;&quot;&gt;
+&lt;div class=&quot;title&quot; style=&quot;font-size:larger; height:1.5em; text-align:center;&quot;&gt;
+'''Lessons'''
+&lt;/div&gt;
+&lt;div class=&quot;body&quot; style=&quot;text-align:center; padding:0.5em; font-size:small; border-top:2px solid SlateBlue;&quot;&gt;
+&lt;div style=&quot;float:left;&quot; class=&quot;plainlinks&quot;&gt;&lt;small&gt;([{{fullurl:Template:Indonesian Lessons|action=edit}} edit])&lt;/small&gt;&lt;/div&gt;
+&lt;div style=&quot;float:right;&quot;&gt;&lt;small&gt;([[Talk:Indonesian/Lessons/Planning|discuss]])&lt;/small&gt;&lt;/div&gt;
+[[Indonesian/Lessons/Information|Information]] •
+[[Indonesian/Lessons/Introductory|Introductory]] •
+[[Indonesian/About#Downloadable and Print Versions|Print Versions]] •
+[[Indonesian/Q&amp;A|Q&amp;A]] •
+[[Indonesian/Lessons/Planning|Planning]]
+----
+[[Indonesian/Lessons/Introduction|'''Basic:''']]&amp;nbsp;
+[[Indonesian/Lessons/Learning Indonesian|Learning Indonesian]] •
+[[Indonesian/Lessons/Alphabet|The Alphabet]] •
+[[Indonesian/Lessons/Greetings|Greetings]] •
+[[Indonesian/Lessons/This and that|This and that]] •
+[[Indonesian/Grammar/Pronouns|Pronouns]] •
+[[Indonesian/Grammar/Tenses|Simple Sentences]] •
+[[Indonesian/Lessons/Numbers|Numbers]] •
+[[Indonesian/Lessons/Rainbow|Rainbow]] •
+[[Indonesian/Grammar/Prepositions|Prepositions]]
+
+'''Beginner:'''&amp;nbsp;
+[[Indonesian/Lessons/Introducing|Introducing Yourself]] •
+[[Indonesian/Lessons/Body|My Body]] •
+[[Indonesian/Lessons/Family|My Family]] •
+[[Indonesian/Lessons/The house|My Home]] •
+[[Indonesian/Lessons/School|At School]] •
+[[Indonesian/Lessons/Work|At Work]] •
+[[Indonesian/Lessons/To the Market|To the Market]] •
+[[Indonesian/Lessons/Time|What Time is it?]] •
+[[Indonesian/Lessons/Happy Birthday|Happy Birthday!]] •
+[[Indonesian/Lessons/Going to Bali|Going to Bali]]
+
+'''Expert:'''&amp;nbsp;
+[[Indonesian/Lessons/Formal speech|Me and you]] •
+[[Indonesian/Lessons/Bahasa Oke|Slang language]] •
+[[Indonesian/Lessons/Money|Money]] •
+[[Indonesian/Lessons/Transportation|Transportation]]
+&lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+
+[[Category:Indonesian Templates|Lessons]]
+&lt;/noinclude&gt;</text>
+      <sha1>785vm611f9no1k7waswsxbr8qx1r0xq</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>SwisTrack/Version 3/Contributing</title>
+    <ns>0</ns>
+    <id>95300</id>
+    <revision>
+      <id>952678</id>
+      <parentid>952672</parentid>
+      <timestamp>2007-08-28T09:41:47Z</timestamp>
+      <contributor>
+        <username>Thomas.lochmatter</username>
+        <id>67419</id>
+      </contributor>
+      <text xml:space="preserve">&lt;p style=&quot;padding: 2px 2px 2px 2px; background-color: #ffffcc; border: 1px solid #cccc00&quot;&gt;&lt;span style=&quot;font-weight:bold; color:#cc0000&quot;&gt;This page refers to version 3 of SwisTrack.&lt;/span&gt; Unless you are still using this old version, you may want to read the [[SwisTrack|documentation of the most recent version of SwisTrack]].&lt;/p&gt;
+
+=Introduction=
+SwisTrack is programmed in C++ and should compile on Windows, Linux, and MacOS platforms.
+
+SwisTrack's is divided in three parts
+* The tracking core that takes care of image acquisition and analysis
+* A graphical user interface that provides tools for visualizing different steps in the tracking process
+* A command line interface
+
+The three parts are linked by an XML description that can be found in the file ''swistrack.exp'' in the SwisTrack directory. Here, the different processes in the tracking process are organized in ''components'' with different ''modes'' (see [[/Using SwisTrack/]]). For the component ''input'' suitable modes are for instance image acquisition from a camera or from a file.
+
+Based on this description (which also specifies the parameter type, e.g. ''list'' or ''integer''), the GUI provides appropriate controls for modifying each parameter and storing it to a configuration file, which is a subset of ''swistrack.exp'' (see for instance ''example.cfg'' in the ''example'' directory). Also, the GUI provides panels that allow changing parameters during tracking and observing their influence on the tracking result at the same time (see [[/Using SwisTrack/]]).
+
+On the other hand, the structure defined in ''swistrack.exp'' should reflect the class hierarchy of the tracking core. As a rule of thumb, each component in ''swistrack.exp'' is encapsulated in its own class, whereas modes are implemented using ''switch'' statements in the class' member functions. Here, it is the duty of the programmer to verify in the constructor of each class, whether the current operational mode and its parameters are provided in the actual configuration file and throw an exception otherwise.
+
+See [[/Installing Swistrack/]] for information about setting up a developer's environment.
+
+==Example==
+
+The &lt;COMPONENTS&gt; section in ''swistrack.exp'' describes the distinct tracking steps that are implemented in the tracking core and require parameter input from the user.
+
+ 
+ &lt;COMPONENTS&gt;
+  &lt;INPUT desc=&quot;Input&quot;/&gt;
+  &lt;SEGMENTER desc=&quot;Segmenter&quot;/&gt;
+  &lt;SEGMENTERPP desc=&quot;Segmenter Post-Processing&quot;/&gt;
+  &lt;PARTICLEFILTER desc=&quot;Particle Filter&quot;/&gt;
+  &lt;MASK desc=&quot;Mask&quot;/&gt;
+  &lt;TRACKER desc=&quot;Tracker&quot;/&gt;
+  &lt;CALIBRATION desc=&quot;Calibration&quot;/&gt;
+  &lt;OUTPUT desc=&quot;Output&quot;/&gt;
+ &lt;/COMPONENTS&gt;
+
+The &lt;SEGMENTER&gt; section for instance might have 2 modes (in this example)
+
+ &lt;SEGMENTER mode=&quot;0&quot; desc=&quot;Static Background, fixed threshold&quot; long=&quot;The image is segmented by subtracting a static background image   from every frame in the video. The 'Threshold' determines the minimal difference for the gray value of an object to be recognized, and 'Max. Number' is the maximal number of contours processed (sorted by size).&quot;&gt;
+  &lt;THRESHOLD desc=&quot;Threshold&quot; type=&quot;integer&quot; min=&quot;1&quot; max=&quot;150&quot; variable=&quot;1&quot;&gt;20&lt;/THRESHOLD&gt;
+  &lt;FIXED desc=&quot;Fixed&quot; type=&quot;boolean&quot; variable=&quot;1&quot;&gt;0&lt;/FIXED&gt;
+  &lt;BGIMAGE desc=&quot;Background Image&quot; type=&quot;open&quot; param=&quot;*.bmp&quot;&gt;example/bg.bmp&lt;/BGIMAGE&gt;
+ &lt;/SEGMENTER&gt;
+ 
+ &lt;SEGMENTER mode=&quot;1&quot; desc=&quot;Running Average&quot; long=&quot;The image is segmented by subtracting a static background image from every frame  in the video. The 'Threshold' determines the minimal difference for the gray value of an object to be recognized, and 'Max. Number' is the maximal number of contours processed (sorted by size). 'Alpha' is the speed of the exponential averager.&quot;&gt;
+  &lt;THRESHOLD desc=&quot;Threshold&quot; type=&quot;integer&quot; min=&quot;1&quot; max=&quot;150&quot; variable=&quot;1&quot;&gt;20&lt;/THRESHOLD&gt;
+  &lt;ALPHA desc=&quot;Averaging Speed&quot; type=&quot;double&quot; min=&quot;0&quot; max=&quot;1&quot; variable=&quot;1&quot;&gt;0.02&lt;/ALPHA&gt;
+ &lt;/SEGMENTER&gt;
+
+Here mode 0 has three parameters (&lt;THRESHOLD&gt;, &lt;FIXED&gt;, and &lt;BGIMAGE&gt;), whereas mode 1 has two parameters (&lt;THRESHOLD&gt;,&lt;ALPHA&gt;), that are of different type. For instance the type &quot;open&quot; of &lt;BGIMAGE&gt; with attribute ''param=&quot;*.bmp&quot;'' tells the GUI to use an ''Open File'' control (the developer should reserve a ''string'' variable in its application).
+
+In the source code, the segmenter component can be found in the class ''Segmenter'' (''segmenter.cpp'', ''segmenter.h''). The constructor then needs to look like
+
+ if(!IsAttrByXPath(cfgRoot,&quot;/CFG/COMPONENTS/SEGMENTER&quot;,&quot;mode&quot;))
+  throw &quot;[Segmenter::Segmenter] Segmenter mode undefined (/CFG/COMPONENTS/SEGMENTER)&quot;;
+ mode=GetIntAttrByXPath(cfgRoot,&quot;/CFG/COMPONENTS/SEGMENTER&quot;,&quot;mode&quot;);
+ switch(mode)
+  {
+   case 0 :
+    {
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='0']&quot;);
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='0']/BGIMAGE&quot;);
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='0']/THRESHOLD&quot;);
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='0']/FIXED&quot;);
+    }
+   case 1 :
+    {
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='1']&quot;);
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='1']/THRESHOLD&quot;);
+     CreateExceptionIfEmpty(cfgRoot,&quot;/CFG/SEGMENTER[@mode='1']/ALPHA&quot;);
+    }
+   default :
+     throw &quot;[Segmenter::Segmenter] Segmenter mode not implemented&quot;;
+  }
+  SetParameters();
+
+The parameters themselves are queried in the member function ''SetParameters()'', which will be called whenever the user changes parameters during run-time.
+
+=Setting up your Developer Environment=
+
+After downloading all necessary library packages (don't forget to compile them using your development environment), create a project for the SwisTrack core. Then create a project for the SwisTrack GUI, which links the core together with the other libraries. Make sure that you compile both projects as Multithreaded DLL.
+
+==Libraries==
+
+You will need to link the following libraries
+
+* libxml++.lib
+* libxml2.lib
+* wxbase26_net.lib
+* wxmsw26_adv.lib
+* wxmsw26_core.lib
+* wxbase26.lib 
+* wxtiff.lib 
+* wxjpeg.lib 
+* wxpng.lib 
+* wxzlib.lib 
+* wxregex.lib
+* wxexpat.lib
+* winmm.lib
+* comctl32.lib
+* rpcrt4.lib
+* wsock32.lib
+* oleacc.lib 
+* odbc32.lib 
+* objecttracker.lib 
+* 1394camera.lib 
+* cv.lib 
+* highgui.lib 
+* cxcore.lib 
+* vispolygon_dll.lib 
+* libgeom_dll.lib
+
+=Contributing components and modes=
+This section addresses how to extend SwisTrack's core functionality by extending a component by a new mode or by adding a new component.
+
+==Extending a component by a new mode==
+# Add a new section into ''swistrack.cfg'' and set the ''mode'' attribute to a number not yet used. Also specify the mode's description and its parameters
+# Add your mode into the ''switch(mode)'' statement in the constructor of the class that represents the component you want to extend, and throw exceptions for each missing parameter
+# Define appropriate variables in the ''private'' section in the class's interface (to be found in ''.h file'')
+# Add your mode into the ''switch(mode)'' statement in the ''SetParameters()'' member function to fetch the parameters from the XML description
+# Go through each member function of the class that you are extending and add code into the switch statement so to implement the functionality that you have in mind. If some of the functionality is redundand, you might want to put your 'case' statement under a case that represents your functionality and remove its 'break;' statement (don't forget to add a ''break;'' in your case though)
+
+==Adding a new component==
+# Have a look at other components to see how they are implemented
+# Inherit your class from the 'Component' class, including ''component.h'' also includes some handy macros that you need for accessing the XML structure
+# Your class should be instantiated in the class that is above your component; in turn, your class needs to instantiate the class that is below your component in the functional hierarchy
+
+=Contributing Panels=
+
+
+[[Category:SwisTrack]]</text>
+      <sha1>lo3h3uj2b5fdk80er091sos7oew6p3s</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
