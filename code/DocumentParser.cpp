@@ -254,17 +254,21 @@ void DocumentParser::writeToStructure(IndexHandler*& ih, int startIndex)
 void DocumentParser::saveIndex()
 {
   ofstream indexSave("index.txt");
-  for (int i = 0; i < /*collection.size()*/ 40000; i++)
+  for (int i = 0; i < collection.size(); i++)
   {
     Page* t = collection[i];
     indexSave << t->getTitle() << endl;
     indexSave << t->getId() << endl;
     indexSave << t->getDate() << endl;
     indexSave << t->getContributingUser() << endl;
+    indexSave << t->getFullText() << endl;
     indexSave << t->getKeywords().size() << endl;
     int largeindex = t->getKeywords().size();
-    for (auto e: t->getKeywords())
-      indexSave << e << endl;
+    for (int i = 0; i < largeindex; i++)
+    {
+      indexSave << t->getKeywordAtIndex(i) << endl;
+      indexSave << t->getFrequency(i) << endl;
+    }
   }
   indexSave.close();
 
@@ -280,26 +284,27 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
     Page* p = new Page();
     getline(indexRead, inString);
     p->setTitle(inString);
-    //cout << ++looper <<  " title: " << inString;
     getline(indexRead, inString);
     p->setId(atoi(inString.c_str()));
-    //cout << " id: " << inString;
+    getline(indexRead, inString);
+    p->setDate(inString);
     getline(indexRead, inString);
     p->setContributingUser(inString);
     getline(indexRead, inString);
-    p->setDate(inString);
-    //cout << " user: " << inString << endl;
+    p->setFullText(inString);
     getline(indexRead, inString);
-    int test = 0;
+    //int test = 0;
     int number_of_pages = atoi(inString.c_str());
     for (int i = 0; i < number_of_pages; i++)
     {
       getline(indexRead, inString);
-      p->addKeyword(inString);
-      //cout <<++test << " " << inString << endl;
+      int dex = p->addKeyword(inString);
+      getline(indexRead, inString);
+      p->setFrequency(dex, atoi(inString.c_str()));
     }
 
     collection.push_back(p);
+
     //cout << p->getTitle() << " " << p->getId() << " " << "number of pages " << number_of_pages << p->getContributingUser() << endl;
   }
 }

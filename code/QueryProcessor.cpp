@@ -274,7 +274,6 @@ vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
   //now sort
   for (int i = 0; i < unsortedResults.size(); i++)
   {
-    cout << unsortedResults[i] << "\t" << resultsinversefreq[i] << endl;
     Result* rs = new Result(unsortedResults[i], resultsinversefreq[i]);
     results.push_back(rs);
   }

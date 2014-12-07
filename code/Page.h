@@ -18,6 +18,9 @@ public:
   void setId(unsigned long);
   void setContributingUser(string);
   void setDate(string);
+  void setFrequency(int, int);
+  void setFullText(string);
+  string getFullText();
 
   //getters
   string getTitle();

@@ -60,32 +60,7 @@ int Page::addKeyword(string& keyword)
   frequency.push_back(1);
   return keywords.size()-1;
 
-  //check for duplicate keyword and add to frequency if exists
-  /*int index = binarySearch(keywords, keyword, 0, keywords.size());
-  if (index == -1)
-  {
-    frequency.push_back(1);
-    keywords.push_back(keyword);
-  }
-  else
-    frequency[index]++;
-
-  sort(keywords.begin(), keywords.end());*/
 }
-
-/*void Page::addKeyword(char*& key)
-{
-  string keyword(key);
-  //check for duplicate keyword and add to frequency if exists
-  int index = binarySearch(keywords, keyword, 0, keywords.size());
-  if (index == -1)
-  {
-    frequency.push_back(1);
-    keywords.push_back(keyword);
-  }
-  else
-    frequency[index]++;
-}*/
 
 vector<string> Page::getKeywords()
 {
@@ -114,4 +89,19 @@ int Page::binarySearch(vector<string>& vc, string kw, int low, int high)
   else
     return binarySearch(vc, kw, low, index);
 
+}
+
+void Page::setFrequency(int index, int freq)
+{
+  frequency[index] = freq;
+}
+
+void Page::setFullText(string text)
+{
+  fullText = text;
+}
+
+string Page::getFullText()
+{
+  return fullText;
 }

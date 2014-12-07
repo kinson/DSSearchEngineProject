@@ -332,7 +332,7 @@ void UserInterface::searchIndex()
 		{
 			cout << endl << "RESULT\t" << resultnum++ << "------------------------------" << endl;
 			cout << e->getTitle() << endl;
-			cout << "id: " << e->getId() << endl << "user: " << e->getPage()->getContributingUser() << endl << "TD/IDF: " << e->getInverseFrequency() << endl;
+			cout << "id: " << e->getId() << endl << "user: " << e->getPage()->getContributingUser() << endl << "date: " << e->getDate() << endl << "TD/IDF: " << e->getInverseFrequency() << endl;
 		}
 		cout << "Enter a result number to see full text or type -1 to return to menu: ";
 		cin >> resultchoice;

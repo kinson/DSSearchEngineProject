@@ -61,6 +61,9 @@ public:
     return infoPage->fullText;
   }
 
-
+  string getDate()
+  {
+    return infoPage->getDate();
+  }
 };
 #endif
