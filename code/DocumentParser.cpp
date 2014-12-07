@@ -313,3 +313,8 @@ int DocumentParser::getCollectionSize()
 {
   return collection.size() - 1;
 }
+
+void DocumentParser::clearCollection()
+{
+  collection.clear();
+}

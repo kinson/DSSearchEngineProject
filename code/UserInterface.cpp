@@ -72,6 +72,7 @@ void UserInterface::maintenenceMode()
 	{
 		case (1):
 			addFilesToIndex(); //add files to index
+			docparser->parseDrive(paths[paths.size()-1], indexhandler);
 			addToExistingIndex();
 			break;
 		case(2):
@@ -134,7 +135,6 @@ void UserInterface::interactiveMode()
 				clearIndex();
 				break;
 			case(3):
-				clearIndex();
 				createStructure(indexhandler->getClassType() == "HashTable" ? "AVLTree" : "HashTable");
 				break;
 			case(0):
@@ -214,19 +214,16 @@ void UserInterface::stressTest()
 			clearIndex();
 		}
 		cout << "Time: " << (std::clock() - start) / (double)(CLOCKS_PER_SEC / 100) << " s" << std::endl;
-
 	}
-
 }
-
 
 void UserInterface::createStructure(string structtype)
 {
 	//check to see if indexhandler is already a structure
-	if (indexhandler != nullptr)
+	/*if (indexhandler != nullptr)
 	{
 		clearIndex();
-	}
+	}*/
 
 	if (structtype == "HashTable")
 		{cout<< "this creates a hashtable";
@@ -235,7 +232,11 @@ void UserInterface::createStructure(string structtype)
 		indexhandler = new AVLTree();
 
 	//check for exmpty list
-	if (paths.size() > 0)
+	if (docparser->getCollectionSize() > 0)
+	{
+		addToExistingIndex();
+	}
+	else if (paths.size() > 0)
 	{
 		for (auto e: paths)
 			docparser->parseDrive(e, indexhandler);
@@ -290,20 +291,21 @@ bool UserInterface::fexists(const string& filename)
 
 void UserInterface::clearIndex()
 {
-	
+
 	if (indexhandler != nullptr)
 	{
-	 cout << "we could delete things here" << endl;
+		docparser->clearCollection();
+		paths.clear();
+		//indexhandler->destroyStructure();
+		//delete indexhandler;
 	}
 }
 
 
 void UserInterface::addToExistingIndex()
 {
-	cout << "parsing files..." << endl;
 	int lastCollectionIndex = docparser->getCollectionSize();
-	docparser->parseDrive(paths[paths.size()-1], indexhandler);
-	cout << "adding files to index..." << endl;
+	//docparser->parseDrive(paths[paths.size()-1], indexhandler);
 	if (indexhandler == nullptr)
 	{
 		cout << "Select a data structure to write to\n1: Hash Table\n2: AVL Tree" << endl;
@@ -319,7 +321,7 @@ void UserInterface::addToExistingIndex()
 			return;
 		}
 	}
-	docparser->writeToStructure(indexhandler, lastCollectionIndex + 1);
+	docparser->writeToStructure(indexhandler);
 }
 
 void UserInterface::searchIndex()

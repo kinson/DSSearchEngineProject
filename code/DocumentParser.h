@@ -29,6 +29,7 @@ public:
   void saveIndex();
   void readInParsedFile(IndexHandler*&); //function to read in an already parsed file
   int getCollectionSize();
+  void clearCollection(); //clear the collection
 
 
 private:
