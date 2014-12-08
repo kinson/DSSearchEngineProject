@@ -133,11 +133,6 @@ void QueryProcessor::otherArgFinder(int type)
     }
 }
 
-void QueryProcessor::print()
-{
-  currentQ->printQuery();
-}
-
 
 vector<Result*> QueryProcessor::searchIndex(string search_string, IndexHandler*& ih)
 {

@@ -1,4 +1,5 @@
-PD smallwikibookdump.xml
-CS HashTable
-SI
+PD mediumwikibookdump.xml
+CS AVLTree
 SQ running NOT dog
+CI
+

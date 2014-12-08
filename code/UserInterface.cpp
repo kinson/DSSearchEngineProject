@@ -238,7 +238,7 @@ void UserInterface::stressTest()
 
 		end = std::chrono::system_clock::now();
 		unsigned int milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
-		std::cout << " Time: " << milliseconds << " seconds" << std::endl;
+		std::cout << " Time: " << milliseconds << " milliseconds" << std::endl;
 	}
 }
 

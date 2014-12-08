@@ -29,7 +29,7 @@ public:
 	void notArgFinder(int); //finds all not words
 	void otherArgFinder(int); // finds the first set of words
 	void stemQuery(); // stems the query
-	void print();
+	
 	vector<Result*> searchIndex(string, IndexHandler*&); 
 	vector<Result*> sortResults(vector<Page*>&); //sort results vectors
 	vector<Result*> merge_sort(vector<Result*>& vec); //merge sort for result vector
