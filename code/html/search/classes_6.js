@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['indexhandler',['IndexHandler',['../class_index_handler.html',1,'']]]
+  ['query',['Query',['../class_query.html',1,'']]],
+  ['queryprocessor',['QueryProcessor',['../class_query_processor.html',1,'']]]
 ];

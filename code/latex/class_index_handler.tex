@@ -1,6 +1,9 @@
-\hypertarget{class_index_handler}{\section{Index\+Handler Class Reference}
+\hypertarget{class_index_handler}{}\section{Index\+Handler Class Reference}
 \label{class_index_handler}\index{Index\+Handler@{Index\+Handler}}
-}
+
+
+{\ttfamily \#include $<$Index\+Handler.\+h$>$}
+
 Inheritance diagram for Index\+Handler\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,27 +13,95 @@ Inheritance diagram for Index\+Handler\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_index_handler_ab79b5f2c35d6cff25d58e72c18af60ea}{virtual string {\bfseries get\+Class\+Type} ()=0}\label{class_index_handler_ab79b5f2c35d6cff25d58e72c18af60ea}
-
+\hyperlink{class_index_handler_a27748387661142a2eb545be6f0499996}{Index\+Handler} ()
 \item 
-\hypertarget{class_index_handler_aa916a3613990ed790d281863d685cfc5}{void {\bfseries add\+Page} (\hyperlink{class_page}{Page} $\ast$)}\label{class_index_handler_aa916a3613990ed790d281863d685cfc5}
-
+virtual \hyperlink{class_index_handler_ad787ca8cf83345ecfe332d2c3b8f8009}{$\sim$\+Index\+Handler} ()
 \item 
-\hypertarget{class_index_handler_a8bce6003281670e4adfb900c07a86d99}{virtual void {\bfseries add\+To\+Index} (\hyperlink{class_page}{Page} $\ast$\&, string \&)=0}\label{class_index_handler_a8bce6003281670e4adfb900c07a86d99}
-
+virtual std\+::string \hyperlink{class_index_handler_aaeb0f250516fbc93936efec2c3f21359}{get\+Class\+Type} ()=0
 \item 
-\hypertarget{class_index_handler_aea6754222ce40912e1dc71e7b00c61e1}{virtual set$<$ \hyperlink{class_page}{Page} $\ast$ $>$ {\bfseries search\+Index} (string)=0}\label{class_index_handler_aea6754222ce40912e1dc71e7b00c61e1}
-
+void \hyperlink{class_index_handler_aa916a3613990ed790d281863d685cfc5}{add\+Page} (\hyperlink{class_page}{Page} $\ast$)
 \item 
-\hypertarget{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}{virtual void {\bfseries print\+Table} ()=0}\label{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}
-
+virtual void \hyperlink{class_index_handler_a102638a9813e71541092a6695bd24012}{add\+To\+Index} (\hyperlink{class_page}{Page} $\ast$\&, std\+::string \&)=0
 \item 
-\hypertarget{class_index_handler_ab3bcb75df49d1b86050c55f1a4526576}{virtual void {\bfseries destroy\+Structure} ()=0}\label{class_index_handler_ab3bcb75df49d1b86050c55f1a4526576}
-
+virtual set$<$ \hyperlink{class_page}{Page} $\ast$ $>$ \hyperlink{class_index_handler_ac3213de7636a1332440c3204957f4658}{search\+Index} (std\+::string)=0
+\item 
+virtual void \hyperlink{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}{print\+Table} ()=0
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_index_handler_a27748387661142a2eb545be6f0499996}{}\index{Index\+Handler@{Index\+Handler}!Index\+Handler@{Index\+Handler}}
+\index{Index\+Handler@{Index\+Handler}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{Index\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::\+Index\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a27748387661142a2eb545be6f0499996}
+\hypertarget{class_index_handler_ad787ca8cf83345ecfe332d2c3b8f8009}{}\index{Index\+Handler@{Index\+Handler}!````~Index\+Handler@{$\sim$\+Index\+Handler}}
+\index{````~Index\+Handler@{$\sim$\+Index\+Handler}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{$\sim$\+Index\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::$\sim$\+Index\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_index_handler_ad787ca8cf83345ecfe332d2c3b8f8009}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_index_handler_aa916a3613990ed790d281863d685cfc5}{}\index{Index\+Handler@{Index\+Handler}!add\+Page@{add\+Page}}
+\index{add\+Page@{add\+Page}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{add\+Page}]{\setlength{\rightskip}{0pt plus 5cm}void Index\+Handler\+::add\+Page (
+\begin{DoxyParamCaption}
+\item[{{\bf Page} $\ast$}]{next\+Page}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_aa916a3613990ed790d281863d685cfc5}
+\hypertarget{class_index_handler_a102638a9813e71541092a6695bd24012}{}\index{Index\+Handler@{Index\+Handler}!add\+To\+Index@{add\+To\+Index}}
+\index{add\+To\+Index@{add\+To\+Index}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{add\+To\+Index}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Index\+Handler\+::add\+To\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Page} $\ast$\&}]{, }
+\item[{std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_handler_a102638a9813e71541092a6695bd24012}
+
+
+Implemented in \hyperlink{class_hash_table_a9bee171516cca4930348a89fd0695b08}{Hash\+Table}.
+
+\hypertarget{class_index_handler_aaeb0f250516fbc93936efec2c3f21359}{}\index{Index\+Handler@{Index\+Handler}!get\+Class\+Type@{get\+Class\+Type}}
+\index{get\+Class\+Type@{get\+Class\+Type}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{get\+Class\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Index\+Handler\+::get\+Class\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_handler_aaeb0f250516fbc93936efec2c3f21359}
+
+
+Implemented in \hyperlink{class_a_v_l_tree_a708b6398ea1771de3077ca39c4005cca}{A\+V\+L\+Tree}, and \hyperlink{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}{Hash\+Table}.
+
+\hypertarget{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}{}\index{Index\+Handler@{Index\+Handler}!print\+Table@{print\+Table}}
+\index{print\+Table@{print\+Table}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{print\+Table}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Index\+Handler\+::print\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}
+
+
+Implemented in \hyperlink{class_a_v_l_tree_aaeb00045be61c381863d43526b4dffe1}{A\+V\+L\+Tree}, and \hyperlink{class_hash_table_ab50be186df67a5621694cb2f692de3fa}{Hash\+Table}.
+
+\hypertarget{class_index_handler_ac3213de7636a1332440c3204957f4658}{}\index{Index\+Handler@{Index\+Handler}!search\+Index@{search\+Index}}
+\index{search\+Index@{search\+Index}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{search\+Index}]{\setlength{\rightskip}{0pt plus 5cm}virtual set$<${\bf Page}$\ast$$>$ Index\+Handler\+::search\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_handler_ac3213de7636a1332440c3204957f4658}
+
+
+Implemented in \hyperlink{class_hash_table_a3e63955ddf861d2feb8e6db908c19ac9}{Hash\+Table}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Index\+Handler.\+h\item 
-Index\+Handler.\+cpp\end{DoxyCompactItemize}
+\hyperlink{_index_handler_8h}{Index\+Handler.\+h}\item 
+\hyperlink{_index_handler_8cpp}{Index\+Handler.\+cpp}\end{DoxyCompactItemize}

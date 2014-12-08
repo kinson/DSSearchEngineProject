@@ -4,14 +4,15 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: IndexHandler Class Reference</title>
+<title>Search Engine - DS2014: IndexHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Search Engine - DS2014
    </div>
   </td>
  </tr>
@@ -39,7 +40,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">IndexHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_index_handler_8h_source.html">IndexHandler.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IndexHandler:</div>
 <div class="dyncontent">
@@ -102,33 +104,197 @@ Inheritance diagram for IndexHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab79b5f2c35d6cff25d58e72c18af60ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab79b5f2c35d6cff25d58e72c18af60ea"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getClassType</b> ()=0</td></tr>
-<tr class="separator:ab79b5f2c35d6cff25d58e72c18af60ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa916a3613990ed790d281863d685cfc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa916a3613990ed790d281863d685cfc5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addPage</b> (<a class="el" href="class_page.html">Page</a> *)</td></tr>
+<tr class="memitem:a27748387661142a2eb545be6f0499996"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#a27748387661142a2eb545be6f0499996">IndexHandler</a> ()</td></tr>
+<tr class="separator:a27748387661142a2eb545be6f0499996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad787ca8cf83345ecfe332d2c3b8f8009"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#ad787ca8cf83345ecfe332d2c3b8f8009">~IndexHandler</a> ()</td></tr>
+<tr class="separator:ad787ca8cf83345ecfe332d2c3b8f8009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb0f250516fbc93936efec2c3f21359"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#aaeb0f250516fbc93936efec2c3f21359">getClassType</a> ()=0</td></tr>
+<tr class="separator:aaeb0f250516fbc93936efec2c3f21359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa916a3613990ed790d281863d685cfc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#aa916a3613990ed790d281863d685cfc5">addPage</a> (<a class="el" href="class_page.html">Page</a> *)</td></tr>
 <tr class="separator:aa916a3613990ed790d281863d685cfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bce6003281670e4adfb900c07a86d99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bce6003281670e4adfb900c07a86d99"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addToIndex</b> (<a class="el" href="class_page.html">Page</a> *&amp;, string &amp;)=0</td></tr>
-<tr class="separator:a8bce6003281670e4adfb900c07a86d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea6754222ce40912e1dc71e7b00c61e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea6754222ce40912e1dc71e7b00c61e1"></a>
-virtual set&lt; <a class="el" href="class_page.html">Page</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>searchIndex</b> (string)=0</td></tr>
-<tr class="separator:aea6754222ce40912e1dc71e7b00c61e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036ccca02cb734711a1e6a50b09a2b1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a036ccca02cb734711a1e6a50b09a2b1f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>printTable</b> ()=0</td></tr>
+<tr class="memitem:a102638a9813e71541092a6695bd24012"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#a102638a9813e71541092a6695bd24012">addToIndex</a> (<a class="el" href="class_page.html">Page</a> *&amp;, std::string &amp;)=0</td></tr>
+<tr class="separator:a102638a9813e71541092a6695bd24012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3213de7636a1332440c3204957f4658"><td class="memItemLeft" align="right" valign="top">virtual set&lt; <a class="el" href="class_page.html">Page</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#ac3213de7636a1332440c3204957f4658">searchIndex</a> (std::string)=0</td></tr>
+<tr class="separator:ac3213de7636a1332440c3204957f4658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036ccca02cb734711a1e6a50b09a2b1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_index_handler.html#a036ccca02cb734711a1e6a50b09a2b1f">printTable</a> ()=0</td></tr>
 <tr class="separator:a036ccca02cb734711a1e6a50b09a2b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3bcb75df49d1b86050c55f1a4526576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3bcb75df49d1b86050c55f1a4526576"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyStructure</b> ()=0</td></tr>
-<tr class="separator:ab3bcb75df49d1b86050c55f1a4526576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a27748387661142a2eb545be6f0499996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexHandler::IndexHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad787ca8cf83345ecfe332d2c3b8f8009"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexHandler::~IndexHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa916a3613990ed790d281863d685cfc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IndexHandler::addPage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_page.html">Page</a> *&#160;</td>
+          <td class="paramname"><em>nextPage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a102638a9813e71541092a6695bd24012"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IndexHandler::addToIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_page.html">Page</a> *&amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_hash_table.html#a9bee171516cca4930348a89fd0695b08">HashTable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaeb0f250516fbc93936efec2c3f21359"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string IndexHandler::getClassType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_a_v_l_tree.html#a708b6398ea1771de3077ca39c4005cca">AVLTree</a>, and <a class="el" href="class_hash_table.html#ab5a5fca28242a0733cb95e0729d94761">HashTable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a036ccca02cb734711a1e6a50b09a2b1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IndexHandler::printTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_a_v_l_tree.html#aaeb00045be61c381863d43526b4dffe1">AVLTree</a>, and <a class="el" href="class_hash_table.html#ab50be186df67a5621694cb2f692de3fa">HashTable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3213de7636a1332440c3204957f4658"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual set&lt;<a class="el" href="class_page.html">Page</a>*&gt; IndexHandler::searchIndex </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_hash_table.html#a3e63955ddf861d2feb8e6db908c19ac9">HashTable</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_index_handler_8h_source.html">IndexHandler.h</a></li>
-<li>IndexHandler.cpp</li>
+<li><a class="el" href="_index_handler_8cpp.html">IndexHandler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2014 11:46:47 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 8 2014 05:05:30 for Search Engine - DS2014 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

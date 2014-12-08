@@ -1,3 +1,9 @@
+/** User Interface header file
+* handles all interaction between the user and the program
+*builds main objects and runs three different modes for program
+* Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef USERINTERFACE_H
 #define USERINTERFACE_H
 

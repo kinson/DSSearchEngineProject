@@ -1,48 +1,210 @@
-\hypertarget{class_page}{\section{Page Class Reference}
+\hypertarget{class_page}{}\section{Page Class Reference}
 \label{class_page}\index{Page@{Page}}
-}
+
+
+{\ttfamily \#include $<$Page.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_page_acf477f6eb17bab9955041f62cf773e8d}{void {\bfseries set\+Title} (string)}\label{class_page_acf477f6eb17bab9955041f62cf773e8d}
-
+\hyperlink{class_page_a9a7cc22d5459498ce638c54ae966c79b}{Page} ()
 \item 
-\hypertarget{class_page_ac482ec0d499e8c4d61f65bec3c845e05}{void {\bfseries set\+Id} (unsigned long)}\label{class_page_ac482ec0d499e8c4d61f65bec3c845e05}
-
+void \hyperlink{class_page_acf477f6eb17bab9955041f62cf773e8d}{set\+Title} (string)
 \item 
-\hypertarget{class_page_aa035203c86eb29a7121987ef5bfa1faf}{void {\bfseries set\+Contributing\+User} (string)}\label{class_page_aa035203c86eb29a7121987ef5bfa1faf}
-
+void \hyperlink{class_page_ac482ec0d499e8c4d61f65bec3c845e05}{set\+Id} (unsigned long)
 \item 
-\hypertarget{class_page_a12df427d5f2620b2e912590eb1c81d32}{void {\bfseries set\+Date} (string)}\label{class_page_a12df427d5f2620b2e912590eb1c81d32}
-
+void \hyperlink{class_page_aa035203c86eb29a7121987ef5bfa1faf}{set\+Contributing\+User} (string)
 \item 
-\hypertarget{class_page_ad8984dc2ec1c9d62343e35724080ee46}{string {\bfseries get\+Title} ()}\label{class_page_ad8984dc2ec1c9d62343e35724080ee46}
-
+void \hyperlink{class_page_a12df427d5f2620b2e912590eb1c81d32}{set\+Date} (string)
 \item 
-\hypertarget{class_page_a8ce274bdff4b0f02131b0142dfd38dde}{unsigned long {\bfseries get\+Id} ()}\label{class_page_a8ce274bdff4b0f02131b0142dfd38dde}
-
+void \hyperlink{class_page_ada78e7ad8b4111afa5dd503151946e70}{set\+Frequency} (int, int)
 \item 
-\hypertarget{class_page_aa21e1e663df6f64d0670f4f9ac97330c}{string {\bfseries get\+Contributing\+User} ()}\label{class_page_aa21e1e663df6f64d0670f4f9ac97330c}
-
+void \hyperlink{class_page_a3f82c5cc09e31dc064246984ce7b7c17}{set\+Full\+Text} (string)
 \item 
-\hypertarget{class_page_aa9f674aaecb16f3ef02d54d0e42abe49}{string {\bfseries get\+Date} ()}\label{class_page_aa9f674aaecb16f3ef02d54d0e42abe49}
-
+string \hyperlink{class_page_ad9647bb36d7587217dae9039aaf9d0db}{get\+Full\+Text} ()
 \item 
-\hypertarget{class_page_a31af27b5aa8f44f6bfb95fdbf555477c}{vector$<$ string $>$ {\bfseries get\+Keywords} ()}\label{class_page_a31af27b5aa8f44f6bfb95fdbf555477c}
-
+string \hyperlink{class_page_ad8984dc2ec1c9d62343e35724080ee46}{get\+Title} ()
 \item 
-\hypertarget{class_page_a769e83dcf803821bd88be6211a79c282}{void {\bfseries add\+Keyword} (string \&)}\label{class_page_a769e83dcf803821bd88be6211a79c282}
-
+unsigned long \hyperlink{class_page_a8ce274bdff4b0f02131b0142dfd38dde}{get\+Id} ()
+\item 
+string \hyperlink{class_page_aa21e1e663df6f64d0670f4f9ac97330c}{get\+Contributing\+User} ()
+\item 
+string \hyperlink{class_page_aa9f674aaecb16f3ef02d54d0e42abe49}{get\+Date} ()
+\item 
+vector$<$ string $>$ \hyperlink{class_page_a31af27b5aa8f44f6bfb95fdbf555477c}{get\+Keywords} ()
+\item 
+int \hyperlink{class_page_a34588144ffb1c839e179f43aa7d9977c}{get\+Frequency} (int)
+\item 
+string \hyperlink{class_page_a0b43e8cd80b96011df19d083e6436a0f}{get\+Keyword\+At\+Index} (int)
+\item 
+void \hyperlink{class_page_a5650ea40b701dd7e15c7aa90fc819358}{increment\+Freq} (int)
+\item 
+int \hyperlink{class_page_a16d01583e3275c3a3c30793408f9865f}{add\+Keyword} (string \&)
+\item 
+\hyperlink{class_page_a2341fff1cc032ab6528874175e7dd841}{$\sim$\+Page} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_page_a8f1ef6fe4e22e67941a00bb6f5ff4be4}{static int {\bfseries binary\+Search} (vector$<$ string $>$ \&, string, int, int)}\label{class_page_a8f1ef6fe4e22e67941a00bb6f5ff4be4}
-
+static int \hyperlink{class_page_a8f1ef6fe4e22e67941a00bb6f5ff4be4}{binary\+Search} (vector$<$ string $>$ \&, string, int, int)
 \end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_page_a8713192624b3bc969533e4ebd39516c3}{full\+Text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_page_a9a7cc22d5459498ce638c54ae966c79b}{}\index{Page@{Page}!Page@{Page}}
+\index{Page@{Page}!Page@{Page}}
+\subsubsection[{Page}]{\setlength{\rightskip}{0pt plus 5cm}Page\+::\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_a9a7cc22d5459498ce638c54ae966c79b}
+\hypertarget{class_page_a2341fff1cc032ab6528874175e7dd841}{}\index{Page@{Page}!````~Page@{$\sim$\+Page}}
+\index{````~Page@{$\sim$\+Page}!Page@{Page}}
+\subsubsection[{$\sim$\+Page}]{\setlength{\rightskip}{0pt plus 5cm}Page\+::$\sim$\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_a2341fff1cc032ab6528874175e7dd841}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_page_a16d01583e3275c3a3c30793408f9865f}{}\index{Page@{Page}!add\+Keyword@{add\+Keyword}}
+\index{add\+Keyword@{add\+Keyword}!Page@{Page}}
+\subsubsection[{add\+Keyword}]{\setlength{\rightskip}{0pt plus 5cm}int Page\+::add\+Keyword (
+\begin{DoxyParamCaption}
+\item[{string \&}]{keyword}
+\end{DoxyParamCaption}
+)}\label{class_page_a16d01583e3275c3a3c30793408f9865f}
+\hypertarget{class_page_a8f1ef6fe4e22e67941a00bb6f5ff4be4}{}\index{Page@{Page}!binary\+Search@{binary\+Search}}
+\index{binary\+Search@{binary\+Search}!Page@{Page}}
+\subsubsection[{binary\+Search}]{\setlength{\rightskip}{0pt plus 5cm}int Page\+::binary\+Search (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{vc, }
+\item[{string}]{kw, }
+\item[{int}]{low, }
+\item[{int}]{high}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_page_a8f1ef6fe4e22e67941a00bb6f5ff4be4}
+\hypertarget{class_page_aa21e1e663df6f64d0670f4f9ac97330c}{}\index{Page@{Page}!get\+Contributing\+User@{get\+Contributing\+User}}
+\index{get\+Contributing\+User@{get\+Contributing\+User}!Page@{Page}}
+\subsubsection[{get\+Contributing\+User}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::get\+Contributing\+User (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_aa21e1e663df6f64d0670f4f9ac97330c}
+\hypertarget{class_page_aa9f674aaecb16f3ef02d54d0e42abe49}{}\index{Page@{Page}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Page@{Page}}
+\subsubsection[{get\+Date}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::get\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_aa9f674aaecb16f3ef02d54d0e42abe49}
+\hypertarget{class_page_a34588144ffb1c839e179f43aa7d9977c}{}\index{Page@{Page}!get\+Frequency@{get\+Frequency}}
+\index{get\+Frequency@{get\+Frequency}!Page@{Page}}
+\subsubsection[{get\+Frequency}]{\setlength{\rightskip}{0pt plus 5cm}int Page\+::get\+Frequency (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_page_a34588144ffb1c839e179f43aa7d9977c}
+\hypertarget{class_page_ad9647bb36d7587217dae9039aaf9d0db}{}\index{Page@{Page}!get\+Full\+Text@{get\+Full\+Text}}
+\index{get\+Full\+Text@{get\+Full\+Text}!Page@{Page}}
+\subsubsection[{get\+Full\+Text}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::get\+Full\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_ad9647bb36d7587217dae9039aaf9d0db}
+\hypertarget{class_page_a8ce274bdff4b0f02131b0142dfd38dde}{}\index{Page@{Page}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Page@{Page}}
+\subsubsection[{get\+Id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Page\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_a8ce274bdff4b0f02131b0142dfd38dde}
+\hypertarget{class_page_a0b43e8cd80b96011df19d083e6436a0f}{}\index{Page@{Page}!get\+Keyword\+At\+Index@{get\+Keyword\+At\+Index}}
+\index{get\+Keyword\+At\+Index@{get\+Keyword\+At\+Index}!Page@{Page}}
+\subsubsection[{get\+Keyword\+At\+Index}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::get\+Keyword\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_page_a0b43e8cd80b96011df19d083e6436a0f}
+\hypertarget{class_page_a31af27b5aa8f44f6bfb95fdbf555477c}{}\index{Page@{Page}!get\+Keywords@{get\+Keywords}}
+\index{get\+Keywords@{get\+Keywords}!Page@{Page}}
+\subsubsection[{get\+Keywords}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Page\+::get\+Keywords (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_a31af27b5aa8f44f6bfb95fdbf555477c}
+\hypertarget{class_page_ad8984dc2ec1c9d62343e35724080ee46}{}\index{Page@{Page}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Page@{Page}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_page_ad8984dc2ec1c9d62343e35724080ee46}
+\hypertarget{class_page_a5650ea40b701dd7e15c7aa90fc819358}{}\index{Page@{Page}!increment\+Freq@{increment\+Freq}}
+\index{increment\+Freq@{increment\+Freq}!Page@{Page}}
+\subsubsection[{increment\+Freq}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::increment\+Freq (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_page_a5650ea40b701dd7e15c7aa90fc819358}
+\hypertarget{class_page_aa035203c86eb29a7121987ef5bfa1faf}{}\index{Page@{Page}!set\+Contributing\+User@{set\+Contributing\+User}}
+\index{set\+Contributing\+User@{set\+Contributing\+User}!Page@{Page}}
+\subsubsection[{set\+Contributing\+User}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Contributing\+User (
+\begin{DoxyParamCaption}
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)}\label{class_page_aa035203c86eb29a7121987ef5bfa1faf}
+\hypertarget{class_page_a12df427d5f2620b2e912590eb1c81d32}{}\index{Page@{Page}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!Page@{Page}}
+\subsubsection[{set\+Date}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Date (
+\begin{DoxyParamCaption}
+\item[{string}]{d}
+\end{DoxyParamCaption}
+)}\label{class_page_a12df427d5f2620b2e912590eb1c81d32}
+\hypertarget{class_page_ada78e7ad8b4111afa5dd503151946e70}{}\index{Page@{Page}!set\+Frequency@{set\+Frequency}}
+\index{set\+Frequency@{set\+Frequency}!Page@{Page}}
+\subsubsection[{set\+Frequency}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Frequency (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{freq}
+\end{DoxyParamCaption}
+)}\label{class_page_ada78e7ad8b4111afa5dd503151946e70}
+\hypertarget{class_page_a3f82c5cc09e31dc064246984ce7b7c17}{}\index{Page@{Page}!set\+Full\+Text@{set\+Full\+Text}}
+\index{set\+Full\+Text@{set\+Full\+Text}!Page@{Page}}
+\subsubsection[{set\+Full\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Full\+Text (
+\begin{DoxyParamCaption}
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}\label{class_page_a3f82c5cc09e31dc064246984ce7b7c17}
+\hypertarget{class_page_ac482ec0d499e8c4d61f65bec3c845e05}{}\index{Page@{Page}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Page@{Page}}
+\subsubsection[{set\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{num}
+\end{DoxyParamCaption}
+)}\label{class_page_ac482ec0d499e8c4d61f65bec3c845e05}
+\hypertarget{class_page_acf477f6eb17bab9955041f62cf773e8d}{}\index{Page@{Page}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Page@{Page}}
+\subsubsection[{set\+Title}]{\setlength{\rightskip}{0pt plus 5cm}void Page\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{string}]{t}
+\end{DoxyParamCaption}
+)}\label{class_page_acf477f6eb17bab9955041f62cf773e8d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_page_a8713192624b3bc969533e4ebd39516c3}{}\index{Page@{Page}!full\+Text@{full\+Text}}
+\index{full\+Text@{full\+Text}!Page@{Page}}
+\subsubsection[{full\+Text}]{\setlength{\rightskip}{0pt plus 5cm}string Page\+::full\+Text}\label{class_page_a8713192624b3bc969533e4ebd39516c3}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Page.\+h\item 
-Page.\+cpp\end{DoxyCompactItemize}
+\hyperlink{_page_8h}{Page.\+h}\item 
+\hyperlink{_page_8cpp}{Page.\+cpp}\end{DoxyCompactItemize}

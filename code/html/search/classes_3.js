@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['documentparser',['DocumentParser',['../class_document_parser.html',1,'']]]
+  ['indexhandler',['IndexHandler',['../class_index_handler.html',1,'']]]
 ];

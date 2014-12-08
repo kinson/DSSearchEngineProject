@@ -1,3 +1,8 @@
+/** Page header file 
+* object that holds all information for each xml file
+*Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef PAGE_H
 #define PAGE_H
 

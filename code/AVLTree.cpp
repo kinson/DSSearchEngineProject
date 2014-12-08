@@ -44,6 +44,7 @@ AVLNode*& AVLTree::insert(string& kw, Page*& pg, AVLNode*& avlnode)
 
 }
 
+///rotations
 AVLNode*& AVLTree::leftRotation(AVLNode* avlnode)
 {
   AVLNode* temp;

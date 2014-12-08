@@ -1,3 +1,4 @@
+
 #include "AVLNode.h"
 
 AVLNode::AVLNode() : Node(nullptr, "")
@@ -23,15 +24,3 @@ AVLNode::~AVLNode()
   delete right; delete left;
 }
 
-
-/*bool operator<(AVLNode& left, string& kw)
-{
-  cout << "using custom comparison" << endl;
-  return (kw.compare(left.getWord()) < 0);
-}
-
-bool operator>(AVLNode& left, string& kw)
-{
-  cout << "using custom comparison" << endl;
-  return (kw.compare(left.getWord()) > 0);
-}*/

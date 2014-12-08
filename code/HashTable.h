@@ -1,3 +1,9 @@
+/** Hash table header file
+* virtual function, parent is index handler
+* hash table structure object
+* Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 

@@ -4,14 +4,15 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: Member List</title>
+<title>Search Engine - DS2014: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Search Engine - DS2014
    </div>
   </td>
  </tr>
@@ -39,7 +40,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,17 +89,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_query_processor.html">QueryProcessor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>notArgFinder</b>(int) (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>otherArgFinder</b>(int) (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>parseQuery</b>(std::string) (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>print</b>() (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>QueryProcessor</b>() (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>stemQuery</b>() (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~QueryProcessor</b>() (defined in <a class="el" href="class_query_processor.html">QueryProcessor</a>)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#a320de974504e3897b91950486e532f14">merge</a>(vector&lt; Result * &gt; &amp;, const vector&lt; Result * &gt; &amp;, const vector&lt; Result * &gt; &amp;)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_query_processor.html#a67bcf8c5a79e7522ade1efdad7e11984">merge_sort</a>(vector&lt; Result * &gt; &amp;vec)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#a5b1b684b03f82b2ef8137ce630be7c33">notArgFinder</a>(int)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_query_processor.html#af6b62a64663cd688f4a55d66570a28a2">otherArgFinder</a>(int)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#a87834efeca2f9af6e32fb5a545d33067">parseQuery</a>(std::string)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_query_processor.html#abc27ce568c2aa6cd84cfc10bca4b803b">print</a>()</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#a32a6760ff0aab51b38fb8eb236e2e140">QueryProcessor</a>()</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_query_processor.html#a740190335d4102760624782105eebb32">searchIndex</a>(string, IndexHandler *&amp;)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#a04a0adb83cbedd2bf62f3822fe84d4c1">sortResults</a>(vector&lt; Page * &gt; &amp;)</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_query_processor.html#a00cadfdc04ae5a048c58cbd9e7eebb1a">stemQuery</a>()</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_query_processor.html#ac4bebae67b0c08004f26f55957428574">~QueryProcessor</a>()</td><td class="entry"><a class="el" href="class_query_processor.html">QueryProcessor</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2014 11:46:47 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 8 2014 05:05:30 for Search Engine - DS2014 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

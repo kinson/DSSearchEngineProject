@@ -13,6 +13,7 @@ UserInterface::~UserInterface()
 
 }
 
+//welcome page
 void UserInterface::driver()
 {
 	int userChoice = 1;
@@ -57,10 +58,11 @@ void UserInterface::driver()
 	}
 }
 
+//runs maintenance mode
 void UserInterface::maintenenceMode()
 {
 	string maintenence;
-	cout << endl << endl << "Welcome to Maintenence Mode" << endl;
+	cout << endl << endl << "Welcome to Maintenance Mode" << endl;
 	cout << "1: Add files to the index " << endl;
 	cout << "2: Clear index " << endl;
 	if (indexhandler != nullptr)
@@ -94,6 +96,7 @@ void UserInterface::maintenenceMode()
 	maintenenceMode();
 }
 
+//runs interactive mode
 void UserInterface::interactiveMode()
 {
 	string interaction;
@@ -149,6 +152,7 @@ void UserInterface::interactiveMode()
 
 }
 
+//runs stress test
 void UserInterface::stressTest()
 {
 	std::chrono::time_point<std::chrono::system_clock> start, end;
@@ -238,6 +242,7 @@ void UserInterface::stressTest()
 	}
 }
 
+//creates the hashtable or avl tress
 void UserInterface::createStructure(string structtype)
 {
 	//check to see if indexhandler is already a structure
@@ -271,6 +276,7 @@ void UserInterface::createStructure(string structtype)
 
 }
 
+//adds file to index
 void UserInterface::addFilesToIndex()
 {
 	string xmlPath;
@@ -297,10 +303,12 @@ void UserInterface::addFilesToIndex()
 
 }
 
+//stress test add files to index
 void UserInterface::addFilesToIndex(string xmlPath)
 {
 		paths.push_back(xmlPath);
 }
+//if a file exists
 
 bool UserInterface::fexists(const string& filename)
 {
@@ -310,6 +318,7 @@ bool UserInterface::fexists(const string& filename)
 	return true;
 }
 
+//clear the index
 void UserInterface::clearIndex()
 {
 
@@ -322,7 +331,7 @@ void UserInterface::clearIndex()
 	}
 }
 
-
+//add to already created index
 void UserInterface::addToExistingIndex()
 {
 	int lastCollectionIndex = docparser->getCollectionSize();
@@ -345,6 +354,7 @@ void UserInterface::addToExistingIndex()
 	docparser->writeToStructure(indexhandler);
 }
 
+//search with entered query
 void UserInterface::searchIndex()
 {
 	cin.ignore();
@@ -374,6 +384,7 @@ void UserInterface::searchIndex()
 
 }
 
+//load old index that was saved to disk
 void UserInterface::loadExistingIndex()
 {
 	if (indexhandler == nullptr)
@@ -397,6 +408,7 @@ void UserInterface::loadExistingIndex()
 
 }
 
+//save index
 void UserInterface::saveIndexToDisk()
 {
 	docparser->saveIndex();

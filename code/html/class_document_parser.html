@@ -4,14 +4,15 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: DocumentParser Class Reference</title>
+<title>Search Engine - DS2014: DocumentParser Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Search Engine - DS2014
    </div>
   </td>
  </tr>
@@ -39,7 +40,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,36 +89,182 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DocumentParser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_document_parser_8h_source.html">DocumentParser.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40fc3f32cbe2d6f4f978caa42ee509d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40fc3f32cbe2d6f4f978caa42ee509d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseDrive</b> (string, <a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;)</td></tr>
+<tr class="memitem:a7a281448c94759450046ab2fb57e7aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a7a281448c94759450046ab2fb57e7aae">DocumentParser</a> ()</td></tr>
+<tr class="separator:a7a281448c94759450046ab2fb57e7aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fc3f32cbe2d6f4f978caa42ee509d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a40fc3f32cbe2d6f4f978caa42ee509d6">parseDrive</a> (string, <a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;)</td></tr>
 <tr class="separator:a40fc3f32cbe2d6f4f978caa42ee509d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae132955b8118c74df2705defd1fe856b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae132955b8118c74df2705defd1fe856b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendToIndex</b> (<a class="el" href="class_page.html">Page</a> *)</td></tr>
+<tr class="memitem:ae132955b8118c74df2705defd1fe856b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#ae132955b8118c74df2705defd1fe856b">sendToIndex</a> (<a class="el" href="class_page.html">Page</a> *)</td></tr>
 <tr class="separator:ae132955b8118c74df2705defd1fe856b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca97302ad273efde7f33163ab9e78dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ca97302ad273efde7f33163ab9e78dc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>writeToStructure</b> (<a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;, int startIndex=0)</td></tr>
+<tr class="memitem:a7ca97302ad273efde7f33163ab9e78dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a7ca97302ad273efde7f33163ab9e78dc">writeToStructure</a> (<a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;, int startIndex=0)</td></tr>
 <tr class="separator:a7ca97302ad273efde7f33163ab9e78dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f07107cbe76401f9db73dbf9cae7a5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f07107cbe76401f9db73dbf9cae7a5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>saveIndex</b> ()</td></tr>
+<tr class="memitem:a8f07107cbe76401f9db73dbf9cae7a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a8f07107cbe76401f9db73dbf9cae7a5f">saveIndex</a> ()</td></tr>
 <tr class="separator:a8f07107cbe76401f9db73dbf9cae7a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8046232e6026fb59d3052426e7ed7a58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8046232e6026fb59d3052426e7ed7a58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readInParsedFile</b> (<a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;)</td></tr>
+<tr class="memitem:a8046232e6026fb59d3052426e7ed7a58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a8046232e6026fb59d3052426e7ed7a58">readInParsedFile</a> (<a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;)</td></tr>
 <tr class="separator:a8046232e6026fb59d3052426e7ed7a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dd86d1fb040662e97845d2499e5ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23dd86d1fb040662e97845d2499e5ae1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getCollectionSize</b> ()</td></tr>
+<tr class="memitem:a23dd86d1fb040662e97845d2499e5ae1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#a23dd86d1fb040662e97845d2499e5ae1">getCollectionSize</a> ()</td></tr>
 <tr class="separator:a23dd86d1fb040662e97845d2499e5ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2c732f67e7442edbc99979a3fc9ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document_parser.html#adb2c732f67e7442edbc99979a3fc9ba6">clearCollection</a> ()</td></tr>
+<tr class="separator:adb2c732f67e7442edbc99979a3fc9ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7a281448c94759450046ab2fb57e7aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DocumentParser::DocumentParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adb2c732f67e7442edbc99979a3fc9ba6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::clearCollection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23dd86d1fb040662e97845d2499e5ae1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DocumentParser::getCollectionSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40fc3f32cbe2d6f4f978caa42ee509d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::parseDrive </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>xmlInFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;&#160;</td>
+          <td class="paramname"><em>indexhandler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8046232e6026fb59d3052426e7ed7a58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::readInParsedFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;&#160;</td>
+          <td class="paramname"><em>indexhandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f07107cbe76401f9db73dbf9cae7a5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::saveIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae132955b8118c74df2705defd1fe856b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::sendToIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_page.html">Page</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ca97302ad273efde7f33163ab9e78dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentParser::writeToStructure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_index_handler.html">IndexHandler</a> *&amp;&#160;</td>
+          <td class="paramname"><em>ih</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_document_parser_8h_source.html">DocumentParser.h</a></li>
-<li>DocumentParser.cpp</li>
+<li><a class="el" href="_document_parser_8cpp.html">DocumentParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2014 11:46:47 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 8 2014 05:05:30 for Search Engine - DS2014 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

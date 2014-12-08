@@ -1,3 +1,7 @@
+/** Hash node header file
+* Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef HASHNODE_H
 #define HASHNODE_H
 

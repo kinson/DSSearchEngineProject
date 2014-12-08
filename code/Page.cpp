@@ -7,6 +7,7 @@ Page::Page()
   fullText = "";
 }
 
+//getters and setters for Page
 void Page::setTitle(string t)
 {
   title = t;

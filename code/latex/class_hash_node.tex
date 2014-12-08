@@ -1,6 +1,9 @@
-\hypertarget{class_hash_node}{\section{Hash\+Node Class Reference}
+\hypertarget{class_hash_node}{}\section{Hash\+Node Class Reference}
 \label{class_hash_node}\index{Hash\+Node@{Hash\+Node}}
-}
+
+
+{\ttfamily \#include $<$Hash\+Node.\+h$>$}
+
 Inheritance diagram for Hash\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,24 +13,74 @@ Inheritance diagram for Hash\+Node\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_hash_node_af85be330cc34bb55f26041c7224b5b25}{{\bfseries Hash\+Node} (\hyperlink{class_node}{Node} $\ast$\&other)}\label{class_hash_node_af85be330cc34bb55f26041c7224b5b25}
-
+\hyperlink{class_hash_node_a90063c7c68cbc38916c1e3903de40212}{Hash\+Node} ()
 \item 
-\hypertarget{class_hash_node_ae3a3c1f03c060e03cc01ef81aae2c734}{\hyperlink{class_hash_node}{Hash\+Node} $\ast$ {\bfseries get\+Next\+Hash\+Node} ()}\label{class_hash_node_ae3a3c1f03c060e03cc01ef81aae2c734}
-
+\hyperlink{class_hash_node_af85be330cc34bb55f26041c7224b5b25}{Hash\+Node} (\hyperlink{class_node}{Node} $\ast$\&other)
 \item 
-\hypertarget{class_hash_node_a0711b28c4cbdb8a21e6df486896081b3}{void {\bfseries set\+Next\+Hash\+Node} (\hyperlink{class_hash_node}{Hash\+Node} $\ast$)}\label{class_hash_node_a0711b28c4cbdb8a21e6df486896081b3}
-
+\hyperlink{class_hash_node_a3fc338c0a01b41b1593a05a3c4bb5c75}{$\sim$\+Hash\+Node} ()
+\item 
+\hyperlink{class_hash_node}{Hash\+Node} $\ast$ \hyperlink{class_hash_node_ae3a3c1f03c060e03cc01ef81aae2c734}{get\+Next\+Hash\+Node} ()
+\item 
+void \hyperlink{class_hash_node_a0711b28c4cbdb8a21e6df486896081b3}{set\+Next\+Hash\+Node} (\hyperlink{class_hash_node}{Hash\+Node} $\ast$)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_hash_node_a574ea806a7ec4e2f0fa54ed7da67b628}{class {\bfseries Hash\+Table}}\label{class_hash_node_a574ea806a7ec4e2f0fa54ed7da67b628}
-
+class \hyperlink{class_hash_node_a574ea806a7ec4e2f0fa54ed7da67b628}{Hash\+Table}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hash node header file Sam Hunter and Morgan Monzingo 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hash_node_a90063c7c68cbc38916c1e3903de40212}{}\index{Hash\+Node@{Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\index{Hash\+Node@{Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{Hash\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Node\+::\+Hash\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_node_a90063c7c68cbc38916c1e3903de40212}
+\hypertarget{class_hash_node_af85be330cc34bb55f26041c7224b5b25}{}\index{Hash\+Node@{Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\index{Hash\+Node@{Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{Hash\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Node\+::\+Hash\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$\&}]{other}
+\end{DoxyParamCaption}
+)}\label{class_hash_node_af85be330cc34bb55f26041c7224b5b25}
+\hypertarget{class_hash_node_a3fc338c0a01b41b1593a05a3c4bb5c75}{}\index{Hash\+Node@{Hash\+Node}!````~Hash\+Node@{$\sim$\+Hash\+Node}}
+\index{````~Hash\+Node@{$\sim$\+Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{$\sim$\+Hash\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Node\+::$\sim$\+Hash\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_node_a3fc338c0a01b41b1593a05a3c4bb5c75}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hash_node_ae3a3c1f03c060e03cc01ef81aae2c734}{}\index{Hash\+Node@{Hash\+Node}!get\+Next\+Hash\+Node@{get\+Next\+Hash\+Node}}
+\index{get\+Next\+Hash\+Node@{get\+Next\+Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{get\+Next\+Hash\+Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hash\+Node} $\ast$ Hash\+Node\+::get\+Next\+Hash\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_node_ae3a3c1f03c060e03cc01ef81aae2c734}
+\hypertarget{class_hash_node_a0711b28c4cbdb8a21e6df486896081b3}{}\index{Hash\+Node@{Hash\+Node}!set\+Next\+Hash\+Node@{set\+Next\+Hash\+Node}}
+\index{set\+Next\+Hash\+Node@{set\+Next\+Hash\+Node}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{set\+Next\+Hash\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Hash\+Node\+::set\+Next\+Hash\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Hash\+Node} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}\label{class_hash_node_a0711b28c4cbdb8a21e6df486896081b3}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_hash_node_a574ea806a7ec4e2f0fa54ed7da67b628}{}\index{Hash\+Node@{Hash\+Node}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Node@{Hash\+Node}}
+\subsubsection[{Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Hash\+Table}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_hash_node_a574ea806a7ec4e2f0fa54ed7da67b628}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Hash\+Node.\+h\item 
-Hash\+Node.\+cpp\end{DoxyCompactItemize}
+\hyperlink{_hash_node_8h}{Hash\+Node.\+h}\item 
+\hyperlink{_hash_node_8cpp}{Hash\+Node.\+cpp}\end{DoxyCompactItemize}

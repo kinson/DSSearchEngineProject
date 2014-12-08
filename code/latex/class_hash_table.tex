@@ -1,6 +1,9 @@
-\hypertarget{class_hash_table}{\section{Hash\+Table Class Reference}
+\hypertarget{class_hash_table}{}\section{Hash\+Table Class Reference}
 \label{class_hash_table}\index{Hash\+Table@{Hash\+Table}}
-}
+
+
+{\ttfamily \#include $<$Hash\+Table.\+h$>$}
+
 Inheritance diagram for Hash\+Table\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,27 +13,95 @@ Inheritance diagram for Hash\+Table\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_hash_table_aaa6417f06baad4f297d098dc7393e48b}{void {\bfseries add\+To\+Index} (\hyperlink{class_page}{Page} $\ast$\&, string \&)}\label{class_hash_table_aaa6417f06baad4f297d098dc7393e48b}
-
+\hyperlink{class_hash_table_adc3bf2b214c572819ba957ad314d7db3}{Hash\+Table} ()
 \item 
-\hypertarget{class_hash_table_ab50be186df67a5621694cb2f692de3fa}{void {\bfseries print\+Table} ()}\label{class_hash_table_ab50be186df67a5621694cb2f692de3fa}
-
+\hyperlink{class_hash_table_a9ce5569bb945880cacb29aaba6f3e3f9}{$\sim$\+Hash\+Table} ()
 \item 
-\hypertarget{class_hash_table_a838109ea89fa1b80908aee6838d96ad1}{set$<$ \hyperlink{class_page}{Page} $\ast$ $>$ {\bfseries search\+Index} (string)}\label{class_hash_table_a838109ea89fa1b80908aee6838d96ad1}
-
+void \hyperlink{class_hash_table_a9bee171516cca4930348a89fd0695b08}{add\+To\+Index} (\hyperlink{class_page}{Page} $\ast$\&, std\+::string \&)
 \item 
-\hypertarget{class_hash_table_ad42a8eb156c387de2645ca1276ea412a}{void {\bfseries save\+Index} ()}\label{class_hash_table_ad42a8eb156c387de2645ca1276ea412a}
-
+void \hyperlink{class_hash_table_ab50be186df67a5621694cb2f692de3fa}{print\+Table} ()
 \item 
-\hypertarget{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}{string {\bfseries get\+Class\+Type} ()}\label{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}
-
+set$<$ \hyperlink{class_page}{Page} $\ast$ $>$ \hyperlink{class_hash_table_a3e63955ddf861d2feb8e6db908c19ac9}{search\+Index} (std\+::string)
 \item 
-\hypertarget{class_hash_table_acf96b4d4e320ab83fbeed1578a415be8}{void {\bfseries destroy\+Structure} ()}\label{class_hash_table_acf96b4d4e320ab83fbeed1578a415be8}
-
+void \hyperlink{class_hash_table_ad42a8eb156c387de2645ca1276ea412a}{save\+Index} ()
+\item 
+std\+::string \hyperlink{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}{get\+Class\+Type} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hash_table_adc3bf2b214c572819ba957ad314d7db3}{}\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+::\+Hash\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_table_adc3bf2b214c572819ba957ad314d7db3}
+\hypertarget{class_hash_table_a9ce5569bb945880cacb29aaba6f3e3f9}{}\index{Hash\+Table@{Hash\+Table}!````~Hash\+Table@{$\sim$\+Hash\+Table}}
+\index{````~Hash\+Table@{$\sim$\+Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{$\sim$\+Hash\+Table}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+::$\sim$\+Hash\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_table_a9ce5569bb945880cacb29aaba6f3e3f9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hash_table_a9bee171516cca4930348a89fd0695b08}{}\index{Hash\+Table@{Hash\+Table}!add\+To\+Index@{add\+To\+Index}}
+\index{add\+To\+Index@{add\+To\+Index}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{add\+To\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void Hash\+Table\+::add\+To\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Page} $\ast$\&}]{, }
+\item[{std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_a9bee171516cca4930348a89fd0695b08}
+
+
+Implements \hyperlink{class_index_handler_a102638a9813e71541092a6695bd24012}{Index\+Handler}.
+
+\hypertarget{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}{}\index{Hash\+Table@{Hash\+Table}!get\+Class\+Type@{get\+Class\+Type}}
+\index{get\+Class\+Type@{get\+Class\+Type}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{get\+Class\+Type}]{\setlength{\rightskip}{0pt plus 5cm}string Hash\+Table\+::get\+Class\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_ab5a5fca28242a0733cb95e0729d94761}
+
+
+Implements \hyperlink{class_index_handler_aaeb0f250516fbc93936efec2c3f21359}{Index\+Handler}.
+
+\hypertarget{class_hash_table_ab50be186df67a5621694cb2f692de3fa}{}\index{Hash\+Table@{Hash\+Table}!print\+Table@{print\+Table}}
+\index{print\+Table@{print\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{print\+Table}]{\setlength{\rightskip}{0pt plus 5cm}void Hash\+Table\+::print\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_ab50be186df67a5621694cb2f692de3fa}
+
+
+Implements \hyperlink{class_index_handler_a036ccca02cb734711a1e6a50b09a2b1f}{Index\+Handler}.
+
+\hypertarget{class_hash_table_ad42a8eb156c387de2645ca1276ea412a}{}\index{Hash\+Table@{Hash\+Table}!save\+Index@{save\+Index}}
+\index{save\+Index@{save\+Index}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{save\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void Hash\+Table\+::save\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_table_ad42a8eb156c387de2645ca1276ea412a}
+\hypertarget{class_hash_table_a3e63955ddf861d2feb8e6db908c19ac9}{}\index{Hash\+Table@{Hash\+Table}!search\+Index@{search\+Index}}
+\index{search\+Index@{search\+Index}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{search\+Index}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ {\bf Page} $\ast$ $>$ Hash\+Table\+::search\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_a3e63955ddf861d2feb8e6db908c19ac9}
+
+
+Implements \hyperlink{class_index_handler_ac3213de7636a1332440c3204957f4658}{Index\+Handler}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Hash\+Table.\+h\item 
-Hash\+Table.\+cpp\end{DoxyCompactItemize}
+\hyperlink{_hash_table_8h}{Hash\+Table.\+h}\item 
+\hyperlink{_hash_table_8cpp}{Hash\+Table.\+cpp}\end{DoxyCompactItemize}

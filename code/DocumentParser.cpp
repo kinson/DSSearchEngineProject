@@ -1,3 +1,6 @@
+//Document Parser cpp file
+//Sam Hunter and Morgan Monzingo
+
 #include "DocumentParser.h"
 #include "stemHelper.h"
 

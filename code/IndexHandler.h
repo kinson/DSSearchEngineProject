@@ -1,3 +1,8 @@
+/** Index Handler Header File
+* Parent function for hashtable and avltree
+*Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef INDEXHANDLER_H
 #define INDEXHANDLER_H
 

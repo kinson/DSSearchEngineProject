@@ -1,3 +1,8 @@
+/** Virtual AVL Tree - header file 
+* Parent function is index handler, AVL Tree structure object
+* Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef AVLTREE_H
 #define AVLTREE_H
 

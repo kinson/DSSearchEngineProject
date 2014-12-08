@@ -4,14 +4,15 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: Query Class Reference</title>
+<title>Search Engine - DS2014: Query Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Search Engine - DS2014
    </div>
   </td>
  </tr>
@@ -39,7 +40,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,72 +89,399 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Query Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_query_8h_source.html">Query.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a509091fc6e1bba8544991403a6d7b4b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a509091fc6e1bba8544991403a6d7b4b7"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getandArgs</b> ()</td></tr>
+<tr class="memitem:a4c1633236bdb9fa8d3fd3572a469889d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a4c1633236bdb9fa8d3fd3572a469889d">Query</a> ()</td></tr>
+<tr class="separator:a4c1633236bdb9fa8d3fd3572a469889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509091fc6e1bba8544991403a6d7b4b7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a509091fc6e1bba8544991403a6d7b4b7">getandArgs</a> ()</td></tr>
 <tr class="separator:a509091fc6e1bba8544991403a6d7b4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab90fc81524045a085b472dad8e6032bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90fc81524045a085b472dad8e6032bd"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getorArgs</b> ()</td></tr>
+<tr class="memitem:ab90fc81524045a085b472dad8e6032bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#ab90fc81524045a085b472dad8e6032bd">getorArgs</a> ()</td></tr>
 <tr class="separator:ab90fc81524045a085b472dad8e6032bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83014fdd314c75564ef1746fccd77407"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83014fdd314c75564ef1746fccd77407"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getnotArgs</b> ()</td></tr>
+<tr class="memitem:a83014fdd314c75564ef1746fccd77407"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a83014fdd314c75564ef1746fccd77407">getnotArgs</a> ()</td></tr>
 <tr class="separator:a83014fdd314c75564ef1746fccd77407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afed0bd695e2b355d42ae78a79c2b2592"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afed0bd695e2b355d42ae78a79c2b2592"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getnormArgs</b> ()</td></tr>
+<tr class="memitem:afed0bd695e2b355d42ae78a79c2b2592"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#afed0bd695e2b355d42ae78a79c2b2592">getnormArgs</a> ()</td></tr>
 <tr class="separator:afed0bd695e2b355d42ae78a79c2b2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2e86853eac7f292d4894cf8ef4260b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2e86853eac7f292d4894cf8ef4260b0"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getandArgs</b> (int)</td></tr>
+<tr class="memitem:aa2e86853eac7f292d4894cf8ef4260b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aa2e86853eac7f292d4894cf8ef4260b0">getandArgs</a> (int)</td></tr>
 <tr class="separator:aa2e86853eac7f292d4894cf8ef4260b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3966de9b3bdba292a67b0e418a9d146"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3966de9b3bdba292a67b0e418a9d146"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getorArgs</b> (int)</td></tr>
+<tr class="memitem:ae3966de9b3bdba292a67b0e418a9d146"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#ae3966de9b3bdba292a67b0e418a9d146">getorArgs</a> (int)</td></tr>
 <tr class="separator:ae3966de9b3bdba292a67b0e418a9d146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef802901ce6e3b7b68e46b2f6659b18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ef802901ce6e3b7b68e46b2f6659b18"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getnotArgs</b> (int)</td></tr>
+<tr class="memitem:a7ef802901ce6e3b7b68e46b2f6659b18"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a7ef802901ce6e3b7b68e46b2f6659b18">getnotArgs</a> (int)</td></tr>
 <tr class="separator:a7ef802901ce6e3b7b68e46b2f6659b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d5b960f0d1cd7c83b7d191ac371d0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7d5b960f0d1cd7c83b7d191ac371d0a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getnormArgs</b> (int)</td></tr>
+<tr class="memitem:aa7d5b960f0d1cd7c83b7d191ac371d0a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aa7d5b960f0d1cd7c83b7d191ac371d0a">getnormArgs</a> (int)</td></tr>
 <tr class="separator:aa7d5b960f0d1cd7c83b7d191ac371d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0497175553ef811642c5b2b3c0bd1ca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0497175553ef811642c5b2b3c0bd1ca2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setandArgs</b> (int, std::string)</td></tr>
+<tr class="memitem:a0497175553ef811642c5b2b3c0bd1ca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a0497175553ef811642c5b2b3c0bd1ca2">setandArgs</a> (int, std::string)</td></tr>
 <tr class="separator:a0497175553ef811642c5b2b3c0bd1ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb2f5f87786fc282fefface523a81138"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2f5f87786fc282fefface523a81138"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setorArgs</b> (int, std::string)</td></tr>
+<tr class="memitem:afb2f5f87786fc282fefface523a81138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#afb2f5f87786fc282fefface523a81138">setorArgs</a> (int, std::string)</td></tr>
 <tr class="separator:afb2f5f87786fc282fefface523a81138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef14c309f6f5880066f649a8f47fe3bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef14c309f6f5880066f649a8f47fe3bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setnotArgs</b> (int, std::string)</td></tr>
+<tr class="memitem:aef14c309f6f5880066f649a8f47fe3bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aef14c309f6f5880066f649a8f47fe3bc">setnotArgs</a> (int, std::string)</td></tr>
 <tr class="separator:aef14c309f6f5880066f649a8f47fe3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a65f32cdc1c1ee4246cbf480763557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24a65f32cdc1c1ee4246cbf480763557"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setnormArgs</b> (int, std::string)</td></tr>
+<tr class="memitem:a24a65f32cdc1c1ee4246cbf480763557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a24a65f32cdc1c1ee4246cbf480763557">setnormArgs</a> (int, std::string)</td></tr>
 <tr class="separator:a24a65f32cdc1c1ee4246cbf480763557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308104a6371bdf950435593413d527a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a308104a6371bdf950435593413d527a6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addandArgs</b> (std::string)</td></tr>
+<tr class="memitem:a308104a6371bdf950435593413d527a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a308104a6371bdf950435593413d527a6">addandArgs</a> (std::string)</td></tr>
 <tr class="separator:a308104a6371bdf950435593413d527a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19cc7a02d5e11c44118760bad4d0f50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa19cc7a02d5e11c44118760bad4d0f50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addorArgs</b> (std::string)</td></tr>
+<tr class="memitem:aa19cc7a02d5e11c44118760bad4d0f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aa19cc7a02d5e11c44118760bad4d0f50">addorArgs</a> (std::string)</td></tr>
 <tr class="separator:aa19cc7a02d5e11c44118760bad4d0f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1923e0fdb1a976e23dc79731722d4fa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1923e0fdb1a976e23dc79731722d4fa3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addnotArgs</b> (std::string)</td></tr>
+<tr class="memitem:a1923e0fdb1a976e23dc79731722d4fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a1923e0fdb1a976e23dc79731722d4fa3">addnotArgs</a> (std::string)</td></tr>
 <tr class="separator:a1923e0fdb1a976e23dc79731722d4fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a038cf2204b03b09bd8423ee919c6866b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a038cf2204b03b09bd8423ee919c6866b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addnormArgs</b> (std::string)</td></tr>
+<tr class="memitem:a038cf2204b03b09bd8423ee919c6866b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#a038cf2204b03b09bd8423ee919c6866b">addnormArgs</a> (std::string)</td></tr>
 <tr class="separator:a038cf2204b03b09bd8423ee919c6866b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9c243533681f606dd784934d03ab10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b9c243533681f606dd784934d03ab10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printQuery</b> ()</td></tr>
-<tr class="separator:a3b9c243533681f606dd784934d03ab10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b2a46725fdad4e06aad405b6c18227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8b2a46725fdad4e06aad405b6c18227"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearQuery</b> ()</td></tr>
+<tr class="memitem:aa8b2a46725fdad4e06aad405b6c18227"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aa8b2a46725fdad4e06aad405b6c18227">clearQuery</a> ()</td></tr>
 <tr class="separator:aa8b2a46725fdad4e06aad405b6c18227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0c964335e9809cc7e22af34e9e8410"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query.html#aad0c964335e9809cc7e22af34e9e8410">~Query</a> ()</td></tr>
+<tr class="separator:aad0c964335e9809cc7e22af34e9e8410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_query.html">Query</a> header file holds each keyword needing to be searched in query Sam Hunter and Morgan Monzingo </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4c1633236bdb9fa8d3fd3572a469889d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Query::Query </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad0c964335e9809cc7e22af34e9e8410"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Query::~Query </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a308104a6371bdf950435593413d527a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::addandArgs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>andArg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a038cf2204b03b09bd8423ee919c6866b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::addnormArgs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>normArg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1923e0fdb1a976e23dc79731722d4fa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::addnotArgs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa19cc7a02d5e11c44118760bad4d0f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::addorArgs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>orArg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8b2a46725fdad4e06aad405b6c18227"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::clearQuery </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a509091fc6e1bba8544991403a6d7b4b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Query::getandArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2e86853eac7f292d4894cf8ef4260b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Query::getandArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afed0bd695e2b355d42ae78a79c2b2592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Query::getnormArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7d5b960f0d1cd7c83b7d191ac371d0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Query::getnormArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83014fdd314c75564ef1746fccd77407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Query::getnotArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ef802901ce6e3b7b68e46b2f6659b18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Query::getnotArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab90fc81524045a085b472dad8e6032bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Query::getorArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3966de9b3bdba292a67b0e418a9d146"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Query::getorArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0497175553ef811642c5b2b3c0bd1ca2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::setandArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>newWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24a65f32cdc1c1ee4246cbf480763557"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::setnormArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>newWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef14c309f6f5880066f649a8f47fe3bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::setnotArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>newWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb2f5f87786fc282fefface523a81138"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Query::setorArgs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>newWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_query_8h_source.html">Query.h</a></li>
-<li>Query.cpp</li>
+<li><a class="el" href="_query_8cpp.html">Query.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2014 11:46:47 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 8 2014 05:05:30 for Search Engine - DS2014 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

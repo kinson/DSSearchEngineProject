@@ -1,3 +1,10 @@
+/**Document Parser header file
+* parses entire document by title, date, id, username and text 
+* stems words and pulls out stop words
+* sends to index
+* Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef DOCUMENTPARSER_H
 #define DOCUMENTPARSER_H
 

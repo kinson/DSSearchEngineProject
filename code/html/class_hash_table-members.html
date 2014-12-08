@@ -4,14 +4,15 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: Member List</title>
+<title>Search Engine - DS2014: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Search Engine - DS2014
    </div>
   </td>
  </tr>
@@ -39,7 +40,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,19 +89,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_hash_table.html">HashTable</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addPage</b>(Page *) (defined in <a class="el" href="class_index_handler.html">IndexHandler</a>)</td><td class="entry"><a class="el" href="class_index_handler.html">IndexHandler</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>addToIndex</b>(Page *&amp;, string &amp;) (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>destroyStructure</b>() (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getClassType</b>() (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HashTable</b>() (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>IndexHandler</b>() (defined in <a class="el" href="class_index_handler.html">IndexHandler</a>)</td><td class="entry"><a class="el" href="class_index_handler.html">IndexHandler</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>printTable</b>() (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>saveIndex</b>() (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>searchIndex</b>(string) (defined in <a class="el" href="class_hash_table.html">HashTable</a>)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_index_handler.html#aa916a3613990ed790d281863d685cfc5">addPage</a>(Page *)</td><td class="entry"><a class="el" href="class_index_handler.html">IndexHandler</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_hash_table.html#a9bee171516cca4930348a89fd0695b08">addToIndex</a>(Page *&amp;, std::string &amp;)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_hash_table.html#ab5a5fca28242a0733cb95e0729d94761">getClassType</a>()</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_hash_table.html#adc3bf2b214c572819ba957ad314d7db3">HashTable</a>()</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_index_handler.html#a27748387661142a2eb545be6f0499996">IndexHandler</a>()</td><td class="entry"><a class="el" href="class_index_handler.html">IndexHandler</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_hash_table.html#ab50be186df67a5621694cb2f692de3fa">printTable</a>()</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_hash_table.html#ad42a8eb156c387de2645ca1276ea412a">saveIndex</a>()</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_hash_table.html#a3e63955ddf861d2feb8e6db908c19ac9">searchIndex</a>(std::string)</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_hash_table.html#a9ce5569bb945880cacb29aaba6f3e3f9">~HashTable</a>()</td><td class="entry"><a class="el" href="class_hash_table.html">HashTable</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_index_handler.html#ad787ca8cf83345ecfe332d2c3b8f8009">~IndexHandler</a>()</td><td class="entry"><a class="el" href="class_index_handler.html">IndexHandler</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2014 11:46:47 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 8 2014 05:05:30 for Search Engine - DS2014 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

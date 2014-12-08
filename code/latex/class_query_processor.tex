@@ -1,27 +1,123 @@
-\hypertarget{class_query_processor}{\section{Query\+Processor Class Reference}
+\hypertarget{class_query_processor}{}\section{Query\+Processor Class Reference}
 \label{class_query_processor}\index{Query\+Processor@{Query\+Processor}}
-}
+
+
+{\ttfamily \#include $<$Query\+Processor.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_query_processor_a87834efeca2f9af6e32fb5a545d33067}{void {\bfseries parse\+Query} (std\+::string)}\label{class_query_processor_a87834efeca2f9af6e32fb5a545d33067}
-
+\hyperlink{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}{Query\+Processor} ()
 \item 
-\hypertarget{class_query_processor_a5b1b684b03f82b2ef8137ce630be7c33}{void {\bfseries not\+Arg\+Finder} (int)}\label{class_query_processor_a5b1b684b03f82b2ef8137ce630be7c33}
-
+\hyperlink{class_query_processor_ac4bebae67b0c08004f26f55957428574}{$\sim$\+Query\+Processor} ()
 \item 
-\hypertarget{class_query_processor_af6b62a64663cd688f4a55d66570a28a2}{void {\bfseries other\+Arg\+Finder} (int)}\label{class_query_processor_af6b62a64663cd688f4a55d66570a28a2}
-
+void \hyperlink{class_query_processor_a87834efeca2f9af6e32fb5a545d33067}{parse\+Query} (std\+::string)
 \item 
-\hypertarget{class_query_processor_a00cadfdc04ae5a048c58cbd9e7eebb1a}{void {\bfseries stem\+Query} ()}\label{class_query_processor_a00cadfdc04ae5a048c58cbd9e7eebb1a}
-
+void \hyperlink{class_query_processor_a5b1b684b03f82b2ef8137ce630be7c33}{not\+Arg\+Finder} (int)
 \item 
-\hypertarget{class_query_processor_abc27ce568c2aa6cd84cfc10bca4b803b}{void {\bfseries print} ()}\label{class_query_processor_abc27ce568c2aa6cd84cfc10bca4b803b}
-
+void \hyperlink{class_query_processor_af6b62a64663cd688f4a55d66570a28a2}{other\+Arg\+Finder} (int)
+\item 
+void \hyperlink{class_query_processor_a00cadfdc04ae5a048c58cbd9e7eebb1a}{stem\+Query} ()
+\item 
+void \hyperlink{class_query_processor_abc27ce568c2aa6cd84cfc10bca4b803b}{print} ()
+\item 
+vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \hyperlink{class_query_processor_a740190335d4102760624782105eebb32}{search\+Index} (string, \hyperlink{class_index_handler}{Index\+Handler} $\ast$\&)
+\item 
+vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \hyperlink{class_query_processor_a04a0adb83cbedd2bf62f3822fe84d4c1}{sort\+Results} (vector$<$ \hyperlink{class_page}{Page} $\ast$ $>$ \&)
+\item 
+vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \hyperlink{class_query_processor_a67bcf8c5a79e7522ade1efdad7e11984}{merge\+\_\+sort} (vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \&vec)
+\item 
+vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \hyperlink{class_query_processor_a320de974504e3897b91950486e532f14}{merge} (vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \&, const vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \&, const vector$<$ \hyperlink{class_result}{Result} $\ast$ $>$ \&)
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}{}\index{Query\+Processor@{Query\+Processor}!Query\+Processor@{Query\+Processor}}
+\index{Query\+Processor@{Query\+Processor}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{Query\+Processor}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::\+Query\+Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}
+\hypertarget{class_query_processor_ac4bebae67b0c08004f26f55957428574}{}\index{Query\+Processor@{Query\+Processor}!````~Query\+Processor@{$\sim$\+Query\+Processor}}
+\index{````~Query\+Processor@{$\sim$\+Query\+Processor}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{$\sim$\+Query\+Processor}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::$\sim$\+Query\+Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_ac4bebae67b0c08004f26f55957428574}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_query_processor_a320de974504e3897b91950486e532f14}{}\index{Query\+Processor@{Query\+Processor}!merge@{merge}}
+\index{merge@{merge}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Result} $\ast$ $>$ Query\+Processor\+::merge (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Result} $\ast$ $>$ \&}]{vec, }
+\item[{const vector$<$ {\bf Result} $\ast$ $>$ \&}]{left, }
+\item[{const vector$<$ {\bf Result} $\ast$ $>$ \&}]{right}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a320de974504e3897b91950486e532f14}
+\hypertarget{class_query_processor_a67bcf8c5a79e7522ade1efdad7e11984}{}\index{Query\+Processor@{Query\+Processor}!merge\+\_\+sort@{merge\+\_\+sort}}
+\index{merge\+\_\+sort@{merge\+\_\+sort}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{merge\+\_\+sort}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Result} $\ast$ $>$ Query\+Processor\+::merge\+\_\+sort (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Result} $\ast$ $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a67bcf8c5a79e7522ade1efdad7e11984}
+\hypertarget{class_query_processor_a5b1b684b03f82b2ef8137ce630be7c33}{}\index{Query\+Processor@{Query\+Processor}!not\+Arg\+Finder@{not\+Arg\+Finder}}
+\index{not\+Arg\+Finder@{not\+Arg\+Finder}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{not\+Arg\+Finder}]{\setlength{\rightskip}{0pt plus 5cm}void Query\+Processor\+::not\+Arg\+Finder (
+\begin{DoxyParamCaption}
+\item[{int}]{loc}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a5b1b684b03f82b2ef8137ce630be7c33}
+\hypertarget{class_query_processor_af6b62a64663cd688f4a55d66570a28a2}{}\index{Query\+Processor@{Query\+Processor}!other\+Arg\+Finder@{other\+Arg\+Finder}}
+\index{other\+Arg\+Finder@{other\+Arg\+Finder}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{other\+Arg\+Finder}]{\setlength{\rightskip}{0pt plus 5cm}void Query\+Processor\+::other\+Arg\+Finder (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_af6b62a64663cd688f4a55d66570a28a2}
+\hypertarget{class_query_processor_a87834efeca2f9af6e32fb5a545d33067}{}\index{Query\+Processor@{Query\+Processor}!parse\+Query@{parse\+Query}}
+\index{parse\+Query@{parse\+Query}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{parse\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void Query\+Processor\+::parse\+Query (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{search}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a87834efeca2f9af6e32fb5a545d33067}
+\hypertarget{class_query_processor_abc27ce568c2aa6cd84cfc10bca4b803b}{}\index{Query\+Processor@{Query\+Processor}!print@{print}}
+\index{print@{print}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Query\+Processor\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_abc27ce568c2aa6cd84cfc10bca4b803b}
+\hypertarget{class_query_processor_a740190335d4102760624782105eebb32}{}\index{Query\+Processor@{Query\+Processor}!search\+Index@{search\+Index}}
+\index{search\+Index@{search\+Index}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{search\+Index}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Result} $\ast$ $>$ Query\+Processor\+::search\+Index (
+\begin{DoxyParamCaption}
+\item[{string}]{search\+\_\+string, }
+\item[{{\bf Index\+Handler} $\ast$\&}]{ih}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a740190335d4102760624782105eebb32}
+\hypertarget{class_query_processor_a04a0adb83cbedd2bf62f3822fe84d4c1}{}\index{Query\+Processor@{Query\+Processor}!sort\+Results@{sort\+Results}}
+\index{sort\+Results@{sort\+Results}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{sort\+Results}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Result} $\ast$ $>$ Query\+Processor\+::sort\+Results (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Page} $\ast$ $>$ \&}]{unsorted\+Results}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a04a0adb83cbedd2bf62f3822fe84d4c1}
+\hypertarget{class_query_processor_a00cadfdc04ae5a048c58cbd9e7eebb1a}{}\index{Query\+Processor@{Query\+Processor}!stem\+Query@{stem\+Query}}
+\index{stem\+Query@{stem\+Query}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{stem\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void Query\+Processor\+::stem\+Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a00cadfdc04ae5a048c58cbd9e7eebb1a}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Query\+Processor.\+h\item 
-Query\+Processor.\+cpp\end{DoxyCompactItemize}
+\hyperlink{_query_processor_8h}{Query\+Processor.\+h}\item 
+\hyperlink{_query_processor_8cpp}{Query\+Processor.\+cpp}\end{DoxyCompactItemize}

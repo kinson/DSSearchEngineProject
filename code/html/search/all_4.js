@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['english_5fstem',['english_stem',['../classstemming_1_1english__stem.html',1,'stemming']]],
-  ['equal_5fstring_5fi_5fcompare',['equal_string_i_compare',['../classstring__util_1_1equal__string__i__compare.html',1,'string_util']]],
-  ['even',['even',['../classeven.html',1,'']]]
+  ['false',['FALSE',['../_porter_stemmer_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'PorterStemmer.h']]],
+  ['fexists',['fexists',['../class_user_interface.html#a37643889f4a4b9819de019bc15e72948',1,'UserInterface']]],
+  ['fulltext',['fullText',['../class_page.html#a8713192624b3bc969533e4ebd39516c3',1,'Page']]]
 ];

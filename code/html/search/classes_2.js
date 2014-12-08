@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['backup_5fvariable',['backup_variable',['../classbackup__variable.html',1,'']]]
+  ['hashnode',['HashNode',['../class_hash_node.html',1,'']]],
+  ['hashtable',['HashTable',['../class_hash_table.html',1,'']]]
 ];

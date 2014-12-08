@@ -1,3 +1,8 @@
+/** Node header file
+* main data holder for both types of structures
+*Sam Hunter and Morgan Monzingo
+*/
+
 #ifndef NODE_H
 #define NODE_H
 

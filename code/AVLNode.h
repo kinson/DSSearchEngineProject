@@ -1,3 +1,8 @@
+
+/** AVL Node header file
+* Sam Hunter and Morgan Monzingo
+* node built for AVL tree 
+*/
 #ifndef AVLNODE_H
 #define AVLNODE_H
 
@@ -22,10 +27,6 @@ public:
   AVLNode(string, AVLNode*&, AVLNode*&, Page*);
   ~AVLNode();
 
-
-  //override comparison constructors for string comparing
-  //friend bool operator<(AVLNode&, string&);
-  //friend bool operator>(AVLNode&, string&);
 
 
 
