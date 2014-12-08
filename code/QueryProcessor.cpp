@@ -187,6 +187,8 @@ vector<Result*> QueryProcessor::searchIndex(string search_string, IndexHandler*&
       set_difference(test.begin(), test.end(), notargs.begin(), notargs.end(), back_inserter(results));
     }
   }
+  for (auto e: results)
+    cout << e->getTitle() << endl;
   vector<Result*> resultsvector = sortResults(results);
   return resultsvector;
 }
@@ -250,6 +252,7 @@ vector<Result*> QueryProcessor::sortResults(vector<Page*>& unsortedResults)
   }
   else //if there is only one search term
   {
+    cout << currentQ->getnormArgs()[0] << endl;
     //for each Page* object in the unsorted results vector
     for (auto e:unsortedResults)
     {

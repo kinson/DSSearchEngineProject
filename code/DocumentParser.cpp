@@ -210,7 +210,6 @@ void DocumentParser::parseDrive(string xmlInFile, IndexHandler*& indexhandler)
           if (stopwords.count(inString))
               isStop = true;
 
-
           //if it's not being thrown out
           if(!isStop && inString.length() > 2)
           {
@@ -264,6 +263,7 @@ void DocumentParser::saveIndex()
     indexSave << t->getFullText() << endl;
     indexSave << t->getKeywords().size() << endl;
     int largeindex = t->getKeywords().size();
+
     for (int i = 0; i < largeindex; i++)
     {
       indexSave << t->getKeywordAtIndex(i) << endl;
@@ -278,7 +278,6 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
 {
   ifstream indexRead("index.txt");
   string inString;
-  int looper = 0;
   while (!indexRead.eof() /*&& looper++ < 10000*/)
   {
     Page* p = new Page();
@@ -293,7 +292,6 @@ void DocumentParser::readInParsedFile(IndexHandler*& indexhandler)
     getline(indexRead, inString);
     p->setFullText(inString);
     getline(indexRead, inString);
-    //int test = 0;
     int number_of_pages = atoi(inString.c_str());
     for (int i = 0; i < number_of_pages; i++)
     {
